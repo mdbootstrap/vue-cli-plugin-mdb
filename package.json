@@ -5,7 +5,12 @@
   "main": "index.js",
   "author": "M.Smolenski <m.smolenski@mdbootstrap.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdbootstrap/vue-cli-plugin-mdb.git"
+  },
+  "homepage": "https://github.com/mdbootstrap/vue-cli-plugin-mdb#readme",
   "dependencies": {
-    "remote-git-tags": "^2.0.0"
+    "git-tags-remote": "^1.0.1"
   }
 }

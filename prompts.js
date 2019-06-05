@@ -4,6 +4,6 @@ module.exports = [
     type: 'list',
     message: 'Default Template or Demo App?',
     choices: ['Default', 'Demo'],
-    default: 0
+    default: 'Default'
   }
 ]

@@ -54,7 +54,7 @@ __________
 
 # Demo
 
- - [Main demo](https://mdbootstrap.com/docs/vue/components/demo/)
+ - [Main demo](https://mdbootstrap.com/previews/templates/vue/)
 
 # Version
 
