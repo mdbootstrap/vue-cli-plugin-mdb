@@ -7,23 +7,42 @@ gitTagsRemote.get(repoPath).then(tags => {
 })
 
 module.exports = (api, options) => {
-  api.extendPackage({
-    scripts: {
-      start: 'vue-cli-service serve --open'
-    },
-    dependencies: {
-      'mdbvue': latestTag
-    },
-    devDependencies: {
-      'eslint-plugin-html': '^5.0.5',
-      'eslint-plugin-vue-libs': '^3.0.0'
-    }
-  })
+  if (options.version === 'Free') {
+    api.extendPackage({
+      scripts: {
+        start: 'vue-cli-service serve --open'
+      },
+      dependencies: {
+        'mdbvue': latestTag
+      },
+      devDependencies: {
+        'eslint-plugin-html': '^5.0.5',
+        'eslint-plugin-vue-libs': '^3.0.0'
+      }
+    })
+  } else {
+    api.extendPackage({
+      scripts: {
+        start: 'vue-cli-service serve --open'
+      },
+      dependencies: {
+        'mdbvue': `git+https://oauth2:${options.token}@git.mdbootstrap.com/mdb/vue/vu-pro.git`
+      },
+      devDependencies: {
+        'eslint-plugin-html': '^5.0.5',
+        'eslint-plugin-vue-libs': '^3.0.0'
+      }
+    })
+  }
 
   if (options.defaultApp === 'Default') {
     api.render('./templates/default')
   } else {
-    api.render('./templates/demo')
+    if (options.version === 'Free') {
+      api.render('./templates/demoFree')
+    } else {
+      api.render('./templates/demoPro')
+    }
   }
 
   api.render('./config')
