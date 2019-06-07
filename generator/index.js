@@ -6,7 +6,19 @@ gitTagsRemote.latest(repoPath).then(tags => {
   latestTag = Array.from(tags)[0]
 })
 
+// check if mdb is installed
+const { exec } = require('shelljs');
+const fs = require('fs')
+const packageJson = fs.readFileSync('./package.json', { encoding: 'utf-8' })
+const packageJsonLines = packageJson.split(/\r?\n/g)
+const packageJsonLinesIndex = packageJsonLines.findIndex(line => line.match(/mdbvue/))
+
 module.exports = (api, options) => {
+
+  // uninstall mdb if exists
+  if (options.mode === 'Existing app' && packageJsonLinesIndex >= 0) {
+    exec('yarn remove mdbvue')
+  }
 
   if (options.version === 'Free') {
     api.extendPackage({
@@ -18,7 +30,7 @@ module.exports = (api, options) => {
       },
       devDependencies: {
         'eslint-plugin-html': '^5.0.5',
-        'eslint-plugin-vue-libs': '^2.1.0'
+        'eslint-plugin-vue-libs': '^3.0.0'
       }
     })
 
@@ -33,9 +45,10 @@ module.exports = (api, options) => {
       },
       devDependencies: {
         'eslint-plugin-html': '^5.0.5',
-        'eslint-plugin-vue-libs': '^2.1.0'
+        'eslint-plugin-vue-libs': '^3.0.0'
       }
     })
+
   }
 
   // rendering new files
@@ -58,23 +71,24 @@ module.exports = (api, options) => {
       api.injectImports(api.entryFile, `import 'bootstrap-css-only/css/bootstrap.min.css'`)
       api.injectImports(api.entryFile, `import 'mdbvue/build/css/mdb.css'`)
       api.injectImports(api.entryFile, `import { Notify } from 'mdbvue'`)
-      api.injectImports(api.entryFile, `import Vue2TouchEvents from 'vue2-touch-events'`)
-      api.injectImports(api.entryFile, `import LoadScript from 'vue-plugin-load-script'`)
  
       api.onCreateComplete(() => {
         const { EOL } = require('os')
-        const fs = require('fs')
         const contentMain = fs.readFileSync(api.entryFile, { encoding: 'utf-8' })
         const lines = contentMain.split(/\r?\n/g)
-      
-        const renderIndex = lines.findIndex(line => line.match(/new Vue/))
-        lines[renderIndex - 1] += `${EOL}Vue.use(Notify)`
-        lines[renderIndex - 1] += `${EOL}Vue.use(Vue2TouchEvents)`
-        lines[renderIndex - 1] += `${EOL}Vue.use(LoadScript)`
-        lines[renderIndex - 1] += `${EOL}`
-      
-        fs.writeFileSync(api.entryFile, lines.join(EOL), { encoding: 'utf-8' })
+
+        // check existing imports
+        const notifyIndex = lines.findIndex(line => line.match(/Vue.use(\(Notify)\)/))
+
+        // update main.js if needed
+        if (notifyIndex < 0) {
+          const renderIndex = lines.findIndex(line => line.match(/new Vue/))
+          lines[renderIndex - 1] += `${EOL}Vue.use(Notify)`
+          lines[renderIndex - 1] += `${EOL}`
+          fs.writeFileSync(api.entryFile, lines.join(EOL), { encoding: 'utf-8' })
+        }
       })
+      api.render('./templates/existingAppPro')
     }
   }
 
@@ -86,7 +100,7 @@ module.exports = (api, options) => {
       const packlist = require('npm-packlist')
       const tar = require('tar')
       const packageDir = './node_modules/mdbvue'
-      const packageTarball = `./mdbvue-v${latestTag}.tgz`
+      const packageTarball = `./mdb/mdbvue/mdbvue-v${latestTag}.tgz`
       
       packlist({ path: packageDir })
         .then(files => tar.create({
@@ -100,15 +114,19 @@ module.exports = (api, options) => {
           const replaceOptions = {
             files: './package.json',
             from: `git+https://oauth2:${options.token}@git.mdbootstrap.com/mdb/vue/vu-pro.git`,
-            to: `./mdbvue-v${latestTag}.tgz`,
+            to: `./mdb/mdbvue/mdbvue-v${latestTag}.tgz`,
           };
           try {
-            const replaceResults = replace.sync(replaceOptions);
+            replace.sync(replaceOptions);
           }
-          catch (error) {
-          }
+          catch (error) {}
         })
+        exec('yarn');
     })
   }
+
+  api.onCreateComplete(() => {
+    console.log('\x1b[32m%s\x1b[0m', 'MDB is ready for coding!')
+  })
 
 }

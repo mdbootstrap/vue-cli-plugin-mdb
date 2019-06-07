@@ -14,6 +14,7 @@
     "git-tags-remote": "^1.0.1",
     "npm-packlist": "^1.4.1",
     "replace-in-file": "^4.1.0",
+    "shelljs": "^0.8.3",
     "tar": "^4.4.10"
   }
 }
