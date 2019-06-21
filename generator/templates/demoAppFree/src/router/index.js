@@ -83,7 +83,6 @@ import StretchedLinkPage from '../docs/Components/StretchedLinkPage';
 import NotificationsFreePage from '../docs/Advanced/NotificationsPage';
 import MasonryPage from '../docs/CSS/MasonryPage';
 import SwitchPage from '../docs/Forms/SwitchPage';
-
 Vue.use(Router);
 
 export default new Router({
@@ -415,6 +414,6 @@ export default new Router({
       path: '/forms/switch',
       name: 'SwitchPage',
       component: SwitchPage
-    }
+    }    
   ]
 });

@@ -1,23 +1,23 @@
+const fs = require('fs')
+
+// check if mdb is already installed
+const packageJson = fs.readFileSync('./package.json', { encoding: 'utf-8' })
+const packageJsonLines = packageJson.split(/\r?\n/g)
+const packageJsonMDBIndex = packageJsonLines.findIndex(line => line.match(/mdbvue/))
+
+// check for the latest mdb version
 const gitTagsRemote = require('git-tags-remote')
 const repoPath = 'https://github.com/mdbootstrap/Vue-Bootstrap-with-Material-Design.git'
-let latestTag = '5.4.0'
+let latestTag = '5.5.0'
 
 gitTagsRemote.latest(repoPath).then(tags => {
   latestTag = Array.from(tags)[0]
 })
 
-// check if mdb is installed
-const { exec } = require('shelljs');
-const fs = require('fs')
-const packageJson = fs.readFileSync('./package.json', { encoding: 'utf-8' })
-const packageJsonLines = packageJson.split(/\r?\n/g)
-const packageJsonLinesIndex = packageJsonLines.findIndex(line => line.match(/mdbvue/))
-
 module.exports = (api, options) => {
-
-  // uninstall mdb if exists
-  if (options.mode === 'Existing app' && packageJsonLinesIndex >= 0) {
-    exec('yarn remove mdbvue')
+  // warning if mdb is already installed
+  if (packageJsonMDBIndex >= 0) {
+    return console.log('\x1b[33m%s\x1b[0m', 'Please type `yarn remove mdbvue` or `npm uninstall mdbvue` to remove old MDB package and run plugin again')
   }
 
   if (options.version === 'Free') {
@@ -121,7 +121,6 @@ module.exports = (api, options) => {
           }
           catch (error) {}
         })
-        exec('yarn');
     })
   }
 

@@ -40,7 +40,9 @@
                   Table Sort<mdb-icon icon="angle-right"/>
                 </h5>
               </mdb-nav-item>
+
             </mdb-list-group>
+            
           </mdb-jumbotron>
         </mdb-col>
       </mdb-row>

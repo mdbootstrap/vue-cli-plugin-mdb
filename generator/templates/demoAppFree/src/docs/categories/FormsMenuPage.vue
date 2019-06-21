@@ -10,42 +10,44 @@
             <h2 class="pb-4"><mdb-icon icon="edit" class="text-danger mr-2" /><strong>Forms</strong></h2>
             <h6 class="my-3">FREE</h6>
             <mdb-list-group>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/forms">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Forms <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/inputs">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Input <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/group">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Input Group <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/search">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Search <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/select">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Select <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/switch">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Switch <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/validation">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Validation<mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
+            <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/forms">
+              <h5 class="justify-content-between d-flex align-items-center">
+                Forms <mdb-icon icon="angle-right"/>
+              </h5>
+            </mdb-nav-item>
+            <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/inputs">
+              <h5 class="justify-content-between d-flex align-items-center">
+                Input <mdb-icon icon="angle-right"/>
+              </h5>
+            </mdb-nav-item>
+            <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/group">
+              <h5 class="justify-content-between d-flex align-items-center">
+                Input Group <mdb-icon icon="angle-right"/>
+              </h5>
+            </mdb-nav-item>
+            <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/search">
+              <h5 class="justify-content-between d-flex align-items-center">
+                Search <mdb-icon icon="angle-right"/>
+              </h5>
+            </mdb-nav-item>
+            <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/select">
+              <h5 class="justify-content-between d-flex align-items-center">
+                Select <mdb-icon icon="angle-right"/>
+              </h5>
+            </mdb-nav-item>
+            <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/switch">
+              <h5 class="justify-content-between d-flex align-items-center">
+                Switch <mdb-icon icon="angle-right"/>
+              </h5>
+            </mdb-nav-item>
+            <mdb-nav-item class="list-group-item list-group-item-action" to="/forms/validation">
+              <h5 class="justify-content-between d-flex align-items-center">
+                Validation<mdb-icon icon="angle-right"/>
+              </h5>
+            </mdb-nav-item>
+
             </mdb-list-group>
+            
           </mdb-jumbotron>
         </mdb-col>
       </mdb-row>

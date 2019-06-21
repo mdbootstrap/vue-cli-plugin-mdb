@@ -16,7 +16,7 @@
               <mdb-input label="Your password" icon="lock" type="password"/>
             </div>
             <div class="text-center">
-              <mdb-btn>Login</mdb-btn>
+              <mdb-btn color="default">Login</mdb-btn>
             </div>
           </form>
         </mdb-col>

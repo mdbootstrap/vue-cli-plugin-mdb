@@ -37,13 +37,13 @@
     <section class="demo-section">
       <h4 class="mt-5 mb-3">Image placeholder</h4>
       <section>
-        <div class="img-container">
+        <div>
           <mdb-row>
             <mdb-col md="4">
-              <mdb-file-input @getValue="getFileInputValue" circle btnColor="mdb-color" btn-title="ADD PHOTO" rounded img="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg" />
+              <mdb-file-input @getValue="getFileInputValue" circle btnColor="mdb-color" btn-title="add photo" rounded img src="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg" />
             </mdb-col>
             <mdb-col md="4">
-              <mdb-file-input @getValue="getFileInputValue" :width="300" btnColor="mdb-color" rounded btn-title="ADD PHOTO" img="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" />
+              <mdb-file-input @getValue="getFileInputValue" :width="300" btnColor="mdb-color" rounded btn-title="add photo" img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" />
             </mdb-col>
           </mdb-row>
         </div>
@@ -71,11 +71,11 @@
         <mdb-row>
           <mdb-col sm="12" md="6">
             <mdb-file-input @getValue="getFileInputValue" icon="cloud-upload-alt" sm gradient="blue" />
-            <mdb-file-input @getValue="getFileInputValue" icon="cloud-upload-alt" icon-right sm rounded btnColor="pink" />
+            <mdb-file-input @getValue="getFileInputValue" icon-right="cloud-upload-alt" sm rounded btnColor="pink" />
           </mdb-col>
           <mdb-col>
             <mdb-file-input @getValue="getFileInputValue" icon="cloud-upload-alt" outline="info" />
-            <mdb-file-input @getValue="getFileInputValue" icon="upload" icon-right rounded lg outline="danger" />
+            <mdb-file-input @getValue="getFileInputValue" icon-right="upload" rounded lg outline="danger" />
           </mdb-col>
         </mdb-row>
       </section> 
@@ -85,13 +85,24 @@
       <section>
         <mdb-row>
           <mdb-col sm="12" md="4">
-            <mdb-file-input @getValue="getFileInputValue" floating icon="paperclip" lg btnColor="pink" />
+            <mdb-file-input @getValue="getFileInputValue" floating icon="paperclip" gradient="peach" />
           </mdb-col>
           <mdb-col sm="12" md="4">
-            <mdb-file-input @getValue="getFileInputValue" floating icon="heart" lg btnColor="cyan" />
+            <mdb-file-input @getValue="getFileInputValue" floating icon="heart" gradient="blue" />
           </mdb-col>
           <mdb-col>
-            <mdb-file-input @getValue="getFileInputValue" floating icon="cloud-upload-alt" lg btnColor="amber" />
+            <mdb-file-input @getValue="getFileInputValue" floating icon="cloud-upload-alt" gradient="purple" />
+          </mdb-col>
+        </mdb-row>
+         <mdb-row>
+          <mdb-col sm="12" md="4">
+            <mdb-file-input @getValue="getFileInputValue" floating lg icon="paperclip" btnColor="pink" />
+          </mdb-col>
+          <mdb-col sm="12" md="4">
+            <mdb-file-input @getValue="getFileInputValue" floating lg icon="heart" btnColor="cyan" />
+          </mdb-col>
+          <mdb-col>
+            <mdb-file-input @getValue="getFileInputValue" floating lg icon="cloud-upload-alt" btnColor="amber" />
           </mdb-col>
         </mdb-row>
       </section> 

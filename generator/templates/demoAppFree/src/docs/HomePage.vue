@@ -96,7 +96,7 @@
           </mdb-col>
         </mdb-row>
         <mdb-row class="mb-4">
-          <mdb-col md="4" class="mb-5" offset="2">
+          <mdb-col md="4" class="mb-5">
             <mdb-card v-animateOnScroll="{animation: 'fadeInLeft', delay: 400}">
               <mdb-card-image src="https://mdbootstrap.com/wp-content/uploads/2018/02/modal-new.jpg" alt="Card image cap"></mdb-card-image>
               <mdb-card-body>
@@ -107,7 +107,7 @@
             </mdb-card>
           </mdb-col>
           <mdb-col md="4" class="mb-5">
-            <mdb-card v-animateOnScroll="{animation: 'fadeInRight'}">
+            <mdb-card v-animateOnScroll="{animation: 'fadeIn'}">
               <mdb-card-image src="https://mdbootstrap.com/img/Marketing/docs/social/main-addons.jpg" alt="Card image cap"></mdb-card-image>
               <mdb-card-body>
                 <mdb-card-title><mdb-icon icon="plus-square" class="blue-text" /><strong> PLUGINS & ADDONS</strong></mdb-card-title>

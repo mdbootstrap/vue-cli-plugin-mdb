@@ -70,18 +70,17 @@
       <mdb-modal-body class="mx-3">
         <mdb-input label="Your email" type="email" class="mb-5 grey-text"/>
         <mdb-input label="Enter password" type="password" class="pb-3"></mdb-input>
-          <p class="font-small blue-text d-flex justify-content-end mb-5">
-            Forgot <a class="ml-1"> Password?</a>
-          </p>
-
+        <p class="font-small blue-text d-flex justify-content-end mb-5">
+          Forgot <a class="ml-1"> Password?</a>
+        </p>
         <div class="text-center mb-3">
           <mdb-btn gradient="blue" block rounded>Sign In</mdb-btn>
         </div>
         <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2">or Sign in with:</p>
         <mdb-row center class="my-3">
-          <mdb-btn color="white" rounded class="mr-md-3 z-depth-1a"><mdb-icon fab icon="facebook-f"/></mdb-btn>
-          <mdb-btn color="white" rounded class="mr-md-3 z-depth-1a"><mdb-icon fab icon="twitter"/></mdb-btn>
-          <mdb-btn color="white" rounded class="mr-md-3 z-depth-1a"><mdb-icon fab icon="google-plus-g"/></mdb-btn>
+          <mdb-btn color="white" rounded class="mr-md-3 z-depth-1a"><mdb-icon fab color="info" icon="facebook-f"/></mdb-btn>
+          <mdb-btn color="white" rounded class="mr-md-3 z-depth-1a"><mdb-icon fab color="info" icon="twitter"/></mdb-btn>
+          <mdb-btn color="white" rounded class="mr-md-3 z-depth-1a"><mdb-icon fab color="info" icon="google-plus-g"/></mdb-btn>
         </mdb-row>
       </mdb-modal-body>
       <mdb-modal-footer class="mx-5 pt-3 mb-1" end>

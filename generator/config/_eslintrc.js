@@ -247,6 +247,7 @@ module.exports = {
         ],
         'require-await': 'error',
         'rest-spread-spacing': 'error',
+        'semi': 'off',
         'semi-spacing': 'off',
         'sort-imports': 'off',
         'sort-keys': 'off',
