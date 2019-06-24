@@ -1,9 +1,5 @@
 const fs = require('fs')
-
-// check if mdb is already installed
-const packageJson = fs.readFileSync('./package.json', { encoding: 'utf-8' })
-const packageJsonLines = packageJson.split(/\r?\n/g)
-const packageJsonMDBIndex = packageJsonLines.findIndex(line => line.match(/mdbvue/))
+const rimraf = require('rimraf')
 
 // check for the latest mdb version
 const gitTagsRemote = require('git-tags-remote')
@@ -16,8 +12,12 @@ gitTagsRemote.latest(repoPath).then(tags => {
 
 module.exports = (api, options) => {
   // warning if mdb is already installed
-  if (packageJsonMDBIndex >= 0) {
-    return console.log('\x1b[33m%s\x1b[0m', 'Please type `yarn remove mdbvue` or `npm uninstall mdbvue` to remove old MDB package and run plugin again')
+  if (api.hasPlugin('mdbvue')) {
+    // delete mdb dir
+    rimraf('./mdb', fs, () => {
+      console.log('Successfully deleted MDB dir')
+    })
+    return api.exitLog('Please type `yarn remove mdbvue` or `npm uninstall mdbvue` to remove old MDB package and run plugin again', 'warn')
   }
 
   if (options.version === 'Free') {
@@ -124,8 +124,6 @@ module.exports = (api, options) => {
     })
   }
 
-  api.onCreateComplete(() => {
-    console.log('\x1b[32m%s\x1b[0m', 'MDB is ready for coding!')
-  })
+  api.exitLog('MDB is ready for coding!', 'done')
 
 }
