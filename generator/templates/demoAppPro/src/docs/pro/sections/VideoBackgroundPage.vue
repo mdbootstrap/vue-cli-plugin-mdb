@@ -1,6 +1,6 @@
 <template>
   <div class="video-background-page">
-    <mdb-navbar style="margin-top: 64px" color="primary" position="top" dark href="#" transparent scrolling>
+    <mdb-navbar style="margin-top: 50px; padding-top: 25px;" color="primary" position="top" dark href="#" transparent scrolling>
       <mdb-container>
         <mdbNavbarBrand href="#"><strong>MDB</strong></mdbNavbarBrand>
         <mdb-navbar-toggler style="max-width: 1140px">
@@ -22,7 +22,7 @@
       </mdb-container>
     </mdb-navbar>
 
-    <view-wrapper src="https://mdbootstrap.com/img/video/animation.mp4" video>
+    <view-wrapper style="margin-top: -10px" src="https://mdbootstrap.com/img/video/animation.mp4" video>
       <mdb-mask class="d-flex justify-content-center align-items-center gradient">
         <mdb-container class="px-md-3 px-sm-0">
           <mdb-row>

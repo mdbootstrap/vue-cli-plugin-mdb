@@ -1,6 +1,6 @@
 <template>
   <div class="classic-form-page">
-    <mdb-navbar style="margin-top: 60px" :color="'primary'" position="top" dark href="#" transparent scrolling>
+    <mdb-navbar style="margin-top: 50px; padding-top: 20px" :color="'primary'" position="top" dark href="#" transparent scrolling>
       <mdb-container>
         <mdbNavbarBrand href="#"><strong>MDB</strong></mdbNavbarBrand>
         <mdb-navbar-toggler style="max-width: 1140px">
@@ -90,12 +90,6 @@ export default {
     mdbInput,
     mdbIcon,
     mdbNavbarBrand
-  },
-  mounted(){
-    document.getElementById("main-navbar").style.height = '60px';
-  },
-  beforeDestroy(){
-    document.getElementById("main-navbar").style.height = null;
   }
 };
 </script>
@@ -107,6 +101,7 @@ export default {
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 60px);
+  margin-top: -10px;
 }
 
 .classic-form-page .gradient {

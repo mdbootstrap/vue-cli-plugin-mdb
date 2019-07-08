@@ -1,586 +1,120 @@
 <template>
   <mdb-container>
     <mdb-row class="mt-5 align-items-center justify-content-start">
-      <h4 class="demo-title"><strong>Chat</strong></h4>
-      <a href="https://mdbootstrap.com/plugins/vue/chat/?utm_source=DemoApp&utm_medium=MDBVuePro" waves-fixed class="border grey-text px-2 border-light rounded ml-2" target="_blank"><mdb-icon icon="graduation-cap" class="mr-2"/>Docs</a>
+      <h4 class="demo-title">
+        <strong>Chat</strong>
+      </h4>
+      <a
+        href="https://mdbootstrap.com/plugins/vue/chat/?utm_source=DemoApp&utm_medium=MDBVuePro"
+        waves-fixed
+        class="border grey-text px-2 border-light rounded ml-2"
+        target="_blank"
+      >
+        <mdb-icon icon="graduation-cap" class="mr-2"/>Docs
+      </a>
     </mdb-row>
-    <hr class="mb-5" />
-    <h4 class="mb-4">Basic chat</h4>
-    <mdb-card class="grey lighten-3 chat-room">
-        <mdb-card-body>
-
-            <!-- Grid row -->
-            <mdb-row class="px-lg-2 px-2">
-
-                <!-- Grid column -->
-                <mdb-col md="6" xl="4" class="px-0">
-
-                    <h6 class="font-weight-bold mb-3 text-center text-lg-left">Member</h6>
-                    <div class="white z-depth-1 px-3 pt-3 pb-0">
-                        <ul class="list-unstyled friend-list">
-                            <li class="active grey lighten-3 p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>John Doe</strong>
-                                        <p class="last-message text-muted">Hello, Are you there?</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Just now</p>
-                                        <span class="badge badge-danger float-right">1</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Danny Smith</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">5 min ago</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Alex Steward</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Ashley Olsen</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-4.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Kate Moss</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Lara Croft</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Brad Pitt</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">5 min ago</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="check" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </mdb-col>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <mdb-col md="6" xl="8" class="pl-md-3 px-lg-auto px-0">
-
-                    <div class="chat-message">
-
-                        <ul class="list-unstyled chat">
-                            <li class="d-flex justify-content-between mb-4">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle ml-lg-3 ml-0 z-depth-1">
-                                <div class="chat-body white p-3 ml-2 z-depth-1">
-                                    <div class="header">
-                                        <strong class="primary-font">Brad Pitt</strong>
-                                        <small class="pull-right text-muted"><mdb-icon icon="clock-o"/> 12 mins ago</small>
-                                    </div>
-                                    <hr class="w-100">
-                                    <p class="mb-0">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between mb-4">
-                                <div class="chat-body white p-3 z-depth-1">
-                                    <div class="header">
-                                        <strong class="primary-font">Lara Croft</strong>
-                                        <small class="pull-right text-muted"><mdb-icon icon="clock-o"/> 13 mins ago</small>
-                                    </div>
-                                    <hr class="w-100">
-                                    <p class="mb-0">
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                                    </p>
-                                </div>
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="avatar" class="avatar rounded-circle mr-0 ml-3 z-depth-1">
-                            </li>
-                            <li class="d-flex justify-content-between mb-4 pb-3">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle ml-lg-3 ml-0 z-depth-1">
-                                <div class="chat-body white p-3 ml-2 z-depth-1">
-                                    <div class="header">
-                                        <strong class="primary-font">Brad Pitt</strong>
-                                        <small class="pull-right text-muted"><mdb-icon icon="clock-o"/> 12 mins ago</small>
-                                    </div>
-                                    <hr class="w-100">
-                                    <p class="mb-0">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="white">
-                                <div class="form-group basic-textarea">
-                                    <textarea class="form-control pl-2 my-0" id="exampleFormControlTextarea2" rows="3" placeholder="Type your message here..."></textarea>
-                                </div>
-                            </li>
-                            <mdb-btn color="info" rounded size="sm" class="float-right">Send</mdb-btn>
-                        </ul>
-
-                    </div>
-
-                </mdb-col>
-                <!-- Grid column -->
-
-            </mdb-row>
-            <!-- Grid row -->
-
-        </mdb-card-body>
-    </mdb-card>
-    <h4 class="mt-5 mb-4">Colorful background chat</h4>
-    <mdb-card class="card purple lighten-4 chat-room">
-        <mdb-card-body>
-
-            <!-- Grid row -->
-            <mdb-row class="px-2">
-
-                <!-- Grid column -->
-                <mdb-col md="6" xl="8" class="pr-md-4 px-lg-auto px-0">
-
-                    <div class="chat-message">
-
-                        <ul class="list-unstyled chat">
-                            <li class="d-flex justify-content-between mb-4">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle ml-0 z-depth-1">
-                                <div class="chat-body white p-3 ml-2 z-depth-1">
-                                    <div class="header">
-                                        <strong class="primary-font">Brad Pitt</strong>
-                                        <small class="pull-right text-muted"><mdb-icon icon="clock-o"/> 12 mins ago</small>
-                                    </div>
-                                    <hr class="w-100">
-                                    <p class="mb-0">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between mb-4">
-                                <div class="chat-body white p-3 z-depth-1">
-                                    <div class="header">
-                                        <strong class="primary-font">Lara Croft</strong>
-                                        <small class="pull-right text-muted"><mdb-icon icon="clock-o"/> 13 mins ago</small>
-                                    </div>
-                                    <hr class="w-100">
-                                    <p class="mb-0">
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                                    </p>
-                                </div>
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="avatar" class="avatar rounded-circle mr-0 ml-3 z-depth-1">
-                            </li>
-                            <li class="d-flex justify-content-between mb-4 pb-3">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle ml-0 z-depth-1">
-                                <div class="chat-body white p-3 ml-2 z-depth-1">
-                                    <div class="header">
-                                        <strong class="primary-font">Brad Pitt</strong>
-                                        <small class="pull-right text-muted"><mdb-icon icon="clock-o"/> 12 mins ago</small>
-                                    </div>
-                                    <hr class="w-100">
-                                    <p class="mb-0">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="white">
-                                <div class="form-group basic-textarea">
-                                    <textarea class="form-control pl-2 my-0" id="exampleFormControlTextarea2" rows="3" placeholder="Type your message here..."></textarea>
-                                </div>
-                            </li>
-                            <mdb-btn color="deep-purple" rounded size="sm" class="float-right">Send</mdb-btn>
-                        </ul>
-
-                    </div>
-
-                </mdb-col>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <mdb-col md="6" xl="4" class="px-0">
-
-                    <h6 class="font-weight-bold mb-3 text-center text-lg-left">Member</h6>
-                    <div class="white z-depth-1 px-3 pt-3 pb-0">
-                        <ul class="list-unstyled friend-list">
-                            <li class="active grey lighten-3 p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>John Doe</strong>
-                                        <p class="last-message text-muted">Hello, Are you there?</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Just now</p>
-                                        <span class="badge badge-danger float-right">1</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Danny Smith</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">5 min ago</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Alex Steward</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Ashley Olsen</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-4.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Kate Moss</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Lara Croft</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Brad Pitt</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">5 min ago</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="check" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </mdb-col>
-                <!-- Grid column -->
-
-            </mdb-row>
-            <!-- Grid row -->
-
-        </mdb-card-body>
-    </mdb-card>
-    <h4 class="mt-5 mb-4">Gradient chat with scrollbar</h4>
-    <mdb-card class="rare-wind-gradient chat-room">
-        <mdb-card-body>
-
-            <!-- Grid row -->
-            <mdb-row class="px-lg-2 px-2">
-
-                <!-- Grid column -->
-                <mdb-col md="6" xl="4" class="px-0">
-
-                    <h6 class="font-weight-bold mb-3 text-center text-lg-left">Member</h6>
-                    <div class="white z-depth-1 px-2 pt-3 pb-0 members-panel-1 scrollbar-light-blue">
-                        <ul class="list-unstyled friend-list">
-                            <li class="active grey lighten-3 p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>John Doe</strong>
-                                        <p class="last-message text-muted">Hello, Are you there?</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Just now</p>
-                                        <span class="badge badge-danger float-right">1</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Danny Smith</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">5 min ago</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Alex Steward</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Ashley Olsen</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-4.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Kate Moss</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Lara Croft</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Brad Pitt</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">5 min ago</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="check" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img(3).jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Ken Ditto</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-2">
-                                <a href="#" class="d-flex justify-content-between">
-                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img(2).jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center z-depth-1">
-                                    <div class="text-small">
-                                        <strong>Marta Wozniak</strong>
-                                        <p class="last-message text-muted">Lorem ipsum dolor sit.</p>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <p class="text-smaller text-muted mb-0">Yesterday</p>
-                                        <span class="text-muted float-right"><mdb-icon icon="mail-reply" aria-hidden="true"/></span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </mdb-col>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <mdb-col md="6" xl="8" class="pl-md-3 px-lg-auto px-0">
-
-                    <div class="chat-message">
-
-                        <ul class="list-unstyled chat-1 scrollbar-light-blue">
-                            <li class="d-flex justify-content-between mb-4">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle ml-lg-3 ml-0 z-depth-1">
-                                <div class="chat-body white p-3 ml-2 z-depth-1">
-                                    <div class="header">
-                                        <strong class="primary-font">Brad Pitt</strong>
-                                        <small class="pull-right text-muted"><mdb-icon icon="clock-o"/> 12 mins ago</small>
-                                    </div>
-                                    <hr class="w-100">
-                                    <p class="mb-0">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between mb-4">
-                                <div class="chat-body white p-3 z-depth-1">
-                                    <div class="header">
-                                        <strong class="primary-font">Lara Croft</strong>
-                                        <small class="pull-right text-muted"><mdb-icon icon="clock-o"/> 13 mins ago</small>
-                                    </div>
-                                    <hr class="w-100">
-                                    <p class="mb-0">
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                                    </p>
-                                </div>
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="avatar" class="avatar rounded-circle mr-0 ml-3 z-depth-1">
-                            </li>
-                            <li class="d-flex justify-content-between mb-4">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle ml-lg-3 ml-0 z-depth-1">
-                                <div class="chat-body white p-3 ml-2 z-depth-1">
-                                    <div class="header">
-                                        <strong class="primary-font">Brad Pitt</strong>
-                                        <small class="pull-right text-muted"><mdb-icon icon="clock-o"/> 12 mins ago</small>
-                                    </div>
-                                    <hr class="w-100">
-                                    <p class="mb-0">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between mb-4">
-                                <div class="chat-body white p-3 z-depth-1">
-                                    <div class="header">
-                                        <strong class="primary-font">Lara Croft</strong>
-                                        <small class="pull-right text-muted"><mdb-icon icon="clock-o"/> 13 mins ago</small>
-                                    </div>
-                                    <hr class="w-100">
-                                    <p class="mb-0">
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                                    </p>
-                                </div>
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="avatar" class="avatar rounded-circle mr-0 ml-3 z-depth-1">
-                            </li>
-                            <li class="d-flex justify-content-between mb-4 pb-3">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle ml-lg-3 ml-0 z-depth-1">
-                                <div class="chat-body white p-3 ml-2 z-depth-1">
-                                    <div class="header">
-                                        <strong class="primary-font">Brad Pitt</strong>
-                                        <small class="pull-right text-muted"><mdb-icon icon="clock-o"/> 12 mins ago</small>
-                                    </div>
-                                    <hr class="w-100">
-                                    <p class="mb-0">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="white">
-                            <div class="form-group basic-textarea">
-                                <textarea class="form-control pl-2 my-0" id="exampleFormControlTextarea2" rows="3" placeholder="Type your message here..."></textarea>
-                            </div>
-                        </div>
-                        <mdb-btn outline="pink" rounded size="sm" darkWaves class="float-right">Send</mdb-btn>
-
-                    </div>
-
-                </mdb-col>
-                <!-- Grid column -->
-
-            </mdb-row>
-            <!-- Grid row -->
-
-        </mdb-card-body>
-    </mdb-card>
+    <section class="demo-section">
+      <h4 class="mb-4">Basic chat</h4>
+      <section>
+        <mdb-chat-room color="grey lighten-3">
+          <mdb-row class="px-lg-2 px-2">
+            <mdb-chat
+              :loggedUserId="basicChat.loggedUserId"
+              :chat="basicChat.chat"
+              color="info"
+              :avatarWidth="50"
+              @send="sendMessage($event, basicChat)"
+            ></mdb-chat>
+          </mdb-row>
+        </mdb-chat-room>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4 class="mt-5 mb-4">Colorful background chat list</h4>
+      <section>
+        <mdb-chat-room color="purple lighten-4">
+          <mdb-row class="px-2">
+            <mdb-chat-list :data="chatList"></mdb-chat-list>
+          </mdb-row>
+        </mdb-chat-room>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4 class="mt-5 mb-4">Gradient chat with scrollbar</h4>
+      <section>
+        <mdb-chat-room color="rare-wind-gradient">
+          <mdb-row class="px-lg-2 px-2">
+            <mdb-col md="6" xl="4" class="px-0 pt-3">
+              <mdb-chat-list
+                scroll
+                :height="500"
+                scrollbarClass="scrollbar-light-blue"
+                :data="gradientChat"
+                @click="changeActiveChat"
+              ></mdb-chat-list>
+            </mdb-col>
+            <mdb-col md="6" xl="8" class="pl-md-3 px-lg-auto px-0 pt-3">
+              <mdb-chat
+                :loggedUserId="gradientChat[0].loggedUserId"
+                :chat="gradientChat[activeChat].chat"
+                outline="purple"
+                :avatarWidth="50"
+                scroll
+                scrollbarClass="scrollbar-light-blue"
+                @send="sendMessage($event, gradientChat[activeChat])"
+              ></mdb-chat>
+            </mdb-col>
+          </mdb-row>
+        </mdb-chat-room>
+      </section>
+    </section>
+    <section class="demo-section">
+      <mdb-chat-room small>
+        <mdb-small-chat
+          :loggedUserId="smallChat.loggedUserId"
+          :chat="smallChat.chat"
+          scrollbarClass="scrollbar-light-blue"
+          small
+          @send="sendMessage($event, smallChat)"
+        >
+          <template v-slot:media>
+            <mdb-media class="mb-3">
+              <img
+                class="d-flex rounded mr-2"
+                src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg"
+                alt="Generic placeholder image"
+                style="width: 60px"
+              >
+              <mdb-media-body style="font-size: 0.8rem">
+                <p class="my-0">You're friends on Facebook</p>
+                <p class="mb-0 text-muted">Web Designer at MDBootstrap</p>
+                <p class="mb-0 text-muted">Lives in Paris</p>
+              </mdb-media-body>
+            </mdb-media>
+          </template>
+        </mdb-small-chat>
+      </mdb-chat-room>
+    </section>
   </mdb-container>
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbBtn, mdbCard, mdbCardBody } from 'mdbvue';
+import {
+  mdbContainer,
+  mdbRow,
+  mdbCol,
+  mdbIcon,
+  mdbBtn,
+  mdbCard,
+  mdbCardBody,
+  mdbChat,
+  mdbChatList,
+  mdbChatRoom,
+  mdbSmallChat,
+  mdbMedia,
+  mdbMediaBody,
+  mdbMediaImage
+} from "mdbvue";
 
 export default {
   components: {
@@ -590,100 +124,723 @@ export default {
     mdbIcon,
     mdbBtn,
     mdbCard,
-    mdbCardBody
+    mdbCardBody,
+    mdbChat,
+    mdbChatList,
+    mdbChatRoom,
+    mdbSmallChat,
+    mdbMedia,
+    mdbMediaBody,
+    mdbMediaImage
+  },
+
+  data() {
+    return {
+      basicChat: {
+        loggedUserId: 1,
+        lastId: 4,
+        chat: [
+          {
+            id: 0,
+            name: "Brad Pitt",
+            img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
+            messages: [
+              {
+                id: 0,
+                date: "2019-04-21 15:00:09",
+                content:
+                  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+              },
+              {
+                id: 1,
+                date: "2019-06-26 11:00",
+                content:
+                  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+              },
+              {
+                id: 4,
+                date: "2019-06-26 11:20",
+                content:
+                  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+              }
+            ]
+          },
+          {
+            id: 1,
+            name: "Lara Croft",
+            img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg",
+            messages: [
+              {
+                id: 2,
+                date: "2019-06-26 11:15",
+                content:
+                  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+              },
+              {
+                id: 3,
+                date: "2019-06-26 11:16",
+                content:
+                  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+              }
+            ]
+          }
+        ]
+      },
+      chatList: [
+        {
+          id: 0,
+          active: true,
+          loggedUserId: 0,
+          lastId: 2,
+          chat: [
+            {
+              id: 0,
+              name: "Brad Pitt",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                }
+              ]
+            },
+            {
+              id: 1,
+              name: "Lara Croft",
+              online: true,
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 1,
+          loggedUserId: 0,
+          lastId: 2,
+          chat: [
+            {
+              id: 0,
+              name: "Brad Pitt",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                },
+              ]
+            },
+            {
+              id: 1,
+              name: "Ashley Olsen",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Sed ut perspicantium.",
+                  unread: true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 2,
+          loggedUserId: 0,
+          lastId: 2,
+          chat: [
+            {
+              id: 0,
+              name: "Brad Pitt",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-06-26 11:00",
+                  content: "Sed ut doloremque laudantium."
+                }
+              ]
+            },
+            {
+              id: 1,
+              name: "Danny Smith",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Sed ut perspiciatis laudantium.",
+                  unread: true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 1,
+          loggedUserId: 0,
+          lastId: 2,
+          chat: [
+            {
+              id: 0,
+              name: "Brad Pitt",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                },
+              ]
+            },
+            {
+              id: 1,
+              name: "Alex Turner",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Sed ut perspicantium.",
+                  unread: true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 2,
+          loggedUserId: 0,
+          lastId: 2,
+          chat: [
+            {
+              id: 0,
+              name: "Brad Pitt",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus remque laudantium."
+                },
+              ]
+            },
+            {
+              id: 1,
+              name: "Kate Moss",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-4.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Sed ut perspiciatis laudantium.",
+                  unread: true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      gradientChat: [
+        {
+          loggedUserId: 1,
+          active: true,
+          lastId: 4,
+          chat: [
+            {
+              id: 0,
+              name: "Brad Pitt",
+              online: true,
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                },
+                {
+                  id: 1,
+                  date: "2019-06-26 11:00",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                },
+                {
+                  id: 4,
+                  date: "2019-07-01 09:20",
+                  content:
+                    "Can you pop out and buy lemons?"
+                }
+              ]
+            },
+            {
+              id: 1,
+              name: "Lara Croft",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                },
+                {
+                  id: 3,
+                  date: "2019-06-26 11:16",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 1,
+          loggedUserId: 1,
+          active: false,
+          lastId: 2,
+          chat: [
+            {
+              id: 1,
+              name: "Lara Croft",
+              online: true,
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                },
+                {
+                  id: 1,
+                  date: "2019-06-26 11:00",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                }
+              ]
+            },
+            {
+              id: 2,
+              name: "Ashley Olsen",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Remember to bring me oranges",
+                  unread: true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 2,
+          loggedUserId: 1,
+          active: false,
+          lastId: 2,
+          chat: [
+            {
+              id: 1,
+              name: "Lara Croft",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus remque laudantium."
+                },
+                {
+                  id: 1,
+                  date: "2019-06-26 11:00",
+                  content: "Sed ut doloremque laudantium."
+                }
+              ]
+            },
+            {
+              id: 3,
+              name: "Danny Smith",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Call me later!",
+                  unread: false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 1,
+          loggedUserId: 1,
+          active: false,
+          lastId: 2,
+          chat: [
+            {
+              id: 1,
+              name: "Lara Croft",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                },
+                {
+                  id: 1,
+                  date: "2019-06-26 11:00",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                }
+              ]
+            },
+            {
+              id: 6,
+              name: "Alex Turner",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Hey, are you at home?",
+                  unread: false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 2,
+          loggedUserId: 1,
+          active: false,
+          lastId: 2,
+          chat: [
+            {
+              id: 1,
+              name: "Lara Croft",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus remque laudantium."
+                },
+                {
+                  id: 1,
+                  date: "2019-06-26 11:00",
+                  content: "Sed ut doloremque laudantium."
+                }
+              ]
+            },
+            {
+              id: 7,
+              name: "Kate Moss",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-4.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Wanna grab a bite later?",
+                  unread: true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 1,
+          loggedUserId: 1,
+          active: false,
+          lastId: 2,
+          chat: [
+            {
+              id: 1,
+              name: "Lara Croft",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                },
+                {
+                  id: 1,
+                  date: "2019-06-26 11:00",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                }
+              ]
+            },
+            {
+              id: 10,
+              name: "Meg Ryan",
+              online: true,
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-12.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Sed ut perspicantium.",
+                  unread: false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 2,
+          loggedUserId: 1,
+          active: false,
+          lastId: 2,
+          chat: [
+            {
+              id: 1,
+              name: "Lara Croft",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus remque laudantium."
+                },
+                {
+                  id: 1,
+                  date: "2019-06-26 11:00",
+                  content: "Sed ut doloremque laudantium."
+                }
+              ]
+            },
+            {
+              id: 3,
+              name: "John Smith",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Sed ut!",
+                  unread: true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 1,
+          loggedUserId: 1,
+          active: false,
+          lastId: 2,
+          chat: [
+            {
+              id: 1,
+              name: "Lara Croft",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                },
+                {
+                  id: 1,
+                  date: "2019-06-26 11:00",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                }
+              ]
+            },
+            {
+              id: 13,
+              name: "Olenna Gervais",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-11.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Sed ut perspicantium.",
+                  unread: false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: 2,
+          loggedUserId: 1,
+          active: false,
+          lastId: 2,
+          chat: [
+            {
+              id: 1,
+              name: "Lara Croft",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg",
+              messages: [
+                {
+                  id: 0,
+                  date: "2019-04-21 15:00:09",
+                  content:
+                    "Sed ut perspiciatis unde omnis iste natus remque laudantium."
+                },
+                {
+                  id: 1,
+                  date: "2019-06-26 11:00",
+                  content: "Sed ut doloremque laudantium."
+                }
+              ]
+            },
+            {
+              id: 11,
+              name: "Max Jackson",
+              img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-14.jpg",
+              messages: [
+                {
+                  id: 2,
+                  date: "2019-06-26 11:15",
+                  content: "Sed laudantium!",
+                  unread: false
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      activeChat: 0,
+      smallChat: {
+        loggedUserId: 1,
+        lastId: 4,
+        chat: [
+          {
+            id: 0,
+            name: "Brad Pitt",
+            online: true,
+            img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
+            messages: [
+              {
+                id: 0,
+                date: "2019-04-21 15:00:09",
+                content: "Sed ut perspi."
+              },
+              {
+                id: 1,
+                date: "2019-06-26 11:00",
+                content: "Sed ut peium."
+              },
+              {
+                id: 4,
+                date: "2019-06-26 11:20",
+                content:
+                  "Error sit voluptatem accusantium doloremque laudantium."
+              }
+            ]
+          },
+          {
+            id: 1,
+            name: "Lara Croft",
+            img: "https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg",
+            messages: [
+              {
+                id: 2,
+                date: "2019-06-26 11:15",
+                content:
+                  "Sed ut or sit voluptatem accusantium doloremque laudantium."
+              },
+              {
+                id: 3,
+                date: "2019-06-26 11:16",
+                content: "voluptatem accusantium doloremque laudantium."
+              }
+            ]
+          }
+        ]
+      }
+    };
+  },
+  methods: {
+    createMessage(e, id) {
+      const { content, unread, date } = e;
+      return {
+        id: id + 1,
+        date,
+        content,
+        unread
+      };
+    },
+    sendMessage(e, chat) {
+      const newMessage = this.createMessage(e, chat.lastId);
+      chat.chat
+        .find(el => {
+          return el.id === chat.loggedUserId;
+        })
+        .messages.push(newMessage);
+
+      chat.lastId += 1;
+    },
+    changeActiveChat(index) {
+      this.activeChat = index;
+      this.gradientChat.forEach((chat, i) => {
+        if (i === index) {
+          chat.active = true;
+        } else {
+          chat.active = false;
+        }
+      });
+    }
   }
 };
 
 </script>
 
 <style>
-.basic-textarea textarea {
-    height: auto;
+.rare-wind-gradient {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#a8edea),
+    to(#fed6e3)
+  );
+  background-image: -webkit-linear-gradient(bottom, #a8edea 0%, #fed6e3 100%);
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
-
-.card.chat-room .friend-list li {
-  border-bottom: 1px solid #e0e0e0; }
-  .card.chat-room .friend-list li:last-of-type {
-    border-bottom: none; }
-
-.card.chat-room img.rounded-circle {
-  border-radius: 50%; }
-
-.card.chat-room img.avatar {
-  height: 3rem;
-  width: 3rem; }
-
-.card.chat-room .text-small {
-  font-size: 0.95rem; }
-
-.card.chat-room .text-smaller {
-  font-size: 0.75rem; }
-
-.card.chat-room .friend-list li {
-border-bottom: 1px solid #e0e0e0; }
-.card.chat-room .friend-list li:last-of-type {
-  border-bottom: none; }
-
-.card.chat-room img.rounded-circle {
-  border-radius: 50%; }
-
-.card.chat-room img.avatar {
-  height: 3rem !important;
-  width: 3rem !important; }
-
-.card.chat-room .text-small {
-  font-size: 0.95rem; }
-
-.card.chat-room .text-smaller {
-  font-size: 0.75rem; }
-
-.card.chat-room .members-panel-1,
-.card.chat-room .chat-1 {
-  position: relative;
-  overflow-y: scroll; }
-
-.card.chat-room .members-panel-1 {
-  height: 570px; }
-
-.card.chat-room .chat-1 {
-  height: 495px; }
-
-.card.chat-room .friend-list li {
-  border-bottom: 1px solid #e0e0e0; }
-  .card.chat-room .friend-list li:last-of-type {
-    border-bottom: none; }
-
-.card.chat-room img.rounded-circle {
-  border-radius: 50%; }
-
-.card.chat-room img.avatar {
-  height: 3rem;
-  width: 3rem; }
-
-.card.chat-room .text-small {
-  font-size: 0.95rem; }
-
-.card.chat-room .text-smaller {
-  font-size: 0.75rem; }
 
 .scrollbar-light-blue::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-color: #F5F5F5;
-  border-radius: 10px; }
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
 
 .scrollbar-light-blue::-webkit-scrollbar {
   width: 12px;
-  background-color: #F5F5F5; }
+  background-color: #f5f5f5;
+}
 
 .scrollbar-light-blue::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-color: #82B1FF; }
-
-.rare-wind-gradient {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#a8edea), to(#fed6e3));
-  background-image: -webkit-linear-gradient(bottom, #a8edea 0%, #fed6e3 100%);
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); }
+  background-color: #82b1ff;
+}
 </style>

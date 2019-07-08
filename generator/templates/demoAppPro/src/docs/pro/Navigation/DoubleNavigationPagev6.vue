@@ -1,14 +1,16 @@
 <template>
-  <div>
+  <div class="flexible-content">
     <mdb-navbar
       dark
-      color="grey"
-      class="darken-3"
+      color="black"
+      position="top"
+      style="margin-top: 50px; z-index: 1060; padding-top: 20px"
       :toggler="false"
-      style="margin-top: -10px; padding-top: 20px"
     >
-      <mdb-navbar-nav left>
-        <mdb-icon icon="bars" size="2x" @click.native="toggle = !toggle" />
+      <mdb-navbar-nav left class="side-toggler">
+        <mdb-nav-item>
+          <mdb-icon icon="bars" size="lg" @click.native="toggle=!toggle" />
+        </mdb-nav-item>
       </mdb-navbar-nav>
       <mdb-navbar-nav class="nav-flex-icons" right>
         <mdb-nav-item
@@ -16,12 +18,7 @@
           waves-fixed
           icon="code-branch"
         >Version 1</mdb-nav-item>
-        <mdb-nav-item
-          to="/navigation/pro/double-navigation-v2"
-          active
-          waves-fixed
-          icon="eye"
-        >Version 2</mdb-nav-item>
+        <mdb-nav-item to="/navigation/pro/double-navigation-v2" waves-fixed icon="eye">Version 2</mdb-nav-item>
         <mdb-nav-item
           to="/navigation/pro/double-navigation-v3"
           waves-fixed
@@ -44,39 +41,41 @@
           waves-fixed
           icon="user"
           far
+          active
         >Version 6</mdb-nav-item>
       </mdb-navbar-nav>
     </mdb-navbar>
     <!--/.Navbar-->
-    <div class="grey-skin">
+    <div class="black-skin">
       <mdb-side-nav
         logo="https://mdbootstrap.com/img/logo/mdb-transparent.png"
         sideNavClass="sn-bg-4"
         mask="dark"
         :OpenedFromOutside.sync="toggle"
-        sideNavStyle="top: 50px; padding-top: 10px"
+        :breakWidth="900"
+        sideNavStyle="top: 110px;"
       >
         <ul>
           <li>
             <ul class="social">
               <li>
                 <a href="#" class="icons-sm fb-ic">
-                  <mdb-icon color="white" fab icon="facebook-f" />
+                  <mdb-icon fab icon="facebook-f" />
                 </a>
               </li>
               <li>
                 <a href="#" class="icons-sm pin-ic">
-                  <mdb-icon color="white" fab icon="pinterest-p" />
+                  <mdb-icon fab icon="pinterest-p" />
                 </a>
               </li>
               <li>
                 <a href="#" class="icons-sm gplus-ic">
-                  <mdb-icon color="white" fab icon="google-plus-g" />
+                  <mdb-icon fab icon="google-plus-g" />
                 </a>
               </li>
               <li>
                 <a href="#" class="icons-sm tw-ic">
-                  <mdb-icon color="white" fab icon="twitter" />
+                  <mdb-icon fab icon="twitter" />
                 </a>
               </li>
             </ul>
@@ -107,12 +106,7 @@
                 <mdb-side-nav-item href="#">Write a message</mdb-side-nav-item>
               </mdb-side-nav-cat>
               <mdb-side-nav-item header icon="envelope" href="#">Write a message</mdb-side-nav-item>
-              <mdb-side-nav-item
-                header
-                icon="user"
-                href="#"
-                @click.native="toggleSideNav('A')"
-              >Profile</mdb-side-nav-item>
+              <mdb-side-nav-item header icon="user" href="#">Profile</mdb-side-nav-item>
               <mdb-side-nav-item
                 header
                 icon="cubes"
@@ -124,15 +118,15 @@
         </ul>
       </mdb-side-nav>
     </div>
-    <div style="height: 90vh; margin-bottom: -25px">
+    <div style="height: 100vh; margin-bottom: -25px">
       <div class="view intro-2">
         <div class="full-bg-img">
-          <div class="mask rgba-black-strong flex-center">
+          <div class="mask rgba-black-light flex-center">
             <div class="container">
               <div class="white-text text-center">
                 <h2
                   class="font-weight-bold"
-                >Double navigation with hidden sidenav & non-fixed navbar</h2>
+                >Double navigation with fixed sidenav under fixed navbar</h2>
               </div>
             </div>
           </div>
@@ -163,7 +157,7 @@ import {
 } from "mdbvue";
 
 export default {
-  name: "DoubleNavigationPagev1",
+  name: "DoubleNavigationPagev6",
   components: {
     mdbNavbar,
     mdbNavItem,
@@ -193,14 +187,22 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .view {
-  background: url("https://mdbootstrap.com/img/Photos/Others/img (43).jpg")
+  background: url("https://mdbootstrap.com/img/Photos/Others/img (51).jpg")
     no-repeat center center;
   background-size: cover;
   height: 100%;
 }
-.navbar i {
-  cursor: pointer;
-  color: white;
+.flexible-content,
+.flexible-content .navbar {
+  transition: margin-left 0.5s;
 }
 
+@media (min-width: 900px) {
+  .flexible-content {
+    margin-left: 240px;
+  }
+  .side-toggler {
+    display: none;
+  }
+}
 </style>

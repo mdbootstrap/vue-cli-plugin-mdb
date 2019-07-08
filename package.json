@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-mdb",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "MDB Vue Cli Plugin",
   "main": "index.js",
   "author": "M.Smolenski <m.smolenski@mdbootstrap.com>",

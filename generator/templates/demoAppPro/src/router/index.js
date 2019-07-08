@@ -98,6 +98,7 @@ import DoubleNavigationPagev2 from '../docs/pro/Navigation/DoubleNavigationPagev
 import DoubleNavigationPagev3 from '../docs/pro/Navigation/DoubleNavigationPagev3';
 import DoubleNavigationPagev4 from '../docs/pro/Navigation/DoubleNavigationPagev4';
 import DoubleNavigationPagev5 from '../docs/pro/Navigation/DoubleNavigationPagev5';
+import DoubleNavigationPagev6 from '../docs/pro/Navigation/DoubleNavigationPagev6';
 import ChartProPage from '../docs/pro/Advanced/ChartProPage';
 import GalleryPage from '../docs/pro/Advanced/GalleryPage';
 import GradientProPage from '../docs/pro/CSS/GradientProPage';
@@ -565,6 +566,10 @@ export default new Router({
       name: 'DoubleNavigationPagev5',
       component: DoubleNavigationPagev5
     }, {
+      path: '/navigation/pro/double-navigation-v6',
+      name: 'DoubleNavigationPagev6',
+      component: DoubleNavigationPagev6
+    },{
       path: '/advanced/pro/chart',
       name: 'ChartProPage',
       component: ChartProPage

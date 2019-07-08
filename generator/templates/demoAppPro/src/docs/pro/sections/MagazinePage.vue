@@ -312,7 +312,7 @@
           </view-wrapper>
           <mdb-row class="mb-3">
             <mdb-col col="12">
-              <a><badge color="pink"><mdb-icon icon="camera" class="pr-2" aria-hidden="true"/>Adventure</badge></a>
+              <a><mdb-badge color="pink"><mdb-icon icon="camera" class="pr-2" aria-hidden="true"/>Adventure</mdb-badge></a>
             </mdb-col>
           </mdb-row>
           <div class="d-flex justify-content-between news">
@@ -356,7 +356,7 @@
           </view-wrapper>
           <mdb-row class="mb-3">
             <mdb-col col="12">
-              <a><badge color="deep-orange"><mdb-icon icon="plane" class="pr-2" aria-hidden="true"/>Travel</badge></a>
+              <a><mdb-badge color="deep-orange"><mdb-icon icon="plane" class="pr-2" aria-hidden="true"/>Travel</mdb-badge></a>
             </mdb-col>
           </mdb-row>
           <div class="d-flex justify-content-between news">
@@ -400,7 +400,7 @@
           </view-wrapper>
           <mdb-row class="mb-3">
             <mdb-col col="12">
-              <a><badge color="success-color"><mdb-icon icon="leaf" class="pr-2" aria-hidden="true"/>Nature</badge></a>
+              <a><mdb-badge color="success-color"><mdb-icon icon="leaf" class="pr-2" aria-hidden="true"/>Nature</mdb-badge></a>
             </mdb-col>
           </mdb-row>
           <div class="d-flex justify-content-between news">
