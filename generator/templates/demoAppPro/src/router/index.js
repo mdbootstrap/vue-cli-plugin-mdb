@@ -83,6 +83,8 @@ import StretchedLinkPage from '../docs/Components/StretchedLinkPage';
 import NotificationsFreePage from '../docs/Advanced/NotificationsPage';
 import MasonryPage from '../docs/CSS/MasonryPage';
 import SwitchPage from '../docs/Forms/SwitchPage';
+import TreeviewPage from '../docs/Plugins/TreeviewPage';
+import RatingPage from '../docs/Plugins/RatingPage';
 // removeIf(free)
 import NotificationsPage from '../docs/pro/Advanced/NotificationsPage';
 import AutocompletePage from '../docs/pro/Forms/AutocompletePage';
@@ -126,6 +128,7 @@ import MegaMenuPage from '../docs/pro/Navigation/MegaMenuPage';
 import StreakPage from '../docs/pro/Plugins/StreakPage';
 import MultiCarouselPage from '../docs/pro/Advanced/MultiCarouselPage';
 import TimelinePage from '../docs/pro/Plugins/TimelinePage';
+import CardAnimationsPage from '../docs/pro/Plugins/CardAnimationsPage';
 import ThumbnailsCarouselPage from '../docs/pro/Advanced/ThumbnailsCarouselPage';
 import StickyPage from '../docs/pro/Advanced/StickyPage';
 import FormsPagePro from '../docs/pro/Forms/FormsPage';
@@ -468,6 +471,10 @@ export default new Router({
       name: 'VideoPage',
       component: VideoPage
     }, {
+      path: '/plugins/treeview',
+      name: 'TreeviewPage',
+      component: TreeviewPage
+    },{
       path: '/components/spinners',
       name: 'SpinnersPage',
       component: SpinnersPage
@@ -499,6 +506,10 @@ export default new Router({
       path: '/forms/switch',
       name: 'SwitchPage',
       component: SwitchPage
+    },{
+      path: '/plugins/rating',
+      name: 'RatingPage',
+      component: RatingPage
     },
     // removeIf(free)
     {
@@ -833,7 +844,11 @@ export default new Router({
       path: '/forms/pro/file-input',
       name: 'FileInputPage',
       component: FileInputPage
-    }
+    }, {
+      path: '/plugins/pro/card-animations',
+      name: 'CardAnimationsPage',
+      component: CardAnimationsPage
+    },
     // endRemoveIf(free)
   ]
 });

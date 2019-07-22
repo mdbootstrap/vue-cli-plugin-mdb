@@ -73,6 +73,28 @@
         </mdb-row>
       </section>
     </section>
+    <section class="demo-section">
+      <h4>Validation</h4>
+      <section>
+        <mdb-row>
+          <mdb-col sm="6">
+            <form @submit.prevent="checkForm" novalidate>
+              <mdb-date-picker
+                v-model="validation.value"
+                :validation="validation.validated"
+                :isValid="validation.valid"
+                required
+                @change="validate()"
+                validFeedback="Look's good."
+                invalidFeedback="Please pick a date"
+                label="Validated date"
+              />
+              <mdb-btn tyoe="submit">Submit</mdb-btn>
+            </form>
+          </mdb-col>
+        </mdb-row>
+      </section>
+    </section>
   </mdb-container>
 </template>
 
@@ -92,6 +114,15 @@ export default {
   methods: {
     getPickerValue(value) {
       console.log(value);
+    },
+    checkForm(event) {
+      event.target.classList.add("was-validated");
+    },
+    validate() {
+      if (this.validate.value) {
+        this.valid = true;
+        this.validated = true;
+      }
     }
   },
   data() {
@@ -111,6 +142,11 @@ export default {
       options: {
         placeholder: '2018-04-13',
         label: "default date"
+      },
+      validation: {
+        value: null,
+        valid: false,
+        validated: false
       }
     };
   }

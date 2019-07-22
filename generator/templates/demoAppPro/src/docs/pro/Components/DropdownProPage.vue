@@ -14,7 +14,7 @@
       </a>
     </mdb-row>
     <hr class="mb-5" />
-    <mdb-container class="mt-5">
+    <mdb-container class="mt-5 mb-5 pb-5">
       <h4 class="pb-1">Material dropdown</h4>
       <mdb-dropdown>
         <mdb-dropdown-toggle color="dark" slot="toggle">Material dropdown</mdb-dropdown-toggle>
@@ -86,17 +86,6 @@
           <mdb-dropdown-item href="#">Separated link</mdb-dropdown-item>
         </mdb-dropdown-menu>
       </mdb-dropdown>
-      <h4 class="pt-4 pb-1">Hoverable</h4>
-      <mdb-dropdown hover>
-        <mdb-dropdown-toggle slot="toggle" color="indigo" icon="paper-plane" rounded>Hover over me</mdb-dropdown-toggle>
-        <mdb-dropdown-menu>
-          <mdb-dropdown-item href="#">Action</mdb-dropdown-item>
-          <mdb-dropdown-item href="#">Another action</mdb-dropdown-item>
-          <mdb-dropdown-item href="#">Something else here</mdb-dropdown-item>
-          <div class="dropdown-divider"></div>
-          <mdb-dropdown-item href="#">Separated link</mdb-dropdown-item>
-        </mdb-dropdown-menu>
-      </mdb-dropdown>
       <h4 class="pt-4 pb-1">Multilevel</h4>
       <mdb-dropdown multiLevel>
         <mdb-dropdown-toggle slot="toggle" color="mdb-color" icon="code-branch" rounded>Click me</mdb-dropdown-toggle>
@@ -131,6 +120,17 @@
               </mdb-dropdown-menu>
             </mdb-dropdown>
           </mdb-dropdown-item>
+        </mdb-dropdown-menu>
+      </mdb-dropdown>
+      <h4 class="pt-4 pb-1">Hoverable</h4>
+      <mdb-dropdown hover>
+        <mdb-dropdown-toggle slot="toggle" color="indigo" icon="paper-plane" rounded>Hover over me</mdb-dropdown-toggle>
+        <mdb-dropdown-menu>
+          <mdb-dropdown-item href="#">Action</mdb-dropdown-item>
+          <mdb-dropdown-item href="#">Another action</mdb-dropdown-item>
+          <mdb-dropdown-item href="#">Something else here</mdb-dropdown-item>
+          <div class="dropdown-divider"></div>
+          <mdb-dropdown-item href="#">Separated link</mdb-dropdown-item>
         </mdb-dropdown-menu>
       </mdb-dropdown>
     </mdb-container>

@@ -194,10 +194,10 @@
     <section class="demo-section">
       <h4 class="pb-1">Menu forms</h4>
       <section>
-        <mdb-dropdown>
+        <mdb-dropdown style="min-width: 400px" multiLevel>
           <mdb-dropdown-toggle slot="toggle" color="secondary">Dropdown link</mdb-dropdown-toggle>
-          <mdb-dropdown-menu>
-            <form class="px-4 py-3">
+          <mdb-dropdown-menu >
+            <form class="px-2 py-2">
               <div class="form-group">
                 <label for="exampleDropdownFormEmail1">Email address</label>
                 <input
@@ -205,6 +205,7 @@
                   class="form-control"
                   id="exampleDropdownFormEmail1"
                   placeholder="email@example.com"
+                  @click.stop
                 />
               </div>
               <div class="form-group">
@@ -214,9 +215,13 @@
                   class="form-control"
                   id="exampleDropdownFormPassword1"
                   placeholder="Password"
+                  @click.stop
                 />
               </div>
-              <mdb-input type="checkbox" id="checkbox1" label="Remember me" />
+              <div class="custom-control custom-checkbox" @click.stop>
+                <input type="checkbox" class="custom-control-input" id="12" @change="$emit('click', $event)">
+                <label class="custom-control-label" for="12">Remember me</label>
+            </div>
               <mdb-btn type="submit" color="primary">Sign in</mdb-btn>
             </form>
             <div class="dropdown-divider"></div>
@@ -242,6 +247,7 @@
       </section>
     </section>
     <section class="demo-section">
+      <h4>Multilevel menu</h4>
       <section>
         <mdb-dropdown multiLevel>
           <mdb-dropdown-toggle slot="toggle" color="mdb-color">Click me</mdb-dropdown-toggle>
