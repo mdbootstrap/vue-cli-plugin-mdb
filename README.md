@@ -65,8 +65,10 @@ __________
 ``` 
 bash
 
-# use Vue UI to install, configure and launch Your App
-vue ui
+# basic installation
+vue create app
+cd app
+vue add mdb
 ```
 
 # Supported browsers
