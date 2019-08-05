@@ -9,7 +9,7 @@
       <h4>Basic</h4>
       <section>
         <mdb-container class="mt-5">
-          <mdb-multi-carousel :interval="8000" showControls showIndicators slide>
+          <mdb-multi-carousel :interval="8000" showControls touch showIndicators slide>
             <template>
               <mdb-carousel-item>
                 <mdb-row class="carousel__item">

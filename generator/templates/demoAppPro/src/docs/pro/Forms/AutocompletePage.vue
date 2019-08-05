@@ -18,6 +18,22 @@
           />
         </mdb-col>
       </mdb-row>
+      
+      <hr class="my-5">
+
+      <h2 class="mb-5">Outline</h2>
+      <mdb-row>
+        <mdb-col md="6" class="mx-auto">
+          <mdb-autocomplete
+            outline
+            icon="user-alt"
+            clearClass="fa-lg"
+            :data="nameList"
+            label="What's your name?"
+            @input="onNameInput"
+          />
+        </mdb-col>
+      </mdb-row>
 
       <hr class="my-5">
 

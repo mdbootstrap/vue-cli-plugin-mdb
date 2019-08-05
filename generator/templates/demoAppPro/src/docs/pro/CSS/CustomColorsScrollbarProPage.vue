@@ -80,7 +80,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .form-elegant,
 .form-dark {
   height: 500px;
@@ -111,50 +111,6 @@ export default {
   font-size: 0.8rem;
 }
 
-.form-dark [type="checkbox"]+label:before {
-  top: 2px;
-  width: 15px;
-  height: 15px;
-}
-
-.form-dark .md-form label {
-  color: #fff;
-}
-
-.form-dark input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #00C851;
-  -webkit-box-shadow: 0 1px 0 0 #00C851;
-  box-shadow: 0 1px 0 0 #00C851;
-}
-
-.form-dark input[type=text]:focus:not([readonly])+label {
-  color: #fff;
-}
-
-.form-dark input[type=password]:focus:not([readonly]) {
-  border-bottom: 1px solid #00C851;
-  -webkit-box-shadow: 0 1px 0 0 #00C851;
-  box-shadow: 0 1px 0 0 #00C851;
-}
-
-.form-dark input[type=password]:focus:not([readonly])+label {
-  color: #fff;
-}
-
-.form-dark input[type="checkbox"]+label:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 17px;
-  height: 17px;
-  z-index: 0;
-  border: 1.5px solid #fff;
-  border-radius: 1px;
-  margin-top: 2px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
 
 .form-dark input[type="checkbox"]:checked+label:before {
   top: -4px;
@@ -219,5 +175,51 @@ export default {
 
 .thin::-webkit-scrollbar {
   width: 6px;
+}
+</style>
+<style>
+.form-dark [type="checkbox"]+label:before {
+  top: 2px;
+  width: 15px;
+  height: 15px;
+}
+
+.form-dark input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  -webkit-box-shadow: 0 1px 0 0 #00C851;
+  box-shadow: 0 1px 0 0 #00C851;
+}
+
+.form-dark input[type=text]:focus:not([readonly])+label {
+  color: #fff;
+}
+
+.form-dark input[type=password]:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  -webkit-box-shadow: 0 1px 0 0 #00C851;
+  box-shadow: 0 1px 0 0 #00C851;
+}
+
+.form-dark input[type=password]:focus:not([readonly])+label {
+  color: #fff;
+}
+
+.form-dark input[type="checkbox"]+label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  z-index: 0;
+  border: 1.5px solid #fff;
+  border-radius: 1px;
+  margin-top: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.form-dark .md-form label {
+  color: #fff;
 }
 </style>

@@ -11,7 +11,7 @@
         <mdb-row>
           <mdb-col sm="6" md="4">
             <mdb-time-picker
-              id="timePickerTwo"
+              id="timePickerOne"
               placeholder="Select your time"
               label="format: 24h"
               :hoursFormat="24"
@@ -28,7 +28,7 @@
         <mdb-row>
           <mdb-col sm="6" md="4">
             <mdb-time-picker
-              id="timePickerOne"
+              id="timePickerTwo"
               placeholder="Select your time"
               label="format: am/pm"
               @getValue="getPickerValue"
@@ -43,12 +43,42 @@
         <mdb-row>
           <mdb-col sm="6" md="4">
             <mdb-time-picker
-              id="timePickerOne"
+              id="timePickerThree"
               placeholder="Select your time"
               label="format: am/pm"
               @getValue="getPickerValue"
               doneLabel="Accept"
               clearLabel="Reset"
+            />
+          </mdb-col>
+        </mdb-row>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4>Icon</h4>
+      <section>
+        <mdb-row>
+          <mdb-col sm="6" md="4">
+            <mdb-time-picker
+              id="timePickerFour"
+              label="icon"
+              @getValue="getPickerValue"
+              icon="clock"
+            />
+          </mdb-col>
+        </mdb-row>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4>Outline</h4>
+      <section>
+        <mdb-row>
+          <mdb-col sm="6" md="4">
+            <mdb-time-picker
+              id="timePickerFive"
+              label="outline"
+              @getValue="getPickerValue"
+              outline
             />
           </mdb-col>
         </mdb-row>
