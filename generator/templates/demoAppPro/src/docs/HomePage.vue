@@ -10,7 +10,7 @@
               <h2 class="pb-4"><strong>MDB Vue Demo App</strong></h2>
               <mdb-row>
                 <mdb-col md="3">
-                  <img src="../assets/logo-mdb-vue-small.png" class="img-fluid"/>
+                  <img src="../../src/assets/logo-mdb-vue-small.png" class="img-fluid"/>
                 </mdb-col>
                 <mdb-col md="9">
                   <p class="pb-4">Vue Bootstrap with Material Design.<br>
