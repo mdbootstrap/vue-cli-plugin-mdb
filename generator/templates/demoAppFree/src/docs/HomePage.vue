@@ -10,7 +10,7 @@
               <h2 class="pb-4"><strong>MDB Vue Demo App</strong></h2>
               <mdb-row>
                 <mdb-col md="3">
-                  <img src="../../src/assets/logo-mdb-vue-small.png" class="img-fluid"/>
+                  <img src="../assets/logo-mdb-vue-small.png" class="img-fluid"/>
                 </mdb-col>
                 <mdb-col md="9">
                   <p class="pb-4">Vue Bootstrap with Material Design.<br>
@@ -18,7 +18,9 @@
                 </mdb-col>
               </mdb-row>
               <mdb-row class="d-flex flex-row justify-content-center">
-                <a href="https://mdbootstrap.com/docs/vue/?utm_source=DemoApp&utm_medium=MDBVue" class="nav-link border font-weight-bold rounded" target="_blank"><mdb-icon icon="graduation-cap" class="mr-2"/>Official documentation</a>
+                <a href="https://mdbootstrap.com/docs/vue/?utm_source=DemoApp&utm_medium=MDBVue" class="nav-link border m-2 font-weight-bold rounded" target="_blank"><mdb-icon icon="graduation-cap" class="mr-2"/>Official documentation</a>
+                <a href="https://mdbootstrap.com/products/vue-ui-kit/" class="nav-link border m-2 indigo-text font-weight-bold rounded" target="_blank"><mdb-icon icon="gem" far class="mr-2"/>PRO</a>
+                <a href="https://mdbootstrap.com/docs/vue/getting-started/download/" class="nav-link border indigo-text m-2 font-weight-bold rounded" target="_blank"><mdb-icon icon="download" class="mr-2"/>FREE</a>
               </mdb-row>
             </mdb-card-body>
           </mdb-col>
