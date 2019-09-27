@@ -8,9 +8,9 @@
     <h4 class="my-4">Gallery with image filtering</h4>
     <mdb-row>
       <mdb-col md="12" class="d-flex justify-content-center mb-5">
-        <mdb-btn @click.native="show = 'all'" outline="black" class="filter" dark-waves>All</mdb-btn>
-        <mdb-btn @click.native="show = '1'" outline="black" class="filter" dark-waves>Mountains</mdb-btn>
-        <mdb-btn @click.native="show = '2'" outline="black" class="filter" dark-waves>Sea</mdb-btn>
+        <mdb-btn @click.native="show = 'all'" outline="black" class="filter">All</mdb-btn>
+        <mdb-btn @click.native="show = '1'" outline="black" class="filter">Mountains</mdb-btn>
+        <mdb-btn @click.native="show = '2'" outline="black" class="filter">Sea</mdb-btn>
       </mdb-col>
     </mdb-row>
 

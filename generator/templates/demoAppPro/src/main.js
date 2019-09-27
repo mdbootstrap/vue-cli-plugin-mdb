@@ -8,7 +8,6 @@ import router from './router';
 import { Notify } from 'mdbvue';
 import Vue2TouchEvents from 'vue2-touch-events';
 import LoadScript from 'vue-plugin-load-script';
- 
 Vue.use(Notify);
 Vue.use(Vue2TouchEvents);
 Vue.use(LoadScript);
