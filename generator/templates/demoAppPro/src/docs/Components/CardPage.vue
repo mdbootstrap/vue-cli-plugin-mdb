@@ -141,7 +141,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbCard, mdbCardImage, mdbCardHeader, mdbCardBody, mdbCardTitle, mdbCardText, mdbBtn, mdbView, mdbMask, mdbCardGroup, mdbIcon } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbCard, mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardText, mdbBtn, mdbView, mdbMask, mdbCardGroup, mdbIcon } from 'mdbvue';
 
 export default {
   name: 'CardPage',
@@ -151,7 +151,6 @@ export default {
     mdbCol,
     mdbCard,
     mdbCardImage,
-    mdbCardHeader,
     mdbCardBody,
     mdbCardTitle,
     mdbCardText,

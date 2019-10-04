@@ -144,7 +144,7 @@
                     </mdb-tooltip>
                   </a>
                 <transition @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave">
-                  <collapse v-if="comment1" class="collapse-item">
+                  <mdb-collapse v-if="comment1" class="collapse-item">
                     <mdb-card class="card-body mt-1">
                       <mdb-textarea label="Add comment"/>
                       <div class="d-flex justify-content-end">
@@ -152,7 +152,7 @@
                         <mdb-btn color="primary" @click.native="comment1=!comment1">Reply</mdb-btn>
                       </div>
                     </mdb-card>
-                  </collapse>
+                  </mdb-collapse>
                 </transition>
               </div>
             </div>
@@ -191,7 +191,7 @@
                   </a>
                 </div>
                 <transition @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave">
-                  <collapse v-if="comment2" class="collapse-item">
+                  <mdb-collapse v-if="comment2" class="collapse-item">
                     <mdb-card class="card-body mt-1">
                       <mdb-textarea label="Add comment"/>
                       <div class="d-flex justify-content-end">
@@ -199,7 +199,7 @@
                         <mdb-btn color="primary" @click.native="comment2=!comment2">Reply</mdb-btn>
                       </div>
                     </mdb-card>
-                  </collapse>
+                  </mdb-collapse>
                 </transition>
             </div>
           </div>
@@ -233,7 +233,7 @@
                   </a>
                 </div>
                 <transition @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave">
-                  <collapse v-if="comment3" class="collapse-item">
+                  <mdb-collapse v-if="comment3" class="collapse-item">
                     <mdb-card class="card-body mt-1">
                       <mdb-textarea label="Add comment"/>
                       <div class="d-flex justify-content-end">
@@ -241,7 +241,7 @@
                         <mdb-btn color="primary" @click.native="comment3=!comment3">Reply</mdb-btn>
                       </div>
                     </mdb-card>
-                  </collapse>
+                  </mdb-collapse>
                 </transition>
             </div>
           </div>
@@ -276,7 +276,7 @@
                   </a>
                 </div>
                 <transition @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave">
-                  <collapse v-if="comment4" class="collapse-item">
+                  <mdb-collapse v-if="comment4" class="collapse-item">
                     <mdb-card class="card-body mt-1">
                       <mdb-textarea label="Add comment"/>
                       <div class="d-flex justify-content-end">
@@ -284,7 +284,7 @@
                         <mdb-btn color="primary" @click.native="comment4=!comment4">Reply</mdb-btn>
                       </div>
                     </mdb-card>
-                  </collapse>
+                  </mdb-collapse>
                 </transition>
             </div>
           </div>
@@ -322,7 +322,7 @@
                 </a>
               </div>
               <transition @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave">
-                <collapse v-if="comment5" class="collapse-item">
+                <mdb-collapse v-if="comment5" class="collapse-item">
                   <mdb-card class="card-body mt-1">
                     <mdb-textarea label="Add comment"/>
                     <div class="d-flex justify-content-end">
@@ -330,7 +330,7 @@
                       <mdb-btn color="primary" @click.native="comment5=!comment5">Reply</mdb-btn>
                     </div>
                   </mdb-card>
-                </collapse>
+                </mdb-collapse>
               </transition>
             </div>
           </div>
@@ -416,10 +416,10 @@
         <mdb-col md="12">
           <mdb-card-group class="my-5">
             <mdb-card personal class="mb-md-0 mb-4">
-              <view-wrapper hover>
+              <mdb-view hover>
                 <mdb-card-image top src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" alt="Card image cap"/>
                 <a><mdb-mask overlay="white-slight" waves/></a>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body>
                 <a><mdb-card-title>Anna</mdb-card-title></a>
                 <a class="card-meta">Friends</a>
@@ -431,10 +431,10 @@
             </mdb-card>
 
             <mdb-card personal class="mb-md-0 mb-4">
-              <view-wrapper hover>
+              <mdb-view hover>
                 <mdb-card-image top src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" alt="Card image cap"/>
                 <a><mdb-mask overlay="white-slight" waves/></a>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body>
                 <a><mdb-card-title>John</mdb-card-title></a>
                 <a class="card-meta">Coworker</a>
@@ -446,10 +446,10 @@
             </mdb-card>
 
             <mdb-card personal class="mb-md-0 mb-4">
-              <view-wrapper hover>
+              <mdb-view hover>
                 <mdb-card-image top src="https://mdbootstrap.com/img/Photos/Avatars/img%20(28).jpg" alt="Card image cap"/>
                 <a><mdb-mask overlay="white-slight" waves/></a>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body>
                 <a><mdb-card-title>Sara</mdb-card-title></a>
                 <a class="card-meta">Coworker</a>
@@ -468,7 +468,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbCard, mdbCardBody, mdbCardGroup, mdbCardTitle,  mdbCardImage, mdbCardText, mdbMask, mdbIcon, ViewWrapper, mdbTooltip, Collapse, mdbInput, mdbTextarea, mdbBtn } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbCard, mdbCardBody, mdbCardGroup, mdbCardTitle,  mdbCardImage, mdbCardText, mdbMask, mdbIcon, mdbView, mdbTooltip, mdbCollapse, mdbInput, mdbTextarea, mdbBtn } from 'mdbvue';
 
 export default {
   name: 'SocialPage',
@@ -484,9 +484,9 @@ export default {
     mdbCardImage,
     mdbMask,
     mdbIcon,
-    ViewWrapper,
+    mdbView,
     mdbTooltip,
-    Collapse,
+    mdbCollapse,
     mdbInput,
     mdbBtn,
     mdbTextarea

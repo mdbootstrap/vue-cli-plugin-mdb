@@ -586,7 +586,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbAccordion, mdbAccordionPane, mdbCard, mdbCardHeader, mdbCardBody, mdbIcon, mdbRow, mdbCol, mdbSelect, mdbDropdown, mdbDropdownToggle, mdbDropdownMenu, mdbDropdownItem, mdbTbl, mdbTblHead, mdbTblBody } from 'mdbvue';
+import { mdbContainer, mdbAccordion, mdbAccordionPane, mdbIcon, mdbRow, mdbCol, mdbSelect, mdbDropdown, mdbDropdownToggle, mdbDropdownMenu, mdbDropdownItem, mdbTbl, mdbTblHead, mdbTblBody } from 'mdbvue';
 
 export default {
   name: 'AccordionPage',
@@ -594,9 +594,6 @@ export default {
     mdbContainer,
     mdbAccordion,
     mdbAccordionPane,
-    mdbCard,
-    mdbCardHeader,
-    mdbCardBody,
     mdbIcon,
     mdbRow,
     mdbCol,
@@ -789,7 +786,7 @@ export default {
   },
   methods: {
     handlePaneOpened(num) {
-      if (this.openPaneNum == num) {return (this.openPaneNum = null);};
+      if (this.openPaneNum == num) {return (this.openPaneNum = null);}
       this.openPaneNum = num;
     }
   }

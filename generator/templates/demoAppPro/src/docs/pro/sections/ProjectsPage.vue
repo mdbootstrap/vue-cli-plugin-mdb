@@ -11,12 +11,12 @@
         <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
         <mdb-row class="text-center">
           <mdb-col lg="4" md="12" class="mb-lg-0 mb-4">
-            <view-wrapper class="overlay rounded z-depth-1">
+            <mdb-view class="overlay rounded z-depth-1">
               <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" alt="sample photo" class="img-fluid"/>
               <a>
                 <mdb-mask waves overlay="white-slight"/>
               </a>
-            </view-wrapper>
+            </mdb-view>
             <mdb-card-body class="pb-0">
               <h4 class="font-weight-bold my-3">Title of the news</h4>
               <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
@@ -24,12 +24,12 @@
             </mdb-card-body>
           </mdb-col>
           <mdb-col lg="4" md="12" class="mb-lg-0 mb-4">
-            <view-wrapper class="overlay rounded z-depth-1">
+            <mdb-view class="overlay rounded z-depth-1">
               <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" alt="sample photo" class="img-fluid"/>
               <a>
                 <mdb-mask waves overlay="white-slight"/>
               </a>
-            </view-wrapper>
+            </mdb-view>
             <mdb-card-body class="pb-0">
               <h4 class="font-weight-bold my-3">Title of the news</h4>
               <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
@@ -37,12 +37,12 @@
             </mdb-card-body>
           </mdb-col>
           <mdb-col lg="4" md="12" class="mb-lg-0 mb-4">
-            <view-wrapper class="overlay rounded z-depth-1">
+            <mdb-view class="overlay rounded z-depth-1">
               <img src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg" alt="sample photo" class="img-fluid"/>
               <a>
                 <mdb-mask waves overlay="white-slight"/>
               </a>
-            </view-wrapper>
+            </mdb-view>
             <mdb-card-body class="pb-0">
               <h4 class="font-weight-bold my-3">Title of the news</h4>
               <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
@@ -57,12 +57,12 @@
         <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
         <mdb-row class="d-flex justify-content-center">
           <mdb-col md="6" xl="5" class="mb-4">
-            <view-wrapper class="overlay rounded z-depth-2">
+            <mdb-view class="overlay rounded z-depth-2">
               <img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" alt="sample photo" class="img-fluid"/>
               <a>
                 <mdb-mask waves overlay="white-slight"/>
               </a>
-            </view-wrapper>
+            </mdb-view>
             <mdb-card-body class="pb-0">
               <a href="" class="green-text"><h5 class="font-weight-bold mt-2 mb-3"><mdb-icon icon="chart-line" class="pr-2"/>Marketing</h5></a>
               <h4 class="font-weight-bold mb-3">Title of the news</h4>
@@ -71,12 +71,12 @@
             </mdb-card-body>
           </mdb-col>
           <mdb-col md="6" xl="5" class="mb-4">
-            <view-wrapper class="overlay rounded z-depth-2">
+            <mdb-view class="overlay rounded z-depth-2">
               <img src="https://mdbootstrap.com/img/Photos/Others/images/19.jpg" alt="sample photo" class="img-fluid"/>
               <a>
                 <mdb-mask waves overlay="white-slight"/>
               </a>
-            </view-wrapper>
+            </mdb-view>
             <mdb-card-body class="pb-0">
               <a href="" class="blue-text"><h5 class="font-weight-bold mt-2 mb-3"><mdb-icon icon="eye" class="pr-2"/>Entertainment</h5></a>
               <h4 class="font-weight-bold mb-3">Title of the news</h4>
@@ -85,12 +85,12 @@
             </mdb-card-body>
           </mdb-col>
           <mdb-col md="6" xl="5" class="mb-4">
-            <view-wrapper class="overlay rounded z-depth-2">
+            <mdb-view class="overlay rounded z-depth-2">
               <img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" alt="sample photo" class="img-fluid"/>
               <a>
                 <mdb-mask waves overlay="white-slight"/>
               </a>
-            </view-wrapper>
+            </mdb-view>
             <mdb-card-body class="pb-0">
               <a href="" class="brown-text"><h5 class="font-weight-bold mt-2 mb-3"><mdb-icon icon="camera" class="pr-2"/>Travel</h5></a>
               <h4 class="font-weight-bold mb-3">Title of the news</h4>
@@ -99,12 +99,12 @@
             </mdb-card-body>
           </mdb-col>
           <mdb-col md="6" xl="5" class="mb-4">
-            <view-wrapper class="overlay rounded z-depth-2">
+            <mdb-view class="overlay rounded z-depth-2">
               <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (56).jpg" alt="sample photo" class="img-fluid"/>
               <a>
                 <mdb-mask waves overlay="white-slight"/>
               </a>
-            </view-wrapper>
+            </mdb-view>
             <mdb-card-body class="pb-0">
               <a href="" class="cyan-text"><h5 class="font-weight-bold mt-2 mb-3"><mdb-icon icon="phone" class="pr-2"/>Technology</h5></a>
               <h4 class="font-weight-bold mb-3">Title of the news</h4>
@@ -248,7 +248,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, ViewWrapper, mdbMask, mdbCard, mdbCardBody, mdbBtn, mdbIcon } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbView, mdbMask, mdbCard, mdbCardBody, mdbBtn, mdbIcon } from 'mdbvue';
 
 export default {
   name: 'ProjectsPage',
@@ -256,7 +256,7 @@ export default {
     mdbContainer,
     mdbRow,
     mdbCol,
-    ViewWrapper,
+    mdbView,
     mdbMask,
     mdbCard,
     mdbCardBody,

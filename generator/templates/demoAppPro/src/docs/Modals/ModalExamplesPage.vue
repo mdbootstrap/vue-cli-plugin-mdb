@@ -276,7 +276,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbBtn, mdbModal, mdbModalHeader, mdbModalBody, mdbModalFooter, mdbModalTitle, mdbBadge, mdbInput, mdbTextarea, mdbTbl, mdbTblHead, mdbTblBody, mdbCarousel, mdbCarouselItem, mdbCarouselIndicators, mdbCarouselIndicator, mdbAccordion, mdbCardBody } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbBtn, mdbModal, mdbModalHeader, mdbModalBody, mdbModalFooter, mdbBadge, mdbInput, mdbTextarea, mdbTbl, mdbTblHead, mdbTblBody } from 'mdbvue';
 
 export default {
   name: 'ModalExamplesPage',
@@ -290,19 +290,12 @@ export default {
     mdbModalHeader,
     mdbModalBody,
     mdbModalFooter,
-    mdbModalTitle,
     mdbBadge,
     mdbInput,
     mdbTextarea,
     mdbTbl,
     mdbTblHead,
-    mdbTblBody,
-    mdbCarousel,
-    mdbCarouselItem,
-    mdbCarouselIndicators,
-    mdbCarouselIndicator,
-    mdbAccordion,
-    mdbCardBody,
+    mdbTblBody
   },
   data() {
     return {

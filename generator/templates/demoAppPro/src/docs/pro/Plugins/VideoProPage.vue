@@ -93,7 +93,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbBtn, mdbNavItem } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbModal, mdbModalBody, mdbModalFooter, mdbBtn, mdbNavItem } from 'mdbvue';
 
 export default {
   name: 'VideoProPage',
@@ -111,8 +111,6 @@ export default {
     mdbCol,
     mdbIcon,
     mdbModal,
-    mdbModalHeader,
-    mdbModalTitle,
     mdbModalBody,
     mdbModalFooter,
     mdbBtn,

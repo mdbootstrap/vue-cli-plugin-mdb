@@ -22,5 +22,12 @@ module.exports = [
     type: 'input',
     message: 'Please enter your gitlab token:',
     when: isPro
+  },
+  {
+    name: 'styling',
+    type: 'list',
+    message: 'Select the styling option:',
+    choices: ['Compiled in the mdbvue package (CSS)', 'Editable in your project (SCSS)'],
+    default: 'Compiled in the mdbvue package (CSS)'
   }
 ]

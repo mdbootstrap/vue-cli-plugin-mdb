@@ -51,10 +51,9 @@ export default {
     mdbRow,
     mdbIcon,
     mdbSwitch
-  }
+  },
 };
 </script>
 
 <style scoped>
-
 </style>

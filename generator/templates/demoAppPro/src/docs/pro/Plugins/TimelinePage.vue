@@ -5,1037 +5,335 @@
       <a href="https://mdbootstrap.com/plugins/vue/timeline/?utm_source=DemoApp&utm_medium=MDBVuePro" waves-fixed class="border grey-text px-2 border-light rounded ml-2" target="_blank"><mdb-icon icon="graduation-cap" class="mr-2"/>Docs</a>
     </mdb-row>
     <hr class="mb-5" />
-    <h4>Basic responsive timeline</h4>
 
-    <!-- Timeline -->
-    <mdb-row class="mt-5">
-        <mdb-col md="12">
-
-            <!-- Timeline Wrapper -->
-            <ul class="stepper stepper-vertical timeline pl-0">
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle primary-color z-depth-1-half"><i class="fas fa-check" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4">
-                        <h4 class="font-weight-bold">Ut enim ad minim veniam</h4>
-                        <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> 11 hours ago via Twitter</p>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle warning-color z-depth-1-half"><i class="far fa-credit-card" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4">
-                        <h4 class="font-weight-bold">Duis aute irure dolor</h4>
-                        <p class=" mt-4 mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    </div>
-                </li>
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle danger-color z-depth-1-half"><i class="fas fa-credit-card" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4">
-                        <h4 class="font-weight-bold">Sed ut nihil unde omnis</h4>
-                        <p class="mt-4 mb-0">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle info-color z-depth-1-half"><i class="far fa-save" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4">
-                        <h4 class="font-weight-bold"> Quis autem vel eum voluptate</h4>
-                        <p class="mt-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-                        <p class="mb-0">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-                    </div>
-                </li>
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle success-color z-depth-1-half"><i class="far fa-thumbs-up" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4">
-                        <h4 class="font-weight-bold">Mussum ipsum cacilds</h4>
-                        <p class="mt-4 mb-0">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-                    </div>
-                </li>
-            </ul>
-            <!-- Timeline Wrapper -->
-
-        </mdb-col>
-    </mdb-row>
-    <!-- Timeline -->
-
-    <h4 class="mt-5">Colorful timeline</h4>
-
-    <!-- Timeline -->
-    <mdb-row class="mt-5">
-        <mdb-col md="12">
-
-            <!-- Timeline Wrapper -->
-            <ul class="stepper stepper-vertical colorful-timeline pl-0">
-
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle red darken-2 z-depth-1-half"><i class="fas fa-check" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-0 mt-2">
-                        <h4 class="font-weight-bold timeline-header red darken-2 white-text p-3">Ut enim ad minim veniam</h4>
-                        <p class="text-muted mt-4 px-4"><i class="far fa-clock" aria-hidden="true"></i> 11 hours ago via Twitter</p>
-                        <p class="mb-0 px-4 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle red darken-2 z-depth-1-half"><i class="far fa-credit-card" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-0 mt-2">
-                        <h4 class="font-weight-bold timeline-header red darken-2 white-text p-3 mb-0">Duis aute irure dolor</h4>
-                        <p class="mb-0 p-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    </div>
-                </li>
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle red darken-2 z-depth-1-half"><i class="fas fa-credit-card" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-0 mt-2">
-                        <h4 class="font-weight-bold timeline-header red darken-2 white-text p-3 mb-0">Sed ut nihil unde omnis</h4>
-                        <p class="mb-0 p-4">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle red darken-2 z-depth-1-half"><i class="far fa-save" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-0 mt-2">
-                        <h4 class="font-weight-bold timeline-header red darken-2 white-text p-3 mb-0"> Quis autem vel eum voluptate</h4>
-                        <p class="mt-4 px-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-                        <p class="mb-0 px-4 pb-4">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-                    </div>
-                </li>
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle red darken-2 z-depth-1-half"><i class="far fa-thumbs-up" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-0 mt-2">
-                        <h4 class="font-weight-bold timeline-header red darken-2 white-text p-3 mb-0">Mussum ipsum cacilds</h4>
-                        <p class="mb-0 p-4">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-                    </div>
-                </li>
-            </ul>
-            <!-- Timeline Wrapper -->
-
-        </mdb-col>
-    </mdb-row>
-    <!-- Timeline -->
-
-    <h4 class="mt-5">Animated on scroll timeline</h4>
-    <!-- Timeline -->
-    <mdb-row class="mt-5">
-        <mdb-col md="12">
-
-            <!-- Timeline Wrapper -->
-            <ul class="stepper stepper-vertical timeline-animated pl-0" ref="animate">
-
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle default-color z-depth-1-half"><i class="fas fa-heart" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4">
-                        <h4 class="font-weight-bold">Ut enim ad minim veniam</h4>
-                        <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> 11 hours ago via Twitter</p>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle secondary-color z-depth-1-half"><i class="fas fa-users" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4">
-                        <h4 class="font-weight-bold">Duis aute irure dolor</h4>
-                        <p class=" mt-4 mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    </div>
-                </li>
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle primary-color z-depth-1-half"><i class="fas fa-cloud" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4">
-                        <h4 class="font-weight-bold">Sed ut nihil unde omnis</h4>
-                        <p class="mt-4 mb-0">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle pink z-depth-1-half"><i class="fas fa-coffee" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4">
-                        <h4 class="font-weight-bold"> Quis autem vel eum voluptate</h4>
-                        <p class="mt-4 mb-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-                    </div>
-                </li>
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle mdb-color z-depth-1-half"><i class="fab fa-instagram" aria-hidden="true"></i></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4">
-                        <h4 class="font-weight-bold">Mussum ipsum cacilds</h4>
-                        <p class="mt-4 mb-0">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-                    </div>
-                </li>
-            </ul>
-            <!-- Timeline Wrapper -->
-
-        </mdb-col>
-    </mdb-row>
-    <!-- Timeline -->
-    
-    <h4 class="mt-5">Simple hoverable timeline</h4>
-
-    <!-- Timeline -->
-    <mdb-row class="mt-5">
-        <mdb-col md="12">
-
-            <!-- Timeline Wrapper -->
-            <ul class="stepper stepper-vertical timeline-simple pl-0">
-
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle grey"></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4 hoverable">
-                        <h4 class="font-weight-bold">Ut enim ad minim veniam</h4>
-                        <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> 2017</p>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle grey"></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4 hoverable">
-                        <h4 class="font-weight-bold">Duis aute irure dolor</h4>
-                        <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> 2016</p>
-                        <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    </div>
-                </li>
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle grey"></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4 hoverable">
-                        <h4 class="font-weight-bold">Sed ut nihil unde omnis</h4>
-                        <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>
-                        <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle grey"></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4 hoverable">
-                        <h4 class="font-weight-bold"> Quis autem vel eum voluptate</h4>
-                        <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> 2014</p>
-                        <p class="mb-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-                    </div>
-                </li>
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle grey"></span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-4 hoverable">
-                        <h4 class="font-weight-bold">Mussum ipsum cacilds</h4>
-                        <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> 2013</p>
-                        <p class="mb-0">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-                    </div>
-                </li>
-            </ul>
-            <!-- Timeline Wrapper -->
-
-        </mdb-col>
-    </mdb-row>
-    <!-- Timeline -->
-
-    <h4 class="mt-5">Timeline with images</h4>
-
-    <!-- Timeline -->
-    <mdb-row class="mt-5">
-        <mdb-col md="12">
-
-            <!-- Timeline Wrapper -->
-            <ul class="stepper stepper-vertical timeline-images pl-0">
-
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle cyan lighten-1">1</span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-0 hoverable">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(135).jpg" class="img-fluid" alt="Responsive image">
-                        <h4 class="font-weight-bold p-4 mb-0">Ut enim ad minim veniam</h4>
-                        <p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2017</p>
-                        <p class="mb-0 p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle cyan lighten-1">2</span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-0 hoverable">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" class="img-fluid" alt="Responsive image">
-                        <h4 class="font-weight-bold p-4 mb-0">Duis aute irure dolor</h4>
-                        <p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2016</p>
-                        <p class="mb-0 p-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    </div>
-                </li>
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle cyan lighten-1">3</span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-0 hoverable">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg" class="img-fluid" alt="Responsive image">
-                        <h4 class="font-weight-bold p-4 mb-0">Sed ut nihil unde omnis</h4>
-                        <p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>
-                        <p class="mb-0 p-4">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle cyan lighten-1">4</span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-0 hoverable">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(125).jpg" class="img-fluid" alt="Responsive image">
-                        <h4 class="font-weight-bold p-4 mb-0"> Quis autem vel eum voluptate</h4>
-                        <p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2014</p>
-                        <p class="mb-0 p-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-                    </div>
-                </li>
-                <li>
-                    <!--Section Title -->
-                    <a href="#!">
-                        <span class="circle cyan lighten-1">5</span>
-                    </a>
-
-                    <!-- Section Description -->
-                    <div class="step-content z-depth-1 ml-xl-0 p-0 hoverable">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(144).jpg" class="img-fluid" alt="Responsive image">
-                        <h4 class="font-weight-bold p-4 mb-0">Mussum ipsum cacilds</h4>
-                        <p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2013</p>
-                        <p class="mb-0 p-4">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-                    </div>
-                </li>
-            </ul>
-            <!-- Timeline Wrapper -->
-
-        </mdb-col>
-    </mdb-row>
-    <!-- Timeline -->
-
+    <section class="demo-section">
+      <h4>Basic Timeline</h4>
+      <section class="p-5">
+        <mdb-timeline>
+          <mdb-timeline-item v-for="(item, i) in timeline" :key="i" :content="item.content" :title="item.title" :inverted="item.inverted" :color="item.color" :icon="item.icon" :far="item.far" :time="item.time"/>
+        </mdb-timeline>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4>Colorful Timeline</h4>
+      <section class="p-5">
+        <mdb-timeline colorful>
+          <mdb-timeline-item v-for="(item, i) in colorfulTimeline" :key="i" :content="item.content" :title="item.title" :inverted="item.inverted" :color="item.color" :icon="item.icon" :far="item.far" :time="item.time"/>
+        </mdb-timeline>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4>Animated Timeline</h4>
+      <section class="p-5">
+        <mdb-timeline>
+          <mdb-timeline-item v-for="(item, i) in animatedTimeline" :key="i" :content="item.content" :title="item.title" :inverted="item.inverted" :color="item.color" :icon="item.icon" :far="item.far" :time="item.time" :fab="item.fab" :animation="item.animation"/>
+        </mdb-timeline>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4>Simple Timeline</h4>
+      <section class="p-5">
+        <mdb-timeline simple>
+          <mdb-timeline-item v-for="(item, i) in simpleTimeline" :key="i" :content="item.content" :title="item.title" :inverted="item.inverted" :time="item.time"/>
+        </mdb-timeline>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4>Timeline with images</h4>
+      <section class="p-5">
+        <mdb-timeline images lineColor="#26c6da">
+          <mdb-timeline-item v-for="(item, i) in imageTimeline" :key="i" :content="item.content" :title="item.title" :inverted="item.inverted" :time="item.time" :imgSrc="item.imgSrc" :marker="item.marker" :color="item.color" />
+        </mdb-timeline>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4>Timeline light</h4>
+      <section class="p-5">
+        <mdb-timeline light>
+          <mdb-timeline-item icon="circle" far content="Text 1" tailStyle="dashed"/>
+          <mdb-timeline-item icon="circle" far iconClass="grey-text" content="Text 2"/>
+          <mdb-timeline-item icon="circle-notch" iconClass="red-text spinner-1" content="Text 3"/>
+          <mdb-timeline-item icon="spinner" iconClass="purple-text spinner-2" tailColor="rgb(43, 187, 173)" tailStyle="dotted" content="Text 4" />
+          <mdb-timeline-item far icon="smile" iconClass="black-text spinner-1" content="Text 5"/>
+        </mdb-timeline>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4>Simple timeline with animated icons</h4>
+      <section class="p-5">
+        <mdb-timeline simple lineColor="#26c6da">
+          <mdb-timeline-item title="Title" color="cyan" icon="circle" far iconClass="black-text" content="Place your content here" tailStyle="dashed"/>
+          <mdb-timeline-item title="Title" color="cyan" icon="circle" far iconClass="black-text" content="Place your content here" inverted/>
+          <mdb-timeline-item title="Title" color="cyan" icon="circle-notch" iconClass="black-text spinner-1" content="Place your content here"/>
+          <mdb-timeline-item title="Title" color="cyan" icon="spinner" iconClass="black-text spinner-2" tailColor="rgb(43, 187, 173)" tailStyle="dotted" content="Place your content here" inverted/>
+          <mdb-timeline-item title="Title" color="cyan" far icon="smile" iconClass="black-text spinner-1" content="Place your content here"/>
+        </mdb-timeline>
+      </section>
+    </section>
   </mdb-container>
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbStepper } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbIcon, mdbTimeline, mdbTimelineItem } from 'mdbvue';
 
 export default {
   name: 'TimelinePage',
   components: {
     mdbContainer,
     mdbRow,
-    mdbCol,
     mdbIcon,
-    mdbStepper
+    mdbTimeline,
+    mdbTimelineItem
   },
   data() {
     return {
-      offsetTop: 0,
-      elements: []
-    };
-  },
-  methods: {
-    handleScroll() {
-      this.elements.map(element => {
-        if (element.offsetTop + this.offsetTop > window.scrollY + window.innerHeight) {
-          element.classList.add('more-padding');
-        } else {
-          element.classList.remove('more-padding');
+      timeline: [
+        {
+          title: 'Sed ut perspiciatis unde',
+          content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'check',
+          color: 'primary',
+          inverted: false,
+          time: "11 hours ago via Twitter"
+        },
+        {
+          title: "Acusamus et iusto odio dignissimos ducimus",
+          content: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+          icon: 'credit-card',
+          color: 'warning',
+          inverted: true,
+          far: true
+        },
+        {
+          title: 'Beatae vitae dicta sunt explicabo',
+          content: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'credit-card',
+          color: 'danger',
+          inverted: false,
+        },
+        {
+          title: 'Sed ut perspiciatis unde',
+          content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'save',
+          color: 'info',
+          inverted: true,
+        },
+        {
+          title: 'Perspiciatis unde',
+          content: "Natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'thumbs-up',
+          color: 'success',
+          inverted: false,
+          far: true
         }
-      });
-    },
-  },
-  mounted() {
-    let parentOffset = this.$refs.animate.offsetParent;
-    while (parentOffset) {
-      this.offsetTop += parentOffset.offsetTop;
-      parentOffset = parentOffset.offsetParent;
+      ],
+      colorfulTimeline: [
+        {
+          title: 'Sed ut perspiciatis unde',
+          content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'check',
+          color: 'warning',
+          inverted: false,
+          time: "11 hours ago via Twitter"
+        },
+        {
+          title: "Acusamus et iusto odio dignissimos ducimus",
+          content: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+          icon: 'credit-card',
+          color: 'danger',
+          inverted: true,
+          far: true
+        },
+        {
+          title: 'Beatae vitae dicta sunt explicabo',
+          content: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'credit-card',
+          color: 'success',
+          inverted: false,
+        },
+        {
+          title: 'Sed ut perspiciatis unde',
+          content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'save',
+          color: 'primary',
+          inverted: true,
+        },
+        {
+          title: 'Perspiciatis unde',
+          content: "Natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'thumbs-up',
+          color: 'info',
+          inverted: false,
+          far: true
+        }
+      ],
+      animatedTimeline: [
+        {
+          title: 'Sed ut perspiciatis unde',
+          content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'heart',
+          color: 'default',
+          inverted: false,
+          time: "11 hours ago via Twitter",
+          animation: 'timeline-animation-left'
+        },
+        {
+          title: "Acusamus et iusto odio dignissimos ducimus",
+          content: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+          icon: 'users',
+          color: 'secondary',
+          inverted: true,
+          animation: 'timeline-animation-right'
+        },
+        {
+          title: 'Beatae vitae dicta sunt explicabo',
+          content: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'cloud',
+          color: 'blue',
+          inverted: false,
+          animation: 'timeline-animation-left'
+        },
+        {
+          title: 'Sed ut perspiciatis unde',
+          content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'coffee',
+          color: 'danger',
+          inverted: true,
+          animation: 'timeline-animation-right'
+        },
+        {
+          title: 'Perspiciatis unde',
+          content: "Natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          icon: 'instagram',
+          color: 'stylish',
+          inverted: false,
+          fab: true,
+          animation: 'timeline-animation-left'
+        }
+      ],
+      simpleTimeline: [
+        {
+          title: 'Sed ut perspiciatis unde',
+          content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          inverted: false,
+          time: "11 hours ago via Twitter"
+        },
+        {
+          title: "Acusamus et iusto odio dignissimos ducimus",
+          content: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+          inverted: true,
+        },
+        {
+          title: 'Beatae vitae dicta sunt explicabo',
+          content: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          inverted: false,
+        },
+        {
+          title: 'Sed ut perspiciatis unde',
+          content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          inverted: true,
+        },
+        {
+          title: 'Perspiciatis unde',
+          content: "Natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          inverted: false,
+        }
+      ],
+      imageTimeline: [
+        {
+          title: 'Sed ut perspiciatis unde',
+          content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          inverted: false,
+          time: "11 hours ago via Twitter",
+          imgSrc: "https://mdbootstrap.com/img/Photos/Slides/img%20(135).jpg",
+          marker: "1",
+          color: "cyan lighten-1"
+        },
+        {
+          title: "Acusamus et iusto odio dignissimos ducimus",
+          content: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+          inverted: true,
+          imgSrc: "https://mdbootstrap.com/img/Photos/Slides/img%20(144).jpg",
+          marker: "2",
+          color: "cyan lighten-1"
+        },
+        {
+          title: 'Beatae vitae dicta sunt explicabo',
+          content: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          inverted: false,
+          imgSrc: "https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg",
+          marker: "3",
+          color: "cyan lighten-1"
+        },
+        {
+          title: 'Sed ut perspiciatis unde',
+          content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          inverted: true,
+          imgSrc: "https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg",
+          marker: "4",
+          color: "cyan lighten-1"
+        },
+        {
+          title: 'Perspiciatis unde',
+          content: "Natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          inverted: false,
+          imgSrc: "https://mdbootstrap.com/img/Photos/Slides/img%20(125).jpg",
+          marker: "5",
+          color: "cyan lighten-1"
+        }
+      ],
     };
-
-    let animatedElements = this.$refs.animate.children;
-    this.elements = Array.from(animatedElements).map(item => {
-      return item;
-    });
   },
-  created() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
 };
 
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-@media (max-width: 1025px) {
-  .stepper.timeline li {
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end; } }
+<style>
+  .timeline-animation-left {
+    animation-name: timeline-left
+  }
 
-.stepper.timeline li a {
-  padding: 0px 24px;
-  left: 50%; }
-  @media (max-width: 450px) {
-    .stepper.timeline li a {
-      left: 6%; } }
-  @media (min-width: 451px) and (max-width: 1025px) {
-    .stepper.timeline li a {
-      left: 6%; } }
-  .stepper.timeline li a .circle {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-    text-align: center;
-    position: absolute;
-    top: 16px;
-    margin-left: -50px;
-    background-color: #ccc;
-    z-index: 2; }
-
-.stepper.timeline li .step-content {
-  width: 45%;
-  float: left;
-  border-radius: 2px;
-  position: relative; }
-  .stepper.timeline li .step-content:before {
-    position: absolute;
-    top: 26px;
-    right: -15px;
-    display: inline-block;
-    border-top: 15px solid transparent;
-    border-left: 15px solid #e0e0e0;
-    border-right: 0 solid #e0e0e0;
-    border-bottom: 15px solid transparent;
-    content: " "; }
-  .stepper.timeline li .step-content:after {
-    position: absolute;
-    top: 27px;
-    right: -14px;
-    display: inline-block;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #fff;
-    border-bottom: 14px solid transparent;
-    content: " "; }
-  @media (max-width: 450px) {
-    .stepper.timeline li .step-content {
-      width: 80%;
-      left: 3rem;
-      margin-right: 3rem;
-      margin-bottom: 2rem;
-      float: right; }
-      .stepper.timeline li .step-content:before {
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
-        right: auto; }
-      .stepper.timeline li .step-content:after {
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
-        right: auto; } }
-  @media (min-width: 451px) and (max-width: 1025px) {
-    .stepper.timeline li .step-content {
-      width: 85%;
-      left: 3rem;
-      margin-right: 3rem;
-      margin-bottom: 2rem;
-      float: right; }
-      .stepper.timeline li .step-content:before {
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
-        right: auto; }
-      .stepper.timeline li .step-content:after {
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
-        right: auto; } }
-
-.stepper.timeline li.timeline-inverted {
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end; }
-  .stepper.timeline li.timeline-inverted .step-content {
-    float: right; }
-    .stepper.timeline li.timeline-inverted .step-content:before {
-      border-left-width: 0;
-      border-right-width: 15px;
-      left: -15px;
-      right: auto; }
-    .stepper.timeline li.timeline-inverted .step-content:after {
-      border-left-width: 0;
-      border-right-width: 14px;
-      left: -14px;
-      right: auto; }
-
-.stepper.stepper-vertical li:not(:last-child):after {
-  content: " ";
-  position: absolute;
-  width: 3px;
-  background-color: #e0e0e0;
-  left: 50%;
-  top: 57px;
-  margin-left: -1.5px; }
-  @media (max-width: 450px) {
-    .stepper.stepper-vertical li:not(:last-child):after {
-      left: 6%; } }
-  @media (min-width: 451px) and (max-width: 1025px) {
-    .stepper.stepper-vertical li:not(:last-child):after {
-      left: 6%; } }
-
-@media (max-width: 1025px) {
-  .stepper.colorful-timeline li {
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end; } }
-
-.stepper.colorful-timeline li a {
-  padding: 0px 24px;
-  left: 50%; }
-  @media (max-width: 450px) {
-    .stepper.colorful-timeline li a {
-      left: 6%; } }
-  @media (min-width: 451px) and (max-width: 1025px) {
-    .stepper.colorful-timeline li a {
-      left: 6%; } }
-  .stepper.colorful-timeline li a .circle {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-    text-align: center;
-    position: absolute;
-    top: 16px;
-    margin-left: -50px;
-    background-color: #ccc;
-    z-index: 2; }
-
-.stepper.colorful-timeline li .step-content {
-  width: 45%;
-  float: left;
-  border-radius: 2px;
-  position: relative; }
-  .stepper.colorful-timeline li .step-content:before {
-    position: absolute;
-    top: 1rem;
-    right: -15px;
-    display: inline-block;
-    border-top: 15px solid transparent;
-    border-left: 15px solid #D32F2F;
-    border-right: 0 solid #D32F2F;
-    border-bottom: 15px solid transparent;
-    content: " "; }
-  .stepper.colorful-timeline li .step-content:after {
-    position: absolute;
-    top: 1rem;
-    right: -14px;
-    display: inline-block;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #D32F2F;
-    border-right: 0 solid #D32F2F;
-    border-bottom: 14px solid transparent;
-    content: " "; }
-  @media (max-width: 450px) {
-    .stepper.colorful-timeline li .step-content {
-      width: 80%;
-      left: 3rem;
-      margin-right: 3rem;
-      margin-bottom: 2rem;
-      float: right; }
-      .stepper.colorful-timeline li .step-content:before {
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
-        right: auto; }
-      .stepper.colorful-timeline li .step-content:after {
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
-        right: auto; } }
-  @media (min-width: 451px) and (max-width: 1025px) {
-    .stepper.colorful-timeline li .step-content {
-      width: 85%;
-      left: 3rem;
-      margin-right: 3rem;
-      margin-bottom: 2rem;
-      float: right; }
-      .stepper.colorful-timeline li .step-content:before {
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
-        right: auto; }
-      .stepper.colorful-timeline li .step-content:after {
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
-        right: auto; } }
-  .stepper.colorful-timeline li .step-content .timeline-header {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px; }
-
-.stepper.colorful-timeline li.timeline-inverted {
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end; }
-  .stepper.colorful-timeline li.timeline-inverted .step-content {
-    float: right; }
-    .stepper.colorful-timeline li.timeline-inverted .step-content:before {
-      border-left-width: 0;
-      border-right-width: 15px;
-      left: -15px;
-      right: auto; }
-    .stepper.colorful-timeline li.timeline-inverted .step-content:after {
-      border-left-width: 0;
-      border-right-width: 14px;
-      left: -14px;
-      right: auto; }
-
-.stepper.stepper-vertical.colorful-timeline li:not(:last-child):after {
-  content: " ";
-  position: absolute;
-  width: 3px;
-  background-color: #D32F2F;
-  left: 50%;
-  top: 57px;
-  margin-left: -1.5px; }
-  @media (max-width: 450px) {
-    .stepper.stepper-vertical.colorful-timeline li:not(:last-child):after {
-      left: 6%; } }
-  @media (min-width: 451px) and (max-width: 1025px) {
-    .stepper.stepper-vertical.colorful-timeline li:not(:last-child):after {
-      left: 6%; } }
-
-.stepper.timeline-animated .more-padding {
-  padding-right: 100px; }
-
-.stepper.timeline-animated .more-padding {
-  padding-left: 100px; }
-
-.stepper.timeline-animated li {
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out; }
-  @media (max-width: 1025px) {
-    .stepper.timeline-animated li {
-      -webkit-box-align: end;
-      -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-      align-items: flex-end; } }
-  .stepper.timeline-animated li a {
-    padding: 0px 24px;
-    left: 50%; }
-    @media (max-width: 450px) {
-      .stepper.timeline-animated li a {
-        left: 6%; } }
-    @media (min-width: 451px) and (max-width: 1025px) {
-      .stepper.timeline-animated li a {
-        left: 6%; } }
-    .stepper.timeline-animated li a .circle {
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      font-size: 1.4em;
-      text-align: center;
-      position: absolute;
-      top: 16px;
-      margin-left: -50px;
-      background-color: #ccc;
-      z-index: 2; }
-  .stepper.timeline-animated li .step-content {
-    width: 45%;
-    float: left;
-    border-radius: 2px;
-    position: relative; }
-    .stepper.timeline-animated li .step-content:before {
-      position: absolute;
-      top: 26px;
-      right: -15px;
-      display: inline-block;
-      border-top: 15px solid transparent;
-      border-left: 15px solid #e0e0e0;
-      border-right: 0 solid #e0e0e0;
-      border-bottom: 15px solid transparent;
-      content: " "; }
-    .stepper.timeline-animated li .step-content:after {
-      position: absolute;
-      top: 27px;
-      right: -14px;
-      display: inline-block;
-      border-top: 14px solid transparent;
-      border-left: 14px solid #fff;
-      border-right: 0 solid #fff;
-      border-bottom: 14px solid transparent;
-      content: " "; }
-    @media (max-width: 450px) {
-      .stepper.timeline-animated li .step-content {
-        width: 80%;
-        left: 3rem;
-        margin-right: 3rem;
-        margin-bottom: 2rem;
-        float: right; }
-        .stepper.timeline-animated li .step-content:before {
-          border-left-width: 0;
-          border-right-width: 15px;
-          left: -15px;
-          right: auto; }
-        .stepper.timeline-animated li .step-content:after {
-          border-left-width: 0;
-          border-right-width: 14px;
-          left: -14px;
-          right: auto; } }
-    @media (min-width: 451px) and (max-width: 1025px) {
-      .stepper.timeline-animated li .step-content {
-        width: 85%;
-        left: 3rem;
-        margin-right: 3rem;
-        margin-bottom: 2rem;
-        float: right; }
-        .stepper.timeline-animated li .step-content:before {
-          border-left-width: 0;
-          border-right-width: 15px;
-          left: -15px;
-          right: auto; }
-        .stepper.timeline-animated li .step-content:after {
-          border-left-width: 0;
-          border-right-width: 14px;
-          left: -14px;
-          right: auto; } }
-  .stepper.timeline-animated li.timeline-inverted {
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end; }
-    .stepper.timeline-animated li.timeline-inverted .step-content {
-      float: right; }
-      .stepper.timeline-animated li.timeline-inverted .step-content:before {
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
-        right: auto; }
-      .stepper.timeline-animated li.timeline-inverted .step-content:after {
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
-        right: auto; }
-
-.stepper.stepper-vertical li:not(:last-child):after {
-  content: " ";
-  position: absolute;
-  width: 3px;
-  background-color: #e0e0e0;
-  left: 50%;
-  top: 57px;
-  margin-left: -1.5px; }
-  @media (max-width: 450px) {
-    .stepper.stepper-vertical li:not(:last-child):after {
-      left: 6%; } }
-  @media (min-width: 451px) and (max-width: 1025px) {
-    .stepper.stepper-vertical li:not(:last-child):after {
-      left: 6%; } }
-
-@media (max-width: 1025px) {
-    .stepper.timeline-simple li {
-      -webkit-box-align: end;
-      -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-      align-items: flex-end; } }
-
-  .stepper.timeline-simple li a {
-    padding: 0px;
-    left: 50%; }
-    @media (max-width: 450px) {
-      .stepper.timeline-simple li a {
-        left: 6%; } }
-    @media (min-width: 451px) and (max-width: 1025px) {
-      .stepper.timeline-simple li a {
-        left: 6%; } }
-    .stepper.timeline-simple li a .circle {
-      margin-top: 0.9rem;
-      width: 23px;
-      height: 23px;
-      line-height: 23px;
-      font-size: 1.4em;
-      text-align: center;
-      position: absolute;
-      top: 16px;
-      margin-left: -12px;
-      background-color: #ccc;
-      z-index: 2; }
-
-  .stepper.timeline-simple li .step-content {
-    width: 45%;
-    float: left;
-    border-radius: 2px;
-    position: relative; }
-    .stepper.timeline-simple li .step-content:before {
-      position: absolute;
-      top: 26px;
-      right: -15px;
-      display: inline-block;
-      border-top: 15px solid transparent;
-      border-left: 15px solid #e0e0e0;
-      border-right: 0 solid #e0e0e0;
-      border-bottom: 15px solid transparent;
-      content: " "; }
-    .stepper.timeline-simple li .step-content:after {
-      position: absolute;
-      top: 27px;
-      right: -14px;
-      display: inline-block;
-      border-top: 14px solid transparent;
-      border-left: 14px solid #fff;
-      border-right: 0 solid #fff;
-      border-bottom: 14px solid transparent;
-      content: " "; }
-    .stepper.timeline-simple li .step-content.hoverable {
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  @keyframes timeline-left {
+    from {
+      padding-left: 100px;
     }
-    .stepper.timeline-simple li .step-content.hoverable:hover {
-      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    to {
+      padding-left: 24px
     }
-    @media (max-width: 450px) {
-      .stepper.timeline-simple li .step-content {
-        width: 80%;
-        left: 3rem;
-        margin-right: 3rem;
-        margin-bottom: 2rem;
-        float: right; }
-        .stepper.timeline-simple li .step-content:before {
-          border-left-width: 0;
-          border-right-width: 15px;
-          left: -15px;
-          right: auto; }
-        .stepper.timeline-simple li .step-content:after {
-          border-left-width: 0;
-          border-right-width: 14px;
-          left: -14px;
-          right: auto; } }
-    @media (min-width: 451px) and (max-width: 1025px) {
-      .stepper.timeline-simple li .step-content {
-        width: 85%;
-        left: 3rem;
-        margin-right: 3rem;
-        margin-bottom: 2rem;
-        float: right; }
-        .stepper.timeline-simple li .step-content:before {
-          border-left-width: 0;
-          border-right-width: 15px;
-          left: -15px;
-          right: auto; }
-        .stepper.timeline-simple li .step-content:after {
-          border-left-width: 0;
-          border-right-width: 14px;
-          left: -14px;
-          right: auto; } }
+  }
 
-  .stepper.timeline-simple li.timeline-inverted {
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end; }
-    .stepper.timeline-simple li.timeline-inverted .step-content {
-      float: right; }
-      .stepper.timeline-simple li.timeline-inverted .step-content:before {
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
-        right: auto; }
-      .stepper.timeline-simple li.timeline-inverted .step-content:after {
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
-        right: auto; }
+    .timeline-animation-right {
+    animation-name: timeline-right
+  }
 
-  .stepper.stepper-vertical.timeline-simple li:not(:last-child):after {
-    content: " ";
-    position: absolute;
-    width: 2px;
-    background-color: #9e9e9e;
-    left: 50%;
-    top: 32px;
-    height: 100%;
-    margin-left: -1.5px; }
-    @media (max-width: 450px) {
-      .stepper.stepper-vertical.timeline-simple li:not(:last-child):after {
-        left: 6%; } }
-    @media (min-width: 451px) and (max-width: 1025px) {
-      .stepper.stepper-vertical.timeline-simple li:not(:last-child):after {
-        left: 6%; } }
-
-@media (max-width: 1025px) {
-    .stepper.timeline-images li {
-      -webkit-box-align: end;
-      -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-      align-items: flex-end; } }
-
-  .stepper.timeline-images li a {
-    padding: 0px;
-    left: 50%; }
-    @media (max-width: 450px) {
-      .stepper.timeline-images li a {
-        left: 6%; } }
-    @media (min-width: 451px) and (max-width: 1025px) {
-      .stepper.timeline-images li a {
-        left: 6%; } }
-    .stepper.timeline-images li a .circle {
-      margin-top: 0.9rem;
-      width: 23px;
-      height: 23px;
-      line-height: 23px;
-      font-size: 1em;
-      text-align: center;
-      position: absolute;
-      top: 16px;
-      margin-left: -12px;
-      background-color: #ccc;
-      z-index: 2; }
-
-  .stepper.timeline-images li .step-content {
-    width: 45%;
-    float: left;
-    border-radius: 2px;
-    position: relative; }
-    .stepper.timeline-images li .step-content.hoverable {
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  @keyframes timeline-right {
+    from {
+      padding-right: 100px;
     }
-    .stepper.timeline-images li .step-content.hoverable:hover {
-      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    to {
+      padding-right: 24px
     }
-    @media (max-width: 450px) {
-      .stepper.timeline-images li .step-content {
-        width: 80%;
-        left: 3rem;
-        margin-right: 3rem;
-        margin-bottom: 2rem;
-        float: right; } }
-    @media (min-width: 451px) and (max-width: 1025px) {
-      .stepper.timeline-images li .step-content {
-        width: 85%;
-        left: 3rem;
-        margin-right: 3rem;
-        margin-bottom: 2rem;
-        float: right; } }
+  }
 
-  .stepper.timeline-images li.timeline-inverted {
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end; }
-    .stepper.timeline-images li.timeline-inverted .step-content {
-      float: right; }
+  .spinner-1 {
+    animation: spinner 1s 1s infinite linear;
+  }
 
-  .stepper.stepper-vertical.timeline-images li:not(:last-child):after {
-    content: " ";
-    position: absolute;
-    width: 2px;
-    background-color: #26c6da;
-    left: 50%;
-    top: 32px;
-    height: 100%;
-    margin-left: -1.5px; }
-    @media (max-width: 450px) {
-      .stepper.stepper-vertical.timeline-images li:not(:last-child):after {
-        left: 6%; } }
-    @media (min-width: 451px) and (max-width: 1025px) {
-      .stepper.stepper-vertical.timeline-images li:not(:last-child):after {
-        left: 6%; } }
+  .spinner-2 {
+    animation: spinner 2s 2s infinite linear;
+  }
+
+  @keyframes spinner {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  
+  
+
 </style>

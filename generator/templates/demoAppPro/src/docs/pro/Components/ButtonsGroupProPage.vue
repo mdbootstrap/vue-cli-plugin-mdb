@@ -53,18 +53,13 @@
 </template>
 
 <script>
-import { mdbBtn, mdbBtnGroup, mdbBtnToolbar, mdbDropdown, mdbDropdownToggle, mdbDropdownMenu, mdbDropdownItem, mdbContainer, mdbIcon, mdbRow } from 'mdbvue';
+import { mdbBtn, mdbBtnGroup, mdbContainer, mdbIcon, mdbRow } from 'mdbvue';
 
 export default {
   name: 'ButtonsGroupProPage',
   components: {
     mdbBtn,
     mdbBtnGroup,
-    mdbBtnToolbar,
-    mdbDropdown,
-    mdbDropdownToggle,
-    mdbDropdownMenu,
-    mdbDropdownItem,
     mdbContainer,
     mdbIcon,
     mdbRow

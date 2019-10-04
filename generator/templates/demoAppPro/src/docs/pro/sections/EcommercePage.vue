@@ -12,9 +12,9 @@
         <mdb-row>
           <mdb-col lg="3" md="6" class="mb-lg-0 mb-4">
             <mdb-card narrow ecommerce>
-              <view-wrapper overlay="white-slight" cascade>
+              <mdb-view overlay="white-slight" cascade>
                 <mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/1.jpg" waves top alt="sample photo"/>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body class="text-center" cascade>
                 <a href="" class="grey-text">
                   <h5>Denim</h5>
@@ -78,9 +78,9 @@
           </mdb-col>
           <mdb-col lg="3" md="6" class="mb-lg-0 mb-4">
             <mdb-card narrow ecommerce>
-              <view-wrapper overlay="white-slight" cascade>
+              <mdb-view overlay="white-slight" cascade>
                 <mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/2.jpg" waves top alt="sample photo"/>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body class="text-center" cascade>
                 <a href="" class="grey-text">
                   <h5>Shoes</h5>
@@ -144,9 +144,9 @@
           </mdb-col>
           <mdb-col lg="3" md="6" class="mb-lg-0 mb-4">
             <mdb-card narrow ecommerce>
-              <view-wrapper overlay="white-slight" cascade>
+              <mdb-view overlay="white-slight" cascade>
                 <mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/4.jpg" waves top alt="sample photo"/>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body class="text-center" cascade>
                 <a href="" class="grey-text">
                   <h5>Outwear</h5>
@@ -210,9 +210,9 @@
           </mdb-col>
           <mdb-col lg="3" md="6" class="mb-lg-0 mb-4">
             <mdb-card narrow ecommerce>
-              <view-wrapper overlay="white-slight" cascade>
+              <mdb-view overlay="white-slight" cascade>
                 <mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/3.jpg" waves top alt="sample photo"/>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body class="text-center" cascade>
                 <a href="" class="grey-text">
                   <h5>Blouses</h5>
@@ -283,9 +283,9 @@
         <mdb-row>
           <mdb-col lg="4" md="12" class="mb-lg-0 mb-4">
             <mdb-card wide ecommerce>
-              <view-wrapper overlay="white-slight" cascade>
+              <mdb-view overlay="white-slight" cascade>
                 <mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (55).jpg" top alt="sample photo" waves/>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body class="text-center" cascade>
                 <a href="" class="text-muted">
                   <h5>Camera</h5>
@@ -322,9 +322,9 @@
           </mdb-col>
           <mdb-col lg="4" md="12" class="mb-lg-0 mb-4">
             <mdb-card wide ecommerce>
-              <view-wrapper overlay="white-slight" cascade>
+              <mdb-view overlay="white-slight" cascade>
                 <mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (49).jpg" top alt="sample photo" waves/>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body class="text-center" cascade>
                 <a href="" class="text-muted">
                   <h5>Photography</h5>
@@ -361,9 +361,9 @@
           </mdb-col>
           <mdb-col lg="4" md="12" class="mb-lg-0 mb-4">
             <mdb-card wide ecommerce>
-              <view-wrapper overlay="white-slight" cascade>
+              <mdb-view overlay="white-slight" cascade>
                 <mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (56).jpg" top alt="sample photo" waves/>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body class="text-center" cascade>
                 <a href="" class="text-muted">
                   <h5>Smartphone</h5>
@@ -407,10 +407,10 @@
         <mdb-row>
           <mdb-col lg="3" md="6" class="mb-lg-0 mb-4">
             <mdb-card class="align-items-center">
-              <view-wrapper hover>
+              <mdb-view hover>
                 <mdb-card-image top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" alt="sample photo"/>
                 <a><mdb-mask overlay="white-slight" waves/></a>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body class="text-center">
                 <a href="" class="grey-text">
                   <h5>Shirt</h5>
@@ -428,10 +428,10 @@
           </mdb-col>
           <mdb-col lg="3" md="6" class="mb-lg-0 mb-4">
             <mdb-card class="align-items-center">
-              <view-wrapper hover>
+              <mdb-view hover>
                 <mdb-card-image top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg" alt="sample photo"/>
                 <a><mdb-mask overlay="white-slight" waves/></a>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body class="text-center">
                 <a href="" class="grey-text">
                   <h5>Sport wear</h5>
@@ -449,10 +449,10 @@
           </mdb-col>
           <mdb-col lg="3" md="6" class="mb-lg-0 mb-4">
             <mdb-card class="align-items-center">
-              <view-wrapper hover>
+              <mdb-view hover>
                 <mdb-card-image top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg" alt="sample photo"/>
                 <a><mdb-mask overlay="white-slight" waves/></a>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body class="text-center">
                 <a href="" class="grey-text">
                   <h5>Sport wear</h5>
@@ -470,10 +470,10 @@
           </mdb-col>
           <mdb-col lg="3" md="6" class="mb-lg-0 mb-4">
             <mdb-card class="align-items-center">
-              <view-wrapper hover>
+              <mdb-view hover>
                 <mdb-card-image top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" alt="sample photo"/>
                 <a><mdb-mask overlay="white-slight" waves/></a>
-              </view-wrapper>
+              </mdb-view>
               <mdb-card-body class="text-center">
                 <a href="" class="grey-text">
                   <h5>Outwear</h5>
@@ -555,10 +555,10 @@
             <mdb-row>
               <mdb-col md="4">
                 <mdb-card narrow ecommerce class="mb-2">
-                  <view-wrapper hover cascade>
+                  <mdb-view hover cascade>
                     <mdb-card-image waves top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(39).jpg" alt="sample photo"/>
                     <a><mdb-mask overlay="white-slight" waves/></a>
-                  </view-wrapper>
+                  </mdb-view>
                   <mdb-card-body cascade>
                     <a href="" class="text-muted">
                       <h5>Shoes</h5>
@@ -591,10 +591,10 @@
               </mdb-col>
               <mdb-col md="4" class="clearfix d-none d-md-block">
                 <mdb-card narrow ecommerce class="mb-2">
-                  <view-wrapper hover cascade>
+                  <mdb-view hover cascade>
                     <mdb-card-image waves top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(22).jpg" alt="sample photo"/>
                     <a><mdb-mask overlay="white-slight" waves/></a>
-                  </view-wrapper>
+                  </mdb-view>
                   <mdb-card-body cascade>
                     <a href="" class="text-muted">
                       <h5>Jeans</h5>
@@ -627,10 +627,10 @@
               </mdb-col>
               <mdb-col md="4" class="clearfix d-none d-md-block">
                 <mdb-card narrow ecommerce class="mb-2">
-                  <view-wrapper hover cascade>
+                  <mdb-view hover cascade>
                     <mdb-card-image waves top src="https://mdbootstrap.com/img/Photos/Others/img%20(31).jpg" alt="sample photo"/>
                     <a><mdb-mask overlay="white-slight" waves/></a>
-                  </view-wrapper>
+                  </mdb-view>
                   <mdb-card-body cascade>
                     <a href="" class="text-muted">
                       <h5>Shorts</h5>
@@ -667,10 +667,10 @@
             <mdb-row>
               <mdb-col md="4">
                 <mdb-card narrow ecommerce class="mb-2">
-                  <view-wrapper hover cascade>
+                  <mdb-view hover cascade>
                     <mdb-card-image waves top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(30).jpg" alt="sample photo"/>
                     <a><mdb-mask overlay="white-slight" waves/></a>
-                  </view-wrapper>
+                  </mdb-view>
                   <mdb-card-body cascade>
                     <a href="" class="text-muted">
                       <h5>Accessories</h5>
@@ -703,10 +703,10 @@
               </mdb-col>
               <mdb-col md="4" class="clearfix d-none d-md-block">
                 <mdb-card narrow ecommerce class="mb-2">
-                  <view-wrapper hover cascade>
+                  <mdb-view hover cascade>
                     <mdb-card-image waves top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(37).jpg" alt="sample photo"/>
                     <a><mdb-mask overlay="white-slight" waves/></a>
-                  </view-wrapper>
+                  </mdb-view>
                   <mdb-card-body cascade>
                     <a href="" class="text-muted">
                       <h5>Shoes</h5>
@@ -739,10 +739,10 @@
               </mdb-col>
               <mdb-col md="4" class="clearfix d-none d-md-block">
                 <mdb-card narrow ecommerce class="mb-2">
-                  <view-wrapper hover cascade>
+                  <mdb-view hover cascade>
                     <mdb-card-image waves top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(31).jpg" alt="sample photo"/>
                     <a><mdb-mask overlay="white-slight" waves/></a>
-                  </view-wrapper>
+                  </mdb-view>
                   <mdb-card-body cascade>
                     <a href="" class="text-muted">
                       <h5>Outwear</h5>
@@ -779,10 +779,10 @@
             <mdb-row>
               <mdb-col md="4">
                 <mdb-card narrow ecommerce class="mb-2">
-                  <view-wrapper hover cascade>
+                  <mdb-view hover cascade>
                     <mdb-card-image waves top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(38).jpg" alt="sample photo"/>
                     <a><mdb-mask overlay="white-slight" waves/></a>
-                  </view-wrapper>
+                  </mdb-view>
                   <mdb-card-body cascade>
                     <a href="" class="text-muted">
                       <h5>Accessories</h5>
@@ -815,10 +815,10 @@
               </mdb-col>
               <mdb-col md="4" class="clearfix d-none d-md-block">
                 <mdb-card narrow ecommerce class="mb-2">
-                  <view-wrapper hover cascade>
+                  <mdb-view hover cascade>
                     <mdb-card-image waves top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/belt.jpg" alt="sample photo"/>
                     <a><mdb-mask overlay="white-slight" waves/></a>
-                  </view-wrapper>
+                  </mdb-view>
                   <mdb-card-body cascade>
                     <a href="" class="text-muted">
                       <h5>Accessproes</h5>
@@ -851,10 +851,10 @@
               </mdb-col>
               <mdb-col md="4" class="clearfix d-none d-md-block">
                 <mdb-card narrow ecommerce class="mb-2">
-                  <view-wrapper hover cascade>
+                  <mdb-view hover cascade>
                     <mdb-card-image waves top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(57).jpg" alt="sample photo"/>
                     <a><mdb-mask overlay="white-slight" waves/></a>
-                  </view-wrapper>
+                  </mdb-view>
                   <mdb-card-body cascade>
                     <a href="" class="text-muted">
                       <h5>Shoes</h5>
@@ -1367,7 +1367,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbCard,  mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardFooter, mdbCardText, mdbIcon, mdbBtn, mdbTooltip, mdbBadge, ViewWrapper, mdbCarousel, mdbCarouselItem, mdbCarouselCaption, mdbTestimonial, mdbAvatar, mdbMask  } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbCard,  mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardFooter, mdbCardText, mdbIcon, mdbBtn, mdbTooltip, mdbBadge, mdbView, mdbCarousel, mdbCarouselItem, mdbMask  } from 'mdbvue';
 
 export default {
   name: 'EcommercePage',
@@ -1385,12 +1385,9 @@ export default {
     mdbBtn,
     mdbTooltip,
     mdbBadge,
-    ViewWrapper,
+    mdbView,
     mdbCarousel,
     mdbCarouselItem,
-    mdbCarouselCaption,
-    mdbTestimonial,
-    mdbAvatar,
     mdbMask
   }
 };

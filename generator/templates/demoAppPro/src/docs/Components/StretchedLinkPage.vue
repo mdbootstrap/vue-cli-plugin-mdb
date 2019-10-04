@@ -58,7 +58,7 @@
 </template>
 
 <script>
-  import { mdbContainer, mdbCard, mdbIcon, mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardText, mdbBtn, mdbStretchedLink, mdbCol, mdbRow, mdbMedia, mdbMediaImage, mdbMediaBody } from 'mdbvue';
+  import { mdbContainer, mdbCard, mdbIcon, mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardText, mdbStretchedLink, mdbCol, mdbRow, mdbMedia, mdbMediaImage, mdbMediaBody } from 'mdbvue';
 
   export default {
     name: 'StretchedLinkPage',
@@ -71,7 +71,6 @@
       mdbCardBody,
       mdbCardTitle,
       mdbCardText,
-      mdbBtn,
       mdbStretchedLink,
       mdbMedia,
       mdbMediaImage,

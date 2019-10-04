@@ -121,7 +121,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbBtn, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbInput, mdbTextarea, mdbTab, mdbTabItem, mdbAvatar } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbBtn, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbInput, mdbTab, mdbTabItem } from 'mdbvue';
 export default {
   name:'ModalFormsPage',
   components: {
@@ -136,10 +136,8 @@ export default {
     mdbModalBody,
     mdbModalFooter,
     mdbInput,
-    mdbTextarea,
     mdbTab,
-    mdbTabItem,
-    mdbAvatar
+    mdbTabItem
   },
   data() {
     return {

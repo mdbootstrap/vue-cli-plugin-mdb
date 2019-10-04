@@ -74,9 +74,9 @@
     <h2 class="mb-3 w-100">Map within a card</h2>
       <mdb-col md="6" mb="4">
         <mdb-card narrow>
-          <view-wrapper cascade gradient="blue">
+          <mdb-view cascade gradient="blue">
             Regular map
-          </view-wrapper>
+          </mdb-view>
           <mdb-card-body cascade>
             <mdb-google-map
               ref="map5"
@@ -92,9 +92,9 @@
       </mdb-col>
       <mdb-col md="6" mb="4">
         <mdb-card narrow>
-          <view-wrapper cascade gradient="peach">
+          <mdb-view cascade gradient="peach">
             Custom map
-          </view-wrapper>
+          </mdb-view>
           <mdb-card-body cascade>
             <mdb-google-map
               ref="map6"
@@ -288,7 +288,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbGoogleMap, mdbCol, mdbIcon, mdbCard, ViewWrapper, mdbCardBody, mdbInput, mdbTextarea, mdbBtn, mdbModal, mdbModalBody, mdbModalFooter  } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbGoogleMap, mdbCol, mdbIcon, mdbCard, mdbView, mdbCardBody, mdbInput, mdbTextarea, mdbBtn, mdbModal, mdbModalBody, mdbModalFooter  } from 'mdbvue';
 export default {
   name:'GoogleMapsPage',
   components: {
@@ -298,7 +298,7 @@ export default {
     mdbCol,
     mdbIcon,
     mdbCard,
-    ViewWrapper,
+    mdbView,
     mdbCardBody,
     mdbInput,
     mdbTextarea,

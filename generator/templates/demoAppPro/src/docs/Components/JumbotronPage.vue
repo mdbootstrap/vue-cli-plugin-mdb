@@ -140,7 +140,7 @@
 </template>
 
 <script>
-import { mdbJumbotron, mdbBtn, mdbCard, mdbCardBody, mdbCardTitle, mdbView, mdbMask, mdbContainer, mdbIcon, mdbRow, mdbCol } from 'mdbvue';
+import { mdbJumbotron, mdbBtn, mdbCard, mdbCardTitle, mdbView, mdbMask, mdbContainer, mdbIcon, mdbRow, mdbCol } from 'mdbvue';
 
 export default {
   name: 'JumbotronPage',
@@ -148,7 +148,6 @@ export default {
     mdbJumbotron,
     mdbBtn,
     mdbCard,
-    mdbCardBody,
     mdbCardTitle,
     mdbView,
     mdbMask,

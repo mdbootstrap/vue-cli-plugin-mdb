@@ -60,8 +60,7 @@ export default {
     handleScroll() {
       for (let i = 0; i < this.scrollSpySectionsOffset.length; i++) {
         if (this.$refs.sectionText.$el.scrollTop > this.scrollSpySectionsOffset[i]) {
-          if (this.$refs.sectionText.$el.scrollTop > this.scrollSpySectionsOffset[i+1]) {
-          } else {
+          if (this.$refs.sectionText.$el.scrollTop < this.scrollSpySectionsOffset[i+1]) {
             this.active = i+1;
           }
         }

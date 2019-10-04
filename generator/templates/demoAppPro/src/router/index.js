@@ -83,7 +83,9 @@ import StretchedLinkPage from '../docs/Components/StretchedLinkPage';
 import NotificationsFreePage from '../docs/Advanced/NotificationsPage';
 import MasonryPage from '../docs/CSS/MasonryPage';
 import SwitchPage from '../docs/Forms/SwitchPage';
-// removeIf(free)
+import TreeviewPage from '../docs/Plugins/TreeviewPage';
+import RatingPage from '../docs/Plugins/RatingPage';
+// PRO
 import NotificationsPage from '../docs/pro/Advanced/NotificationsPage';
 import AutocompletePage from '../docs/pro/Forms/AutocompletePage';
 import ButtonsGroupProPage from '../docs/pro/Components/ButtonsGroupProPage';
@@ -98,6 +100,7 @@ import DoubleNavigationPagev2 from '../docs/pro/Navigation/DoubleNavigationPagev
 import DoubleNavigationPagev3 from '../docs/pro/Navigation/DoubleNavigationPagev3';
 import DoubleNavigationPagev4 from '../docs/pro/Navigation/DoubleNavigationPagev4';
 import DoubleNavigationPagev5 from '../docs/pro/Navigation/DoubleNavigationPagev5';
+import DoubleNavigationPagev6 from '../docs/pro/Navigation/DoubleNavigationPagev6';
 import ChartProPage from '../docs/pro/Advanced/ChartProPage';
 import GalleryPage from '../docs/pro/Advanced/GalleryPage';
 import GradientProPage from '../docs/pro/CSS/GradientProPage';
@@ -125,6 +128,7 @@ import MegaMenuPage from '../docs/pro/Navigation/MegaMenuPage';
 import StreakPage from '../docs/pro/Plugins/StreakPage';
 import MultiCarouselPage from '../docs/pro/Advanced/MultiCarouselPage';
 import TimelinePage from '../docs/pro/Plugins/TimelinePage';
+import CardAnimationsPage from '../docs/pro/Plugins/CardAnimationsPage';
 import ThumbnailsCarouselPage from '../docs/pro/Advanced/ThumbnailsCarouselPage';
 import StickyPage from '../docs/pro/Advanced/StickyPage';
 import FormsPagePro from '../docs/pro/Forms/FormsPage';
@@ -166,7 +170,7 @@ import TooltipProPage from '../docs/pro/Advanced/TooltipProPage';
 import TableFilterPage from '../docs/pro/Tables/TableFilterPage';
 import BackgroundImageProPage from '../docs/pro/CSS/BackgroundImageProPage';
 import FileInputPage from '../docs/pro/Forms/FileInputPage';
-// endRemoveIf(free)
+// END PRO
 Vue.use(Router);
 
 export default new Router({
@@ -467,6 +471,10 @@ export default new Router({
       name: 'VideoPage',
       component: VideoPage
     }, {
+      path: '/plugins/treeview',
+      name: 'TreeviewPage',
+      component: TreeviewPage
+    },{
       path: '/components/spinners',
       name: 'SpinnersPage',
       component: SpinnersPage
@@ -498,8 +506,12 @@ export default new Router({
       path: '/forms/switch',
       name: 'SwitchPage',
       component: SwitchPage
+    },{
+      path: '/plugins/rating',
+      name: 'RatingPage',
+      component: RatingPage
     },
-    // removeIf(free)
+    // PRO
     {
       path: '/advanced/pro/notify',
       name: 'NotificationsPage',
@@ -565,6 +577,10 @@ export default new Router({
       name: 'DoubleNavigationPagev5',
       component: DoubleNavigationPagev5
     }, {
+      path: '/navigation/pro/double-navigation-v6',
+      name: 'DoubleNavigationPagev6',
+      component: DoubleNavigationPagev6
+    },{
       path: '/advanced/pro/chart',
       name: 'ChartProPage',
       component: ChartProPage
@@ -828,7 +844,11 @@ export default new Router({
       path: '/forms/pro/file-input',
       name: 'FileInputPage',
       component: FileInputPage
+    }, {
+      path: '/plugins/pro/card-animations',
+      name: 'CardAnimationsPage',
+      component: CardAnimationsPage
     }
-    // endRemoveIf(free)
+    // END PRO
   ]
 });

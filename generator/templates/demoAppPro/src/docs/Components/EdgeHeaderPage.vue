@@ -62,7 +62,7 @@ export default {
     mdbBtn
   },
   methods: {
-    handleSubmit(e) {
+    handleSubmit() {
       console.log('Form submitted');
     }
   }

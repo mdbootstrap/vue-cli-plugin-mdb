@@ -10,7 +10,17 @@
       <section>
         <mdb-row>
           <mdb-col sm="6">
-            <mdb-date-picker @getValue="getPickerValue" />
+            <mdb-date-picker label="basic example" @getValue="getPickerValue" />
+          </mdb-col>
+        </mdb-row>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4>Outline</h4>
+      <section>
+        <mdb-row>
+          <mdb-col sm="6">
+            <mdb-date-picker outline label="outline" @getValue="getPickerValue" />
           </mdb-col>
         </mdb-row>
       </section>
@@ -20,8 +30,8 @@
       <section>
         <mdb-row>
           <mdb-col sm="6">
-            <mdb-date-picker v-model="date" />
-            <mdb-btn @click.native="date = '2012-02-02'">Change</mdb-btn>
+            <mdb-date-picker v-model="date" label="v-model example" :option="option"/>
+            <mdb-btn @click.native="date = '02-02-1993'">Change</mdb-btn>
           </mdb-col>
           <mdb-col class="d-flex justify-content-center align-items-center" sm="6">
             {{date}}
@@ -34,7 +44,7 @@
       <section>
         <mdb-row>
           <mdb-col sm="6">
-            <mdb-date-picker v-model="date2" :option="{placeholder: 'Pick a date'}"/>
+            <mdb-date-picker v-model="date2" label="placeholder example" placeholder='Pick a date'/>
             <mdb-btn @click.native="date2 = '2012-02-02'">Change</mdb-btn>
           </mdb-col>
           <mdb-col class="d-flex justify-content-center align-items-center" sm="6">
@@ -48,7 +58,7 @@
       <section>
         <mdb-row>
           <mdb-col sm="6">
-            <mdb-date-picker @getValue="getPickerValue" :limit="limit" />
+            <mdb-date-picker @getValue="getPickerValue" :limit="limit" label="limits example" />
           </mdb-col>
         </mdb-row>
       </section>
@@ -58,7 +68,7 @@
       <section>
         <mdb-row>
           <mdb-col sm="6">
-            <mdb-date-picker @getValue="getPickerValue" autoHide />
+            <mdb-date-picker @getValue="getPickerValue" autoHide label="auto hide example"/>
           </mdb-col>
         </mdb-row>
       </section>
@@ -73,12 +83,43 @@
         </mdb-row>
       </section>
     </section>
+    <section class="demo-section">
+      <h4>Icon</h4>
+      <section>
+        <mdb-row>
+          <mdb-col sm="6">
+            <mdb-date-picker icon="clock" far :option="options" />
+          </mdb-col>
+        </mdb-row>
+      </section>
+    </section>
+    <section class="demo-section">
+      <h4>Validation</h4>
+      <section>
+        <mdb-row>
+          <mdb-col sm="6">
+            <form @submit.prevent="checkForm" novalidate>
+              <mdb-date-picker
+                v-model="validation.value"
+                :validation="validation.validated"
+                :isValid="validation.valid"
+                required
+                @change="validate()"
+                validFeedback="Look's good."
+                invalidFeedback="Please pick a date"
+                label="Validated date"
+              />
+              <mdb-btn tyoe="submit">Submit</mdb-btn>
+            </form>
+          </mdb-col>
+        </mdb-row>
+      </section>
+    </section>
   </mdb-container>
 </template>
 
 <script>
 import { mdbContainer, mdbDatePicker, mdbRow, mdbCol, mdbIcon, mdbBtn } from 'mdbvue';
-
 export default {
   name: 'DatePickerPage',
   components: {
@@ -92,12 +133,25 @@ export default {
   methods: {
     getPickerValue(value) {
       console.log(value);
+    },
+    checkForm(event) {
+      event.target.classList.add("was-validated");
+    },
+    validate() {
+      if (this.validate.value) {
+        this.valid = true;
+        this.validated = true;
+      }
     }
   },
   data() {
     return {
       date: '',
-      date2: '2018-04-13',
+      option: {
+        type: 'day',
+        format: 'DD-MM-YYYY'
+      },
+      date2: '',
       date3: '2018-04-13',
       limit: [{
         type: 'weekday',
@@ -111,6 +165,11 @@ export default {
       options: {
         placeholder: '2018-04-13',
         label: "default date"
+      },
+      validation: {
+        value: null,
+        valid: false,
+        validated: false
       }
     };
   }

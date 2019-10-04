@@ -6,7 +6,7 @@
     </mdb-row>
     <hr />
     <h4 class="my-4">Carousel with lightbox</h4>
-    <mdb-multi-carousel :interval="8000" showControls showIndicators slide top navClass="btn-secondary" indicatorClass="secondary-color">
+    <mdb-carousel :interval="8000" multi showControls showIndicators slide top navClass="btn-secondary" indicatorClass="secondary-color">
       <mdb-carousel-item>
         <mdb-row class="mdb-lightbox px-2">
           <mdb-col md="4" class="d-md-inline-block" @click.native="showLightbox(0)">
@@ -109,7 +109,7 @@
           </mdb-col>
         </mdb-row>
       </mdb-carousel-item>
-    </mdb-multi-carousel>
+    </mdb-carousel>
     <mdb-lightbox
       :visible="visible"
       :imgs="imgs"
@@ -132,14 +132,13 @@
 </template>
 
 <script>
-import { mdbMultiCarousel, mdbCarouselItem, mdbCarouselCaption, mdbRow, mdbIcon, mdbContainer, mdbCol, mdbLightbox } from 'mdbvue';
+import { mdbCarousel, mdbCarouselItem, mdbRow, mdbIcon, mdbContainer, mdbCol, mdbLightbox } from 'mdbvue';
 
 export default {
   name: 'CarouselProPage',
   components: {
-    mdbMultiCarousel,
+    mdbCarousel,
     mdbCarouselItem,
-    mdbCarouselCaption,
     mdbRow,
     mdbIcon,
     mdbContainer,

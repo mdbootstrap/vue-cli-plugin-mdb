@@ -6,9 +6,20 @@
     </mdb-row>
     <hr />
     <section class="demo-section">
+      <h4>v-model</h4>
+      <section>
+        <mdb-input type="text" label="Input text" v-model="inputValue"/> 
+        <p>Value: {{inputValue}} </p>
+        <mdb-btn size="md" @click="inputValue = 'New value'">Change value</mdb-btn>
+        <hr class="m-3"/>
+        <mdb-input type="checkbox" id="check1" v-model="checkValue" checkboxValue="Checkbox" label="Checkbox" />
+        <p class="mt-3">Value: {{checkValue}} </p>
+        <mdb-btn size="md" @click="checkValue = !checkValue">Change value</mdb-btn>
+      </section>
+    </section>
+    <section class="demo-section">
       <h4>Checkboxes</h4>
       <section>
-
         <h5 class="mb-3">Basic examples</h5>
         <mdb-input type="checkbox" id="checkbox1" v-model="check" label="Default checkbox" />
         <p class="pt-2">Checked: {{ check }}</p>
@@ -222,7 +233,9 @@ export default {
       active3: false,
       check: false,
       checkArray: ['John'],
-      multiCheckboxes: false
+      multiCheckboxes: false,
+      inputValue: 'hello',
+      checkValue: true
     };
   },
   methods: {

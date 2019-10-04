@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import { mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbDropdown, mdbDropdownItem, mdbDropdownMenu, mdbDropdownToggle, mdbInput, mdbBtn } from 'mdbvue';
+import { mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbDropdown, mdbDropdownItem, mdbDropdownMenu, mdbDropdownToggle, mdbInput } from 'mdbvue';
 
 export default {
   name: 'NavigationPage',
@@ -55,8 +55,7 @@ export default {
     mdbDropdownItem,
     mdbDropdownMenu,
     mdbDropdownToggle,
-    mdbInput,
-    mdbBtn
+    mdbInput
   },
   mounted() {
     document.getElementById("main-navbar").style.height = '60px';

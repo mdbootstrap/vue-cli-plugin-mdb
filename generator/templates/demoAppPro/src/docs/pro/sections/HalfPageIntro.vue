@@ -51,7 +51,7 @@
 </template>
 
 <script>
-  import {mdbNavbar, mdbNavbarNav, mdbNavItem, mdbBtn, mdbContainer, mdbNavbarBrand, mdbNavbarToggler, mdbFileInput, mdbIcon, mdbDropdown, mdbDropdownMenu, mdbDropdownToggle, mdbDropdownItem, mdbRow, mdbCol, mdbParallax, mdbView, mdbMask } from 'mdbvue';
+  import {mdbNavbar, mdbNavbarNav, mdbNavItem, mdbBtn, mdbContainer, mdbNavbarBrand, mdbNavbarToggler, mdbIcon, mdbDropdown, mdbDropdownMenu, mdbDropdownToggle, mdbDropdownItem, mdbRow, mdbCol, mdbView, mdbMask } from 'mdbvue';
   export default {
     name: "halfPageIntro",
     components: {
@@ -62,7 +62,6 @@
       mdbNavbarBrand,
       mdbNavbarToggler,
       mdbContainer,
-      mdbFileInput,
       mdbIcon,
       mdbDropdown,
       mdbDropdownMenu,
@@ -70,15 +69,8 @@
       mdbDropdownItem,
       mdbCol,
       mdbRow,
-      mdbParallax,
       mdbView,
       mdbMask
-    },
-    mounted(){
-      document.getElementById("main-navbar").style.height = '64px';
-    },
-    beforeDestroy(){
-      document.getElementById("main-navbar").style.height = null;
     }
   };
   
@@ -104,7 +96,7 @@
   .navbar {
     background: linear-gradient(40deg, rgba(0,51,199,.3), rgba(209,149,249,.3));
     box-shadow: 0 0 0 0 transparent;
-    margin-top: 64px;
+    margin-top: 50px;
   }
 
   .navbar:not(.top-nav-collapse) {

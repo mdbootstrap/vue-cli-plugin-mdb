@@ -98,19 +98,21 @@
         <section class="demo-section">
           <h4>Material numeric inputs</h4>
           <section>
-            <mdb-numeric-input :max="10" :emptyValue="5" minus @input="handleInput" class="my-0"/><br/>
-            <mdb-numeric-input :min="0" :max="10" :precision="1" :emptyValue="5.3" class="my-0"/><br/>
-            <mdb-numeric-input :min="0" :max="10" placeholder="placeholder" class="my-0"/>
+            <mdb-input type="number" :max="10" label="max. 10" minus @input="handleInput"/>
+            <mdb-input type="number" :min="0" label="step 0.2" :max="10" :step="0.2" v-model="numericValue"/>
+            <mdb-input type="number" :min="0" :max="10" placeholder="placeholder" label="placeholder"/>
+            <mdb-input type="number" icon="plus" label="icon"/>
           </section>
         </section>
       </mdb-col>
       <mdb-col sm="6">
         <section class="demo-section">
-          <h4>Default numeric inputs</h4>
+          <h4>Outline numeric inputs</h4>
           <section>
-            <mdb-numeric-input :max="10" :emptyValue="5" minus @input="handleInput" basic/><br/>
-            <mdb-numeric-input :min="0" :max="10" :precision="1" :emptyValue="5.3" basic/><br/>
-            <mdb-numeric-input :min="0" :max="10" placeholder="placeholder" basic/>
+            <mdb-input outline type="number" :max="10" label="max. 10" minus @input="handleInput"/>
+            <mdb-input outline type="number" :min="0" label="step 0.2" :max="10" :step="0.2"/>
+            <mdb-input outline type="number" :min="0" :max="10" placeholder="placeholder"/>
+            <mdb-input outline type="number" icon="plus" label="icon"/>
           </section>
         </section>
       </mdb-col>
@@ -267,7 +269,7 @@
 </template>
 
 <script>
-import { mdbCol, mdbInput, mdbTextarea, mdbContainer, mdbNumericInput, mdbRow, mdbIcon, mdbBtn } from "mdbvue";
+import { mdbCol, mdbInput, mdbTextarea, mdbContainer, mdbRow, mdbIcon, mdbBtn } from "mdbvue";
 
 export default {
   name: "InputsPage",
@@ -276,14 +278,14 @@ export default {
     mdbInput,
     mdbTextarea,
     mdbContainer,
-    mdbNumericInput,
     mdbRow,
     mdbIcon,
     mdbBtn
   },
   data() {
     return {
-      test: 'Test value'
+      test: 'Test value',
+      numericValue: 5.3
     };
   },
   methods: {

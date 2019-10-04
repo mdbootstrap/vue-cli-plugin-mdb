@@ -72,15 +72,14 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbIcon, mdbBtn } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbIcon } from 'mdbvue';
 
 export default {
   name: 'BackgroundImagePage',
   components: {
     mdbContainer,
     mdbRow,
-    mdbIcon,
-    mdbBtn
+    mdbIcon
   }
 };
 </script>

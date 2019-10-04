@@ -142,7 +142,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbCol, mdbRow, mdbIcon, mdbTabs, mdbJumbotron, mdbView, mdbMask, mdbBtn, mdbTextarea, mdbInput, mdbCarousel, mdbCarouselItem } from 'mdbvue';
+import { mdbContainer, mdbCol, mdbRow, mdbIcon, mdbTabs, mdbJumbotron, mdbView, mdbMask, mdbBtn, mdbTextarea, mdbInput } from 'mdbvue';
 
 export default {
   name: 'TabPage',
@@ -157,9 +157,7 @@ export default {
     mdbMask,
     mdbBtn,
     mdbTextarea,
-    mdbInput,
-    mdbCarouselItem,
-    mdbCarousel
+    mdbInput
   }
 };
 </script>

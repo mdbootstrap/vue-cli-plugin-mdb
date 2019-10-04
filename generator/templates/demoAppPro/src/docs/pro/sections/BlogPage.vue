@@ -15,12 +15,12 @@
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <mdb-row>
         <mdb-col lg="5">
-          <view-wrapper class="rounded z-depth-2 mb-lg-0 mb-4" hover>
+          <mdb-view class="rounded z-depth-2 mb-lg-0 mb-4" hover>
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg" alt="Sample image" />
             <a>
               <mdb-mask overlay="white-slight" waves/>
             </a>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
         <mdb-col lg="7">
           <a class="green-text">
@@ -59,23 +59,23 @@
           <mdb-btn color="pink" size="md" class="mb-lg-0 mb-4 waves-light">Read more</mdb-btn>
         </mdb-col>
         <mdb-col lg="5">
-          <view-wrapper class="rounded z-depth-2 mb-lg-0 mb-4" hover>
+          <mdb-view class="rounded z-depth-2 mb-lg-0 mb-4" hover>
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg" alt="Sample image" />
             <a>
               <mdb-mask overlay="white-slight" waves/>
             </a>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
       </mdb-row>
       <hr class="my-5" />
       <mdb-row>
         <mdb-col lg="5">
-          <view-wrapper class="rounded z-depth-2 mb-lg-0 mb-4" hover>
+          <mdb-view class="rounded z-depth-2 mb-lg-0 mb-4" hover>
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img (28).jpg" alt="Sample image" />
             <a>
               <mdb-mask overlay="white-slight" waves/>
             </a>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
         <mdb-col lg="7">
           <a class="indigo-text">
@@ -104,10 +104,10 @@
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <mdb-row>
         <mdb-col lg="4" md="12" class="mb-lg-0 mb-4">
-          <view-wrapper hover class="rounded z-depth-2 mb-4">
+          <mdb-view hover class="rounded z-depth-2 mb-4">
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/81.jpg" />
             <mdb-mask overlay="white-slight" waves/>
-          </view-wrapper>
+          </mdb-view>
           <a class="pink-text">
             <h6 class="font-weight-bold mb-3">
               <mdb-icon icon="map" class="pr-2" />Adventure</h6>
@@ -122,10 +122,10 @@
           <mdb-btn color="pink" rounded size="md">Read more</mdb-btn>
         </mdb-col>
         <mdb-col lg="4" md="12" class="mb-lg-0 mb-4">
-          <view-wrapper hover class="rounded z-depth-2 mb-4">
+          <mdb-view hover class="rounded z-depth-2 mb-4">
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" />
             <mdb-mask overlay="white-slight" waves/>
-          </view-wrapper>
+          </mdb-view>
           <a class="deep-orange-text">
             <h6 class="font-weight-bold mb-3">
               <mdb-icon icon="graduation-cap" class="pr-2" />Education</h6>
@@ -139,10 +139,10 @@
           <mdb-btn color="deep-orange" rounded size="md">Read more</mdb-btn>
         </mdb-col>
         <mdb-col lg="4" md="12" class="mb-lg-0 mb-4">
-          <view-wrapper hover class="rounded z-depth-2 mb-4">
+          <mdb-view hover class="rounded z-depth-2 mb-4">
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" />
             <mdb-mask overlay="white-slight" waves/>
-          </view-wrapper>
+          </mdb-view>
           <a class="blue-text">
             <h6 class="font-weight-bold mb-3">
               <mdb-icon icon="fire" class="pr-2" />Culture</h6>
@@ -167,12 +167,12 @@
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <mdb-row>
         <mdb-col lg="5" xl="4">
-          <view-wrapper hover class="rounded z-depth-1-half mb-lg-0 mb-4">
+          <mdb-view hover class="rounded z-depth-1-half mb-lg-0 mb-4">
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image" />
             <a>
               <mdb-mask overlay="white-slight" waves/>
             </a>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
         <mdb-col lg="7" xl="8">
           <h3 class="font-weight-bold mb-3 p-0">
@@ -189,12 +189,12 @@
       <hr class="my-5" />
       <mdb-row>
         <mdb-col lg="5" xl="4">
-          <view-wrapper hover class="rounded z-depth-1-half mb-lg-0 mb-4">
+          <mdb-view hover class="rounded z-depth-1-half mb-lg-0 mb-4">
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/31.jpg" alt="Sample image" />
             <a>
               <mdb-mask overlay="white-slight" waves/>
             </a>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
         <mdb-col lg="7" xl="8">
           <h3 class="font-weight-bold mb-3 p-0">
@@ -211,12 +211,12 @@
       <hr class="my-5" />
       <mdb-row>
         <mdb-col lg="5" xl="4">
-          <view-wrapper hover class="rounded z-depth-1-half mb-lg-0 mb-4">
+          <mdb-view hover class="rounded z-depth-1-half mb-lg-0 mb-4">
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg" alt="Sample image" />
             <a>
               <mdb-mask overlay="white-slight" waves/>
             </a>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
         <mdb-col lg="7" xl="8">
           <h3 class="font-weight-bold mb-3 p-0">
@@ -238,10 +238,10 @@
       <mdb-row class="mt-5">
         <mdb-col md="12">
           <mdb-card reverse>
-            <view-wrapper hover cascade>
+            <mdb-view hover cascade>
               <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg" class="img-fluid" />
               <mdb-mask overlay="white-slight" class="waves-light" waves/>
-            </view-wrapper>
+            </mdb-view>
             <mdb-card-body class="text-center" cascade>
               <h2 class="font-weight-bold">
                 <a>Title of the news</a>
@@ -290,10 +290,10 @@
       <mdb-row>
         <mdb-col md="12">
           <mdb-card reverse>
-            <view-wrapper hover cascade>
+            <mdb-view hover cascade>
               <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(146).jpg" class="img-fluid" />
               <mdb-mask overlay="white-slight" class="waves-light" waves/>
-            </view-wrapper>
+            </mdb-view>
             <mdb-card-body class="text-center" cascade>
               <h2 class="font-weight-bold">
                 <a>Title of the news</a>
@@ -344,7 +344,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbCard, mdbCardBody, mdbMask, mdbIcon, ViewWrapper, mdbBtn } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbCard, mdbCardBody, mdbMask, mdbIcon, mdbView, mdbBtn } from 'mdbvue';
 
 export default {
   name: 'BlogPage',
@@ -356,7 +356,7 @@ export default {
     mdbCardBody,
     mdbMask,
     mdbIcon,
-    ViewWrapper,
+    mdbView,
     mdbBtn
   }
 };

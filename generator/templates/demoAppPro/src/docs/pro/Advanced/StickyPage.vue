@@ -87,12 +87,11 @@
 </template>
 
 <script>
-import { mdbBtn, mdbContainer, Sticky, mdbIcon, mdbRow } from 'mdbvue';
+import { mdbContainer, Sticky, mdbIcon, mdbRow } from 'mdbvue';
 
 export default {
   name: 'Test',
   components: {
-    mdbBtn,
     mdbContainer,
     mdbIcon,
     mdbRow

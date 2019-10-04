@@ -33,14 +33,13 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbIcon } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbIcon } from 'mdbvue';
 
 export default {
   name: 'MultiSelectPageFree',
   components: {
     mdbContainer,
     mdbRow,
-    mdbCol,
     mdbIcon
   },
   data() {

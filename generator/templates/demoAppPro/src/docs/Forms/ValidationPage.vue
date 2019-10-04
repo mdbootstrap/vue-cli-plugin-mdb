@@ -180,7 +180,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbBtn, mdbIcon, mdbRow, mdbInput } from "mdbvue";
+import { mdbContainer, mdbBtn, mdbIcon, mdbRow } from "mdbvue";
 
 export default {
   name: "InputsPage",
@@ -188,8 +188,7 @@ export default {
     mdbContainer,
     mdbBtn,
     mdbIcon,
-    mdbRow,
-    mdbInput
+    mdbRow
   },
   data() {
     return {

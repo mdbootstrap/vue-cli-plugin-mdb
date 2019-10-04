@@ -127,7 +127,7 @@
 </template>
 
 <script>
-import { mdbSelect, mdbContainer, mdbRow, mdbCol, mdbIcon, mdbBtn } from 'mdbvue';
+import { mdbSelect, mdbContainer, mdbRow, mdbCol, mdbIcon } from 'mdbvue';
 
 export default {
   name: 'MultiSelectPage',
@@ -136,8 +136,7 @@ export default {
     mdbContainer,
     mdbRow,
     mdbCol,
-    mdbIcon,
-    mdbBtn
+    mdbIcon
   },
   data() {
     return {
@@ -228,7 +227,7 @@ export default {
     };
   },
   methods: {
-    getSelectValue(value, text) {
+    getSelectValue(value) {
       console.log(value);
     }
   }

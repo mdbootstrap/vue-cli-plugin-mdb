@@ -375,24 +375,24 @@
       <h2>Masks</h2>
       <mdb-row>
         <mdb-col col="12" sm="6" class="py-2">
-          <view-wrapper src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg" alt="view">
+          <mdb-view src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg" alt="view">
             <mdb-mask flex-center waves text="waves"></mdb-mask>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
         <mdb-col col="12" sm="6" class="py-2">
-          <view-wrapper src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg" alt="view">
+          <mdb-view src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg" alt="view">
             <mdb-mask flex-center pattern="3" text="pattern = &quot;3&quot;"></mdb-mask>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
         <mdb-col col="12" sm="6">
-          <view-wrapper overlay="blue-strong" src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg" alt="view">
+          <mdb-view overlay="blue-strong" src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg" alt="view">
             <mdb-mask flex-center waves overlay="blue-strong" text="overlay = &quot;blue-strong&quot; waves"></mdb-mask>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
         <mdb-col col="12" sm="6">
-          <view-wrapper src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg" alt="view">
+          <mdb-view src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg" alt="view">
             <mdb-mask flex-center waves pattern="5" text="pattern = &quot;5&quot; waves"></mdb-mask>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
       </mdb-row>
     </section>
@@ -530,7 +530,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbBadge, mdbBtn, mdbIcon, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbInput, mdbTextarea, mdbBreadcrumb, mdbBreadcrumbItem, mdbDropdown, mdbDropdownToggle, mdbDropdownMenu, mdbDropdownItem, mdbCard,  mdbCardImage, mdbCardHeader, mdbCardFooter, mdbCardBody, mdbTbl, mdbTblHead, mdbTblBody, mdbPagination, mdbPageNav, mdbPageItem,mdbMedia,mdbMediaImage,mdbMediaBody, mdbListGroup, mdbListGroupItem, mdbLineChart, mdbRadarChart, mdbBarChart, mdbPolarChart, mdbPieChart, mdbDoughnutChart, ViewWrapper, mdbMask, mdbEdgeHeader, Tooltip } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbBadge, mdbBtn, mdbIcon, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbInput, mdbTextarea, mdbBreadcrumb, mdbBreadcrumbItem, mdbDropdown, mdbDropdownToggle, mdbDropdownMenu, mdbDropdownItem, mdbCard,  mdbCardImage, mdbCardHeader, mdbCardFooter, mdbCardBody, mdbTbl, mdbTblHead, mdbTblBody, mdbPagination, mdbPageItem,mdbMedia,mdbMediaImage,mdbMediaBody, mdbListGroup, mdbListGroupItem, mdbLineChart, mdbRadarChart, mdbBarChart, mdbPolarChart, mdbPieChart, mdbDoughnutChart, mdbView, mdbMask, mdbEdgeHeader } from 'mdbvue';
 
 export default {
   name: 'LiveDemoPage',
@@ -562,7 +562,6 @@ export default {
     mdbTblHead,
     mdbTblBody,
     mdbPagination,
-    mdbPageNav,
     mdbPageItem,
     mdbMedia,
     mdbMediaImage,
@@ -575,10 +574,9 @@ export default {
     mdbPolarChart,
     mdbPieChart,
     mdbDoughnutChart,
-    ViewWrapper,
+    mdbView,
     mdbMask,
-    mdbEdgeHeader,
-    Tooltip
+    mdbEdgeHeader
   },
   data() {
     return {
@@ -748,7 +746,7 @@ export default {
       }
       this.active[index] = !this.active[index];
     },
-    allDropdownsClose(target) {
+    allDropdownsClose() {
       for (let i = 0; i < Object.keys(this.active).length; i++) {
         this.active[i] = false;
       }

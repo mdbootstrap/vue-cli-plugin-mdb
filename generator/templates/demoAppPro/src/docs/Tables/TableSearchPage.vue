@@ -26,14 +26,11 @@
 </template>
 
 <script>
-import { mdbTbl, mdbTblHead, mdbTblBody, mdbDatatable, mdbContainer, mdbRow, mdbIcon } from 'mdbvue';
+import { mdbDatatable, mdbContainer, mdbRow, mdbIcon } from 'mdbvue';
 
 export default {
   name: 'TableSearchPage',
   components: {
-    mdbTbl,
-    mdbTblHead,
-    mdbTblBody,
     mdbDatatable,
     mdbContainer,
     mdbRow,

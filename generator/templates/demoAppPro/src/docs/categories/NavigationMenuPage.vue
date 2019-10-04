@@ -100,6 +100,11 @@
                       Double navigation with fixed slim sidenav & fixed navbar
                     </h6>
                   </mdb-nav-item>
+                  <mdb-nav-item to="/navigation/pro/double-navigation-v6" class="list-group-item list-group-item-action">
+                    <h6 class="justify-content-between d-flex align-items-center pl-4">
+                      Double navigation with fixed sidenav under fixed navbar
+                    </h6>
+                  </mdb-nav-item>
                 </mdb-list-group>
               </transition>
               <mdb-nav-item class="list-group-item list-group-item-action" to="/navigation/pro/footer">
@@ -137,7 +142,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbJumbotron, mdbNavItem, mdbListGroup, mdbCollapse, mdbEdgeHeader } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbJumbotron, mdbNavItem, mdbListGroup, mdbEdgeHeader } from 'mdbvue';
 
 export default {
   name: 'ComponentsPage',
@@ -149,7 +154,6 @@ export default {
     mdbJumbotron,
     mdbNavItem,
     mdbListGroup,
-    mdbCollapse,
     mdbEdgeHeader
   },
   data() {

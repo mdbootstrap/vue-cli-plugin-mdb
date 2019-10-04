@@ -79,14 +79,13 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbAlert } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbIcon, mdbAlert } from 'mdbvue';
 
 export default {
   name: 'AlertPage',
   components: {
     mdbContainer,
     mdbRow,
-    mdbCol,
     mdbIcon,
     mdbAlert
   },

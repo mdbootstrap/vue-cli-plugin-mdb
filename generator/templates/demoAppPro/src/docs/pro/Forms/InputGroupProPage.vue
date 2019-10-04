@@ -178,7 +178,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbIcon, mdbCol, mdbInput, mdbBtn, mdbDropdown, mdbDropdownToggle, mdbDropdownMenu, mdbDropdownItem, mdbSelect } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbIcon, mdbCol, mdbInput, mdbBtn, mdbDropdown, mdbDropdownToggle, mdbDropdownMenu, mdbDropdownItem } from 'mdbvue';
 
 export default {
   name: 'InputGroupProPage',
@@ -192,25 +192,9 @@ export default {
     mdbDropdown,
     mdbDropdownToggle,
     mdbDropdownMenu,
-    mdbDropdownItem,
-    mdbSelect
-  },
-  data() {
-    return {
-      options1: [
-        { text: 'Choose...', value: null, selected: true, disabled: true },
-        { text: 'One', value: 'One' },
-        { text: 'Two', value: 'Two' },
-        { text: 'Three', value: 'Three' },
-      ]
-    };
-  },
-  methods: {
-    checkboxChange (val) {
-      console.log(val);
-    },
+    mdbDropdownItem
   }
-};
+}
 </script>
 
 <style>

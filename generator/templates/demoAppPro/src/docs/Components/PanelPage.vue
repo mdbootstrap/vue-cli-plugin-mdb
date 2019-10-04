@@ -511,7 +511,7 @@
 </template>
 
 <script>
-import { mdbContainer,  mdbRow, mdbCol, mdbBtn, mdbCard, mdbCardTitle, mdbCardText, mdbCardFooter, mdbCardBody, mdbCardHeader, mdbListGroup, mdbListGroupItem, mdbNavItem, mdbCardGroup, mdbJumbotron, mdbIcon, mdbFooter, mdbTab, mdbTabItem, mdbTabContent, mdbTabPane } from 'mdbvue';
+import { mdbContainer,  mdbRow, mdbCol, mdbBtn, mdbCard, mdbCardTitle, mdbCardText, mdbCardFooter, mdbCardBody, mdbCardHeader, mdbListGroup, mdbListGroupItem, mdbCardGroup, mdbJumbotron, mdbIcon, mdbFooter, mdbTab, mdbTabItem, mdbTabContent, mdbTabPane } from 'mdbvue';
 
 export default {
   name: 'PanelPage',
@@ -528,7 +528,6 @@ export default {
     mdbCardHeader,
     mdbListGroup,
     mdbListGroupItem,
-    mdbNavItem,
     mdbCardGroup,
     mdbJumbotron,
     mdbIcon,

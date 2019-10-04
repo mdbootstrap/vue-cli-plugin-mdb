@@ -49,7 +49,6 @@
 import {
   mdbToastNotification,
   mdbContainer,
-  mdbBtn,
   mdbRow,
   mdbIcon,
 } from "mdbvue";
@@ -59,7 +58,6 @@ export default {
   components: {
     mdbToastNotification,
     mdbContainer,
-    mdbBtn,
     mdbRow,
     mdbIcon,
   },

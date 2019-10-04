@@ -1,6 +1,6 @@
 <template>
   <div>
-    <mdb-navbar style="margin-top: 64px" position="top" color="light-blue" dark transparent scrolling>
+    <mdb-navbar style="margin-top: 50px; padding: 20px" position="top" color="light-blue" dark transparent scrolling>
       <mdb-container>
         <mdb-navbar-brand href="#"><strong>MDB</strong></mdb-navbar-brand>
         <mdb-navbar-toggler style="max-width: 1140px">
@@ -74,12 +74,6 @@ export default {
     mdbRow,
     mdbCol,
     mdbBtn
-  },
-  mounted(){
-    document.getElementById("main-navbar").style.height = '64px';
-  },
-  beforeDestroy(){
-    document.getElementById("main-navbar").style.height = null;
   }
 };
 </script>

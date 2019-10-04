@@ -1182,7 +1182,7 @@
                   </mdb-dropdown-menu>
                 </mdb-dropdown>
                 <!-- Multi-level dropdown -->
-                <mdb-dropdown tag="li" multiLevel class="nav-item">
+                <!-- <mdb-dropdown tag="li" multiLevel class="nav-item">
                   <mdb-dropdown-toggle slot="toggle" class="text-uppercase" tag="a" transparent navLink waves-fixed>Multi-level</mdb-dropdown-toggle>
                   <mdb-dropdown-menu class="mt-2 rounded-0 pink darken-3 border-0 z-depth-1">
                     <mdb-dropdown-item tag="ul" class="dropdown-submenu p-0">
@@ -1196,7 +1196,46 @@
                       </mdb-dropdown>
                     </mdb-dropdown-item>
                   </mdb-dropdown-menu>
+                </mdb-dropdown> -->
+
+                <mdb-dropdown tag="li" multiLevel class="nav-item">
+                  <mdb-dropdown-toggle slot="toggle" class="text-uppercase" tag="a" transparent navLink waves-fixed>Multi-level</mdb-dropdown-toggle>
+                  <mdb-dropdown-menu class="mt-2 rounded-0 pink darken-3 border-0 z-depth-1">
+                    <mdb-dropdown-item class="p-0" submenu>
+                      <mdb-dropdown class="w-100">
+                        <mdb-dropdown-item
+                          slot="toggle"
+                          submenuIcon="caret-right"
+                          class="submenu-item text-white"
+                        >
+                          Click me
+                        </mdb-dropdown-item>
+                        <mdb-dropdown-menu class="ml-2 rounded-0 pink darken-3 border-0 z-depth-1">
+                          <mdb-dropdown-item class="text-white" href="#">Item 1</mdb-dropdown-item>
+                          <mdb-dropdown-item class="text-white" href="#">Item 2</mdb-dropdown-item>
+                          <mdb-dropdown-item class="text-white" href="#">Item 3</mdb-dropdown-item>
+                        </mdb-dropdown-menu>
+                      </mdb-dropdown>
+                    </mdb-dropdown-item>
+                    <mdb-dropdown-item class="p-0" submenu>
+                      <mdb-dropdown class="w-100">
+                        <mdb-dropdown-item
+                          slot="toggle"
+                          submenuIcon="caret-right"
+                          class="submenu-item text-white"
+                        >
+                          Click me
+                        </mdb-dropdown-item>
+                        <mdb-dropdown-menu class="ml-2 rounded-0 pink darken-3 border-0 z-depth-1">
+                          <mdb-dropdown-item class="text-white" href="#">Item 1</mdb-dropdown-item>
+                          <mdb-dropdown-item class="text-white" href="#">Item 2</mdb-dropdown-item>
+                          <mdb-dropdown-item class="text-white" href="#">Item 3</mdb-dropdown-item>
+                        </mdb-dropdown-menu>
+                      </mdb-dropdown>
+                    </mdb-dropdown-item>
+                  </mdb-dropdown-menu>
                 </mdb-dropdown>
+
               </mdb-navbar-nav>
               <form>
                 <mdb-input type="text" class="text-white" placeholder="Search" aria-label="Search" label navInput waves waves-fixed/>
@@ -1211,7 +1250,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbIcon, mdbNavbar, mdbNavbarBrand, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbInput, mdbDropdown, mdbDropdownToggle, mdbDropdownMenu, mdbDropdownItem } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbIcon, mdbNavbar, mdbNavbarBrand, mdbNavbarToggler, mdbNavbarNav, mdbInput, mdbDropdown, mdbDropdownToggle, mdbDropdownMenu, mdbDropdownItem } from 'mdbvue';
 
 export default {
   name: 'MegaMenuPage',
@@ -1223,7 +1262,6 @@ export default {
     mdbNavbarBrand,
     mdbNavbarToggler,
     mdbNavbarNav,
-    mdbNavItem,
     mdbInput,
     mdbDropdown,
     mdbDropdownToggle,
@@ -1237,5 +1275,9 @@ export default {
 <style scoped>
   .menu-section {
     min-height: 520px;
+  }
+
+  .submenu-item:focus {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 </style>

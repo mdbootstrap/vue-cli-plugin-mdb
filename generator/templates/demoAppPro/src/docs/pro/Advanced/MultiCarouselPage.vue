@@ -9,7 +9,7 @@
       <h4>Basic</h4>
       <section>
         <mdb-container class="mt-5">
-          <mdb-multi-carousel :interval="8000" showControls showIndicators slide>
+          <mdb-multi-carousel :interval="8000" showControls touch showIndicators slide>
             <template>
               <mdb-carousel-item>
                 <mdb-row class="carousel__item">
@@ -432,13 +432,12 @@
 </template>
 
 <script>
-import { mdbLightbox, mdbCarouselItem, mdbCarouselCaption, mdbContainer, mdbRow, mdbCol, mdbCard,  mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardText, mdbBtn, mdbIcon, mdbMultiCarousel } from 'mdbvue';
+import { mdbLightbox, mdbCarouselItem, mdbContainer, mdbRow, mdbCol, mdbCard,  mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardText, mdbBtn, mdbIcon, mdbMultiCarousel } from 'mdbvue';
 
 export default {
   name: 'CarouselPage',
   components: {
     mdbCarouselItem,
-    mdbCarouselCaption,
     mdbContainer,
     mdbRow,
     mdbCol,

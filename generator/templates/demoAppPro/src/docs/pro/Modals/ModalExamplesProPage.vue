@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbBtn, mdbModal, mdbModalHeader, mdbModalBody, mdbModalFooter, mdbModalTitle, mdbBadge, Input, mdbTextarea, mdbTbl, mdbTblHead, mdbTblBody, mdbCarousel, mdbCarouselItem, mdbCarouselIndicators, mdbCarouselIndicator, mdbAccordion, mdbCardBody, mdbSelect } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbBtn, mdbModal, mdbModalBody, mdbCarousel, mdbCarouselItem, mdbAccordion, mdbCardBody, mdbSelect } from 'mdbvue';
 
 export default {
   name: 'ModalExamplesPage',
@@ -68,20 +68,9 @@ export default {
     mdbIcon,
     mdbBtn,
     mdbModal,
-    mdbModalHeader,
     mdbModalBody,
-    mdbModalFooter,
-    mdbModalTitle,
-    mdbBadge,
-    Input,
-    mdbTextarea,
-    mdbTbl,
-    mdbTblHead,
-    mdbTblBody,
     mdbCarousel,
     mdbCarouselItem,
-    mdbCarouselIndicators,
-    mdbCarouselIndicator,
     mdbAccordion,
     mdbCardBody,
     mdbSelect

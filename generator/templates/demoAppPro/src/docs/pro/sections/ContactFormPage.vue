@@ -2,7 +2,7 @@
   <div>
     <header>
       <!--Navbar-->
-      <mdb-navbar style="margin-top: 64px" :color="'primary'" position="top" dark href="#" transparent scrolling>
+      <mdb-navbar style="margin-top: 50px; padding-top: 20px;" :color="'primary'" position="top" dark href="#" transparent scrolling>
         <mdb-container>
           <mdbNavbarBrand href="#"><strong>MDB</strong></mdbNavbarBrand>
           <mdb-navbar-toggler style="max-width: 1140px">
@@ -21,8 +21,8 @@
       </mdb-navbar>
       <!--/.Navbar-->
 
-      <!--ViewWrapper-->
-      <view-wrapper>
+      <!--mdbView-->
+      <mdb-view>
         <mdb-mask overlay="indigo-strong" class="d-flex justify-content-center align-items-center">
           <mdb-container>
               <!--Grid row-->
@@ -73,8 +73,8 @@
               <!--Grid row-->
           </mdb-container>
         </mdb-mask>
-      </view-wrapper>
-      <!--/.ViewWrapper-->
+      </mdb-view>
+      <!--/.mdbView-->
     </header>
 
     <main>
@@ -92,7 +92,7 @@
 </template>
 
 <script>
-import { mdbNavbar, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbInput, mdbTextarea, ViewWrapper, mdbMask, mdbRow, mdbCol, mdbContainer, mdbBtn, mdbCard, mdbCardBody, mdbNavbarBrand } from 'mdbvue';
+import { mdbNavbar, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbInput, mdbTextarea, mdbView, mdbMask, mdbRow, mdbCol, mdbContainer, mdbBtn, mdbCard, mdbCardBody, mdbNavbarBrand } from 'mdbvue';
 
 export default {
   name: 'ContactFormPage',
@@ -103,7 +103,7 @@ export default {
     mdbNavItem,
     mdbInput,
     mdbTextarea,
-    ViewWrapper,
+    mdbView,
     mdbMask,
     mdbRow,
     mdbCol,
@@ -112,12 +112,6 @@ export default {
     mdbCard,
     mdbCardBody,
     mdbNavbarBrand
-  },
-  mounted(){
-    document.getElementById("main-navbar").style.height = '64px';
-  },
-  beforeDestroy(){
-    document.getElementById("main-navbar").style.height = null;
   }
 };
 </script>
@@ -143,6 +137,7 @@ export default {
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 60px);
+  margin-top: -10px;
 }
 h6 {
     line-height: 1.7;

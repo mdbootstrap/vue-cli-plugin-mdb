@@ -46,6 +46,16 @@
       </section>
     </section>
     <section class="demo-section">
+      <h4>Select with icon</h4>
+      <section>  
+        <mdb-row>
+          <mdb-col sm="6">
+            <mdb-select icon="paper-plane" far search @getValue="getSelectValue" :options="searchOptions" label="Search" />
+          </mdb-col>
+        </mdb-row>
+      </section>
+    </section>
+    <section class="demo-section">
       <h4>Select with label and search box</h4>
       <section>  
         <mdb-row>
@@ -314,7 +324,7 @@ export default {
     };
   },
   methods: {
-    getSelectValue(value, text) {
+    getSelectValue(value) {
       console.log(value);
     },
     removeOption(data) {

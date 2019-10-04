@@ -17,14 +17,13 @@
 </template>
 
 <script>
-import { mdbCarousel, mdbCarouselItem, mdbCarouselCaption, mdbContainer, mdbRow, mdbIcon } from 'mdbvue';
+import { mdbCarousel, mdbCarouselItem, mdbContainer, mdbRow, mdbIcon } from 'mdbvue';
 
 export default {
   name: 'VideoCarouselPage',
   components: {
     mdbCarousel,
     mdbCarouselItem,
-    mdbCarouselCaption,
     mdbContainer,
     mdbRow,
     mdbIcon

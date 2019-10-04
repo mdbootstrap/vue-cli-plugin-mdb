@@ -8,26 +8,26 @@
     <mdb-container fluid class="my-5">
       <mdb-row class="mx-5">
         <mdb-col lg="4" md="12">
-          <view-wrapper hover src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg">
+          <mdb-view hover src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg">
             <mdb-mask overlay="red-strong" flexCenter text="Strong overlay"></mdb-mask>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
         <mdb-col lg="4" md="12">
-          <view-wrapper hover src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg">
+          <mdb-view hover src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg">
             <mdb-mask overlay="red-light" flexCenter text="Light overlay"></mdb-mask>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
         <mdb-col lg="4" md="12">
-          <view-wrapper hover src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg">
+          <mdb-view hover src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg">
             <mdb-mask overlay="red-slight" flexCenter text="Slight overlay"></mdb-mask>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
       </mdb-row>
       <mdb-row class="mx-5 mt-5">
         <mdb-col md="6">
-          <view-wrapper zoom hover src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg">
+          <mdb-view zoom hover src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg">
             <mdb-mask flexCenter text="Zoom effect"></mdb-mask>
-          </view-wrapper>
+          </mdb-view>
         </mdb-col>
         <mdb-col md="6" class="text-center">
           <h4 class="text-center">Shadow effect</h4>
@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, ViewWrapper, mdbMask, mdbIcon } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbView, mdbMask, mdbIcon } from 'mdbvue';
 
 export default {
   name: 'GridPage',
@@ -47,7 +47,7 @@ export default {
     mdbContainer,
     mdbRow,
     mdbCol,
-    ViewWrapper,
+    mdbView,
     mdbMask,
     mdbIcon
   }

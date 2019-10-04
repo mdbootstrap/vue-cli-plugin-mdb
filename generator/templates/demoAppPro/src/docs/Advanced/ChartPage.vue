@@ -414,7 +414,7 @@ export default {
   },
   methods: {
     randomize(arr) {
-      return arr.map(value => Math.floor(Math.random()*30));
+      return arr.map(() => Math.floor(Math.random()*30));
     },
     changeData(){
       let lineData = {...this.lineChartData};

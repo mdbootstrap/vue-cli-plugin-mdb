@@ -14,12 +14,12 @@
       <mdb-row>
         <mdb-col lg="6" md="12">
           <div class="news">
-            <view-wrapper hover rounded class="z-depth-1-half mb-4">
+            <mdb-view hover rounded class="z-depth-1-half mb-4">
               <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/82.jpg" alt="Sample image"/>
               <a>
                 <mdb-mask overlay="white-slight" class="waves-light" waves/>
               </a>
-            </view-wrapper>
+            </mdb-view>
             <div class="d-flex justify-content-between">
               <a class="light-blue-text"><h6 class="font-weight-bold"><mdb-icon icon="plane" class="pr-2"/>Travels</h6></a>
               <p class="font-weight-bold dark-grey-text"><mdb-icon far icon="clock" class="pr-2"/>20/08/2018</p>
@@ -31,12 +31,12 @@
           <div class="news">
             <mdb-row>
               <mdb-col md="3">
-                <view-wrapper hover rounded class="z-depth-1-half mb-4">
+                <mdb-view hover rounded class="z-depth-1-half mb-4">
                   <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/photo8.jpg" alt="Sample image"/>
                   <a>
                     <mdb-mask overlay="white-slight" class="waves-light" waves/>
                   </a>
-                </view-wrapper>
+                </mdb-view>
               </mdb-col>
               <mdb-col md="9">
                 <p class="font-weight-bold dark-grey-text">19/08/2018</p>
@@ -53,12 +53,12 @@
           <div class="news">
             <mdb-row>
               <mdb-col md="3">
-                <view-wrapper hover rounded class="z-depth-1-half mb-4">
+                <mdb-view hover rounded class="z-depth-1-half mb-4">
                   <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/54.jpg" alt="Sample image"/>
                   <a>
                     <mdb-mask overlay="white-slight" class="waves-light" waves/>
                   </a>
-                </view-wrapper>
+                </mdb-view>
               </mdb-col>
               <mdb-col md="9">
                 <p class="font-weight-bold dark-grey-text">18/08/2018</p>
@@ -75,12 +75,12 @@
           <div class="mb-4">
             <mdb-row>
               <mdb-col md="3">
-                <view-wrapper hover rounded class="z-depth-1-half mb-4">
+                <mdb-view hover rounded class="z-depth-1-half mb-4">
                   <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image"/>
                   <a>
                     <mdb-mask overlay="white-slight" class="waves-light" waves/>
                   </a>
-                </view-wrapper>
+                </mdb-view>
               </mdb-col>
               <mdb-col md="9">
                 <p class="font-weight-bold dark-grey-text">17/08/2018</p>
@@ -97,12 +97,12 @@
 
         <mdb-col lg="6" md="12">
           <div class="news">
-            <view-wrapper hover rounded class="z-depth-1-half mb-4">
+            <mdb-view hover rounded class="z-depth-1-half mb-4">
               <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg" alt="Sample image"/>
               <a>
                 <mdb-mask overlay="white-slight" class="waves-light" waves/>
               </a>
-            </view-wrapper>
+            </mdb-view>
             <div class="d-flex justify-content-between">
               <a class="pink-text"><h6 class="font-weight-bold"><mdb-icon icon="home" class="pr-2"/>Lifestyle</h6></a>
               <p class="font-weight-bold dark-grey-text"><mdb-icon far icon="clock" class="pr-2"/>24/08/2018</p>
@@ -114,12 +114,12 @@
           <div class="news">
             <mdb-row>
               <mdb-col md="3">
-                <view-wrapper hover rounded class="z-depth-1-half mb-4">
+                <mdb-view hover rounded class="z-depth-1-half mb-4">
                   <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg" alt="Sample image"/>
                   <a>
                     <mdb-mask overlay="white-slight" class="waves-light" waves/>
                   </a>
-                </view-wrapper>
+                </mdb-view>
               </mdb-col>
               <mdb-col md="9">
                 <p class="font-weight-bold dark-grey-text">23/08/2018</p>
@@ -136,12 +136,12 @@
           <div class="news">
             <mdb-row>
               <mdb-col md="3">
-                <view-wrapper hover rounded class="z-depth-1-half mb-4">
+                <mdb-view hover rounded class="z-depth-1-half mb-4">
                   <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" alt="Sample image"/>
                   <a>
                     <mdb-mask overlay="white-slight" class="waves-light" waves/>
                   </a>
-                </view-wrapper>
+                </mdb-view>
               </mdb-col>
               <mdb-col md="9">
                 <p class="font-weight-bold dark-grey-text">22/08/2018</p>
@@ -158,12 +158,12 @@
           <div class="mb-4">
             <mdb-row>
               <mdb-col md="3">
-                <view-wrapper hover rounded class="z-depth-1-half mb-4">
+                <mdb-view hover rounded class="z-depth-1-half mb-4">
                   <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(56).jpg" alt="Sample image"/>
                   <a>
                     <mdb-mask overlay="white-slight" class="waves-light" waves/>
                   </a>
-                </view-wrapper>
+                </mdb-view>
               </mdb-col>
               <mdb-col md="9">
                 <p class="font-weight-bold dark-grey-text">21/08/2018</p>
@@ -188,12 +188,12 @@
       <mdb-row>
         <mdb-col md="12" lg="6">
           <div class="mb-4">
-            <view-wrapper hover rounded class="z-depth-1-half mb-4">
+            <mdb-view hover rounded class="z-depth-1-half mb-4">
               <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/1.jpg" alt="Sample image"/>
               <a>
                 <mdb-mask overlay="white-slight" class="waves-light" waves/>
               </a>
-            </view-wrapper>
+            </mdb-view>
             <div class="d-flex justify-content-between">
               <a class="deep-orange-text"><h6 class="font-weight-bold"><mdb-icon icon="utensils" class="pr-2"/>Culinary</h6></a>
               <p class="font-weight-bold dark-grey-text"><mdb-icon far icon="clock" class="pr-2"/>27/02/2018</p>
@@ -207,12 +207,12 @@
           <div class="news">
             <mdb-row>
               <mdb-col md="3">
-                <view-wrapper hover rounded class="z-depth-1-half mb-4">
+                <mdb-view hover rounded class="z-depth-1-half mb-4">
                   <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg" alt="Sample image"/>
                   <a>
                     <mdb-mask overlay="white-slight" class="waves-light" waves/>
                   </a>
-                </view-wrapper>
+                </mdb-view>
               </mdb-col>
               <mdb-col md="9">
                 <p class="font-weight-bold dark-grey-text">26/02/2018</p>
@@ -229,12 +229,12 @@
           <div class="news">
             <mdb-row>
               <mdb-col md="3">
-                <view-wrapper hover rounded class="z-depth-1-half mb-4">
+                <mdb-view hover rounded class="z-depth-1-half mb-4">
                   <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg" alt="Sample image"/>
                   <a>
                     <mdb-mask overlay="white-slight" class="waves-light" waves/>
                   </a>
-                </view-wrapper>
+                </mdb-view>
               </mdb-col>
               <mdb-col md="9">
                 <p class="font-weight-bold dark-grey-text">25/02/2018</p>
@@ -251,12 +251,12 @@
           <div class="news">
             <mdb-row>
               <mdb-col md="3">
-                <view-wrapper hover rounded class="z-depth-1-half mb-4">
+                <mdb-view hover rounded class="z-depth-1-half mb-4">
                   <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/87.jpg" alt="Sample image"/>
                   <a>
                     <mdb-mask overlay="white-slight" class="waves-light" waves/>
                   </a>
-                </view-wrapper>
+                </mdb-view>
               </mdb-col>
               <mdb-col md="9">
                 <p class="font-weight-bold dark-grey-text">24/03/2018</p>
@@ -273,12 +273,12 @@
           <div class="mb-4">
             <mdb-row>
               <mdb-col md="3">
-                <view-wrapper hover rounded class="z-depth-1-half mb-4">
+                <mdb-view hover rounded class="z-depth-1-half mb-4">
                   <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg" alt="Sample image"/>
                   <a>
                     <mdb-mask overlay="white-slight" class="waves-light" waves/>
                   </a>
-                </view-wrapper>
+                </mdb-view>
               </mdb-col>
               <mdb-col md="9">
                 <p class="font-weight-bold dark-grey-text">23/02/2018</p>
@@ -304,15 +304,15 @@
       <mdb-row>
 
         <mdb-col md="12" lg="4" class="mb-lg-0 mb-5">
-          <view-wrapper hover rounded class="z-depth-1-half mb-4">
+          <mdb-view hover rounded class="z-depth-1-half mb-4">
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg" alt="Sample image"/>
             <a>
               <mdb-mask overlay="white-slight" class="waves-light" waves/>
             </a>
-          </view-wrapper>
+          </mdb-view>
           <mdb-row class="mb-3">
             <mdb-col col="12">
-              <a><badge color="pink"><mdb-icon icon="camera" class="pr-2" aria-hidden="true"/>Adventure</badge></a>
+              <a><mdb-badge color="pink"><mdb-icon icon="camera" class="pr-2" aria-hidden="true"/>Adventure</mdb-badge></a>
             </mdb-col>
           </mdb-row>
           <div class="d-flex justify-content-between news">
@@ -348,15 +348,15 @@
         </mdb-col>
 
         <mdb-col md="12" lg="4" class="mb-lg-0 mb-5">
-          <view-wrapper hover rounded class="z-depth-1-half mb-4">
+          <mdb-view hover rounded class="z-depth-1-half mb-4">
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/31.jpg" alt="Sample image"/>
             <a>
               <mdb-mask overlay="white-slight" class="waves-light" waves/>
             </a>
-          </view-wrapper>
+          </mdb-view>
           <mdb-row class="mb-3">
             <mdb-col col="12">
-              <a><badge color="deep-orange"><mdb-icon icon="plane" class="pr-2" aria-hidden="true"/>Travel</badge></a>
+              <a><mdb-badge color="deep-orange"><mdb-icon icon="plane" class="pr-2" aria-hidden="true"/>Travel</mdb-badge></a>
             </mdb-col>
           </mdb-row>
           <div class="d-flex justify-content-between news">
@@ -392,15 +392,15 @@
         </mdb-col>
 
         <mdb-col md="12" lg="4" class="mb-lg-0 mb-5">
-          <view-wrapper hover rounded class="z-depth-1-half mb-4">
+          <mdb-view hover rounded class="z-depth-1-half mb-4">
             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg" alt="Sample image"/>
             <a>
               <mdb-mask overlay="white-slight" class="waves-light" waves/>
             </a>
-          </view-wrapper>
+          </mdb-view>
           <mdb-row class="mb-3">
             <mdb-col col="12">
-              <a><badge color="success-color"><mdb-icon icon="leaf" class="pr-2" aria-hidden="true"/>Nature</badge></a>
+              <a><mdb-badge color="success-color"><mdb-icon icon="leaf" class="pr-2" aria-hidden="true"/>Nature</mdb-badge></a>
             </mdb-col>
           </mdb-row>
           <div class="d-flex justify-content-between news">
@@ -440,7 +440,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, ViewWrapper, mdbIcon, mdbMask, mdbBadge } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbView, mdbIcon, mdbMask, mdbBadge } from 'mdbvue';
 
 export default {
   name: 'MagazinePage',
@@ -448,7 +448,7 @@ export default {
     mdbContainer,
     mdbRow,
     mdbCol,
-    ViewWrapper,
+    mdbView,
     mdbIcon,
     mdbMask,
     mdbBadge

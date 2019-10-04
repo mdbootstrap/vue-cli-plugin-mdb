@@ -180,14 +180,13 @@
 </template>
 
 <script>
-import { mdbCarousel, mdbCarouselItem, mdbCarouselCaption, mdbContainer, mdbRow, mdbCol, mdbTestimonial, mdbAvatar, mdbIcon } from 'mdbvue';
+import { mdbCarousel, mdbCarouselItem, mdbContainer, mdbRow, mdbCol, mdbTestimonial, mdbAvatar, mdbIcon } from 'mdbvue';
 
 export default {
   name: 'CarouselPage',
   components: {
     mdbCarousel,
     mdbCarouselItem,
-    mdbCarouselCaption,
     mdbContainer,
     mdbRow,
     mdbCol,

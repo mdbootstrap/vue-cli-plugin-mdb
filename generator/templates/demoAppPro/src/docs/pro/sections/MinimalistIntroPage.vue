@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--Navbar-->
-    <mdb-navbar style="margin-top: 64px" color="stylish" position="top" dark href="#" transparent scrolling>
+    <mdb-navbar style="margin-top: 50px; padding-top: 20px" color="stylish" position="top" dark href="#" transparent scrolling>
       <mdb-container>
         <mdb-navbar-brand href="#"><strong>MDB</strong></mdb-navbar-brand>
         <mdb-navbar-toggler style="max-width: 1140px">
@@ -21,7 +21,7 @@
       </mdb-container>
     </mdb-navbar>
     <!--/.Navbar-->
-    <!--ViewWrapper-->
+    <!--mdbView-->
 
     <mdb-parallax
       src="https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg"
@@ -44,7 +44,7 @@
         </mdb-container>
       </mdb-mask>
     </mdb-parallax>
-    <!--/.ViewWrapper-->
+    <!--/.mdbView-->
 
     <main>
         <mdb-container>
@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbNavbar, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbInput, mdbView, mdbMask, mdbBtn, mdbNavbarBrand, mdbParallax } from 'mdbvue';
+import { mdbContainer, mdbRow, mdbCol, mdbNavbar, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbInput, mdbMask, mdbBtn, mdbNavbarBrand, mdbParallax } from 'mdbvue';
 export default {
   name: 'AppPage',
   components: {
@@ -84,17 +84,10 @@ export default {
     mdbNavbarNav,
     mdbNavItem,
     mdbInput,
-    mdbView,
     mdbMask,
     mdbBtn,
     mdbNavbarBrand,
     mdbParallax
-  },
-  mounted(){
-    document.getElementById("main-navbar").style.height = '64px';
-  },
-  beforeDestroy(){
-    document.getElementById("main-navbar").style.height = null;
   }
 };
 </script>

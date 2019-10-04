@@ -128,7 +128,7 @@
 </template>
 
 <script>
-import { mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbDropdown, mdbDropdownItem, mdbDropdownMenu, mdbDropdownToggle, mdbInput, mdbBtn, mdbSideNav, mdbSideNavNav, mdbSideNavCat, mdbSideNavItem, mdbIcon, waves } from 'mdbvue';
+import { mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbSideNav, mdbSideNavNav, mdbSideNavCat, mdbSideNavItem, mdbIcon, waves } from 'mdbvue';
 
 export default {
   name: 'DoubleNavigationPage',
@@ -137,11 +137,6 @@ export default {
     mdbNavItem,
     mdbNavbarNav,
     mdbNavbarToggler,
-    mdbDropdown,
-    mdbDropdownItem,
-    mdbDropdownMenu,
-    mdbDropdownToggle,
-    mdbInput,
     mdbBtn,
     mdbSideNav,
     mdbSideNavNav,
