@@ -1,21 +1,31 @@
-const fs = require('fs-extra')
+const updateMainJS = require('./commands/updateMainJS')
+const applySCSS = require('./commands/applySCSS')
+const applyRoboto = require('./commands/applyRoboto')
+const applyFA5 = require('./commands/applyFA5')
+const packTgz = require('./commands/pack')
+
+const gitTagsRemote = require('git-tags-remote')
 
 // check for the latest mdb version
-const gitTagsRemote = require('git-tags-remote')
-const repoPath = 'https://github.com/mdbootstrap/Vue-Bootstrap-with-Material-Design.git'
 let latestTag = '5.8.3'
-
-gitTagsRemote.latest(repoPath).then(tags => {
+gitTagsRemote.latest('https://github.com/mdbootstrap/Vue-Bootstrap-with-Material-Design.git').then(tags => {
   latestTag = Array.from(tags)[0]
 })
 
 module.exports = (api, options) => {
-  // warning if mdb is already installed
+
   if (api.hasPlugin('mdbvue')) {
     api.exitLog('Please type `npm uninstall mdbvue` or `yarn remove mdbvue` to remove old MDB package and run plugin again', 'warn')
   } else {
 
+    // render new files
+    if (options.mode === 'New app') {
+      api.render('./templates/newApp')
+    }
+
+    // extend existing config & update main.js
     if (options.version === 'Free') {
+
       api.extendPackage({
         scripts: {
           start: 'vue-cli-service serve --open'
@@ -23,6 +33,10 @@ module.exports = (api, options) => {
         dependencies: {
           'mdbvue': latestTag
         }
+      })
+
+      api.onCreateComplete(() => {
+        updateMainJS(api.entryFile, options.version, options.styling)
       })
 
     } else {
@@ -36,94 +50,43 @@ module.exports = (api, options) => {
         }
       })
 
+      api.onCreateComplete(() => {
+        updateMainJS(api.entryFile, options.version, options.styling)
+      })
+      api.render('./templates/existingAppPro')
     }
 
-    // rendering new files & eslint rules update
-    if (options.mode === 'New app') {
-      api.render('./templates/newApp')
-    } else if (options.mode === 'Demo') {
-      if (options.version === 'Free') {
-        api.render('./templates/demoAppFree')
-      } else {
-        api.render('./templates/demoAppPro')
-      }
+    // apply SCSS config
+    if (options.styling === 'Editable in your project (SCSS)') {
       api.extendPackage({
-        eslintConfig: {
-          "rules": {
-            "no-console": 0
-          }
+        devDependencies: {
+          'node-sass': '^4.9.0',
+          'sass-loader': '^7.1.0'
         }
+      })
+      api.onCreateComplete(() => {
+        applySCSS()
       })
     }
 
-    // extending existing files
-    if (options.mode === 'Existing app') {
-      if (options.version === 'Free') {
-        api.injectImports(api.entryFile, `import 'bootstrap-css-only/css/bootstrap.min.css'`)
-        api.injectImports(api.entryFile, `import 'mdbvue/lib/css/mdb.min.css'`)
-      } else {
-        api.injectImports(api.entryFile, `import 'bootstrap-css-only/css/bootstrap.min.css'`)
-        api.injectImports(api.entryFile, `import 'mdbvue/lib/css/mdb.min.css'`)
-        api.injectImports(api.entryFile, `import Notify from 'mdbvue/lib/components/Notify'`)
-  
-        api.onCreateComplete(() => {
-          const { EOL } = require('os')
-          const contentMain = fs.readFileSync(api.entryFile, { encoding: 'utf-8' })
-          const lines = contentMain.split(/\r?\n/g)
+    // apply Roboto font
+    if (options.roboto === true) {
+      api.onCreateComplete(() => {
+        applyRoboto()
+      })
+    }
 
-          // check existing imports
-          const notifyIndex = lines.findIndex(line => line.match(/Vue.use(\(Notify)\)/))
-
-          // update main.js if needed
-          if (notifyIndex < 0) {
-            const renderIndex = lines.findIndex(line => line.match(/new Vue/))
-            lines[renderIndex - 1] += `${EOL}Vue.use(Notify)`
-            lines[renderIndex - 1] += `${EOL}`
-            fs.writeFileSync(api.entryFile, lines.join(EOL), { encoding: 'utf-8' })
-          }
-        })
-        api.render('./templates/existingAppPro')
-      }
+    // apply Font Awesome
+    if (options.fa5 === true) {
+      api.onCreateComplete(() => {
+        applyFA5(api.entryFile)
+      })
     }
 
     // npm pack & replace dependency by tgz
     if (options.version === 'Pro') {
       api.onCreateComplete(() => {
-
-        // editable SCSS option
-        if (options.styling === 'Editable in your project (SCSS)') {
-          fs.copy('./node_modules/mdbvue/lib/scss', './mdb/mdbvue/scss', err => {
-            if (err) throw err
-          })
-          fs.copy('./node_modules/mdbvue/lib/img', './mdb/mdbvue/img', err => {
-            if (err) throw err
-          })
-        }
-
-        const packlist = require('npm-packlist')
-        const tar = require('tar')
-        const packageDir = './node_modules/mdbvue'
-        const packageTarball = `./mdb/mdbvue/mdbvue-v${latestTag}.tgz`
-        
-        packlist({ path: packageDir })
-          .then(files => tar.create({
-            prefix: 'package/',
-            cwd: packageDir,
-            file: packageTarball,
-            gzip: true
-          }, files))
-          .then(() => {
-            const replace = require('replace-in-file');
-            const replaceOptions = {
-              files: './package.json',
-              from: `git+https://oauth2:${options.token}@git.mdbootstrap.com/mdb/vue/mdb-vue-dev.git`,
-              to: `./mdb/mdbvue/mdbvue-v${latestTag}.tgz`,
-            };
-            try {
-              replace.sync(replaceOptions);
-            }
-            catch (error) {}
-          })
+        packTgz(latestTag, options.token)
       })
     }
 
