@@ -46,7 +46,7 @@ module.exports = (api, options) => {
           start: 'vue-cli-service serve --open'
         },
         dependencies: {
-          'mdbvue': `git+https://oauth2:${options.token}@git.mdbootstrap.com/mdb/vue/mdb-vue-dev.git`
+          'mdbvue': `git+https://oauth2:${options.token}@git.mdbootstrap.com/mdb/vue/vu-pro.git`
         }
       })
 
