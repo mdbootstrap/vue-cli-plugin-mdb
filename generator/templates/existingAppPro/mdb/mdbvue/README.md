@@ -54,7 +54,7 @@ __________
 
 # Demo
 
- - [Main demo](https://mdbootstrap.com/previews/templates/vue/)
+ - [Main demo](https://vue.mdbootstrap.com/)
 
 # Quick start
 
