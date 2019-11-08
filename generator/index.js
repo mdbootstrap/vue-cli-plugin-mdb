@@ -46,7 +46,7 @@ module.exports = (api, options) => {
           start: 'vue-cli-service serve --open'
         },
         dependencies: {
-          'mdbvue': `git+https://oauth2:${options.token}@git.mdbootstrap.com/mdb/vue/mdb-vue-dev.git`
+          'mdbvue': `git+https://oauth2:${options.token}@git.mdbootstrap.com/mdb/vue/vu-pro.git`
         }
       })
 
@@ -61,7 +61,7 @@ module.exports = (api, options) => {
       api.extendPackage({
         devDependencies: {
           'node-sass': '^4.9.0',
-          'sass-loader': '^7.1.0'
+          'sass-loader': '^8.0.0'
         }
       })
       api.onCreateComplete(() => {

@@ -16,7 +16,7 @@ const packTgz = (tag, token) => {
     const replace = require('replace-in-file');
     const replaceOptions = {
       files: './package.json',
-      from: `git+https://oauth2:${token}@git.mdbootstrap.com/mdb/vue/mdb-vue-dev.git`,
+      from: `git+https://oauth2:${token}@git.mdbootstrap.com/mdb/vue/vu-pro.git`,
       to: `./mdb/mdbvue/mdbvue-v${tag}.tgz`,
     };
     try {
