@@ -65,7 +65,7 @@ module.exports = (api, options) => {
         }
       })
       api.onCreateComplete(() => {
-        applySCSS()
+        applySCSS(options.version)
       })
     }
 
