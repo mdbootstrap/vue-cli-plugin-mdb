@@ -7,7 +7,7 @@ const packTgz = require('./commands/pack')
 const gitTagsRemote = require('git-tags-remote')
 
 // check for the latest mdb version
-let latestTag = '5.8.3'
+let latestTag = '6.2.0'
 gitTagsRemote.latest('https://github.com/mdbootstrap/Vue-Bootstrap-with-Material-Design.git').then(tags => {
   latestTag = Array.from(tags)[0]
 })
