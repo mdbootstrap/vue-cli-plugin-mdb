@@ -14,7 +14,7 @@ module.exports = [
     name: 'version',
     type: 'list',
     message: 'Free or Pro version?',
-    choices: ['Free', 'Pro'],
+    choices: ['Free', 'Basic', 'Pro'],
     default: 'Free'
   },
   {

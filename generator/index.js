@@ -39,6 +39,21 @@ module.exports = (api, options) => {
         updateMainJS(api.entryFile, options.version, options.styling)
       })
 
+    } else if (options.version === 'Basic') {
+
+      api.extendPackage({
+        scripts: {
+          start: 'vue-cli-service serve --open'
+        },
+        dependencies: {
+          'mdbvue': `./mdb/mdbvue/mdbvue-${latestTag}.tgz`
+        }
+      })
+
+      api.onCreateComplete(() => {
+        updateMainJS(api.entryFile, options.version, options.styling)
+      })
+
     } else {
 
       api.extendPackage({
